@@ -1,8 +1,10 @@
+/* eslint-disable @typescript-eslint/member-ordering */
 import { FormControl } from '@angular/forms';
 import { GeneralHelper } from '../../../../helpers/general.helper';
 import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 
 @Component({
+  // eslint-disable-next-line @angular-eslint/component-selector
   selector: 'tecvirt-password-input',
   templateUrl: './password-input.component.html',
   styleUrls: ['./password-input.component.scss'],

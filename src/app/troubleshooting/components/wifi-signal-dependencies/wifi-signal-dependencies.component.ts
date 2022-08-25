@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-unused-expressions */
+/* eslint-disable @typescript-eslint/member-ordering */
 import { AnalyticsService } from 'src/app/core/analytics.service';
 import { FeatureState } from 'src/app/states/feature.state';
 import { Component, OnInit, Output, EventEmitter, NgZone, AfterContentInit, Input } from '@angular/core';
@@ -55,6 +57,7 @@ const DEPENDENCIES_LIST = [
 ];
 
 @Component({
+  // eslint-disable-next-line @angular-eslint/component-selector
   selector: 'tecvirt-wifi-signal-dependencies',
   templateUrl: './wifi-signal-dependencies.component.html',
   styleUrls: ['./wifi-signal-dependencies.component.scss'],

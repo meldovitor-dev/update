@@ -3,6 +3,7 @@ import { FormControl } from '@angular/forms';
 import { GeneralHelper } from 'src/app/helpers/general.helper';
 
 @Component({
+  // eslint-disable-next-line @angular-eslint/component-selector
   selector: 'tecvirt-ssid-input',
   templateUrl: './ssid-input.component.html',
   styleUrls: ['./ssid-input.component.scss']

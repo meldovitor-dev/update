@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { NavParams, ModalController } from '@ionic/angular';
 
 @Component({
+    // eslint-disable-next-line @angular-eslint/component-selector
     selector: 'tecvirt-menu-slides',
     templateUrl: './menu-slides.component.html',
     styleUrls: ['./menu-slides.component.scss'],
@@ -32,9 +33,7 @@ export class MenuSlidesComponent implements OnInit {
     public createCategories() {
         const categories = this.items
             .map(its => its.section)
-            .filter((elem, index, self) => {
-                return index === self.indexOf(elem);
-            });
+            .filter((elem, index, self) => index === self.indexOf(elem));
         categories.forEach(element => {
             this.buttonsAccordion.push({
                 open: false,

@@ -3,6 +3,7 @@ import { Component, OnInit, Input, SimpleChanges, OnChanges, AfterContentInit } 
 
 
 @Component({
+    // eslint-disable-next-line @angular-eslint/component-selector
     selector: 'tecvirt-stopwatch',
     template: `
     <div stopwatch>

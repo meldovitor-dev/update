@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/member-ordering */
 import { Store } from '@ngxs/store';
 import { WifiLevelEnum } from './../../../services/wifi-manager.service';
 import { WifiSignalPageModel, getWifiPage } from './wifi-signal-catalog';
@@ -7,6 +8,7 @@ import { WifiManagerService } from 'src/app/services/wifi-manager.service';
 import { ScreenStateModel, ScreenSet } from 'src/app/actions/screen.actions';
 
 @Component({
+  // eslint-disable-next-line @angular-eslint/component-selector
   selector: 'tecvirt-wifi-signal-verifier',
   templateUrl: './wifi-signal-verifier.component.html',
   styleUrls: ['./wifi-signal-verifier.component.scss'],

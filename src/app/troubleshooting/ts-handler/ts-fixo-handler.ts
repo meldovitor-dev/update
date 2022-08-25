@@ -35,7 +35,7 @@ export class TsFixoHandler extends TsHandler {
     const resCorp = {
       bd: '',
       bdJaAberto: false
-    }
+    };
     if (ticket && ticket.payload) {
       resCorp.bd = ticket.payload.bd === 'null'? '' : ticket.payload.bd;
       resCorp.bdJaAberto = ticket.payload.bdAberto;

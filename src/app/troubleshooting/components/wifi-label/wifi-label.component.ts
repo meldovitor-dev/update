@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
+  // eslint-disable-next-line @angular-eslint/component-selector
   selector: 'tecvirt-wifi-label',
   template: `
     <div network *ngIf="selectedNetwork && (selectedNetwork.ssid || selectedNetwork.nomeDaRede)">

@@ -5,6 +5,7 @@ import { ScreenSet, ScreenStateModel } from 'src/app/actions/screen.actions';
 import { Store } from '@ngxs/store';
 
 @Component({
+  // eslint-disable-next-line @angular-eslint/component-selector
   selector: 'tecvirt-conclusion-troubleshooting',
   templateUrl: './conclusion-troubleshooting.component.html',
   styleUrls: ['./conclusion-troubleshooting.component.scss']

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/naming-convention */
 import { TsFixoHandler } from './ts-fixo-handler';
 import { TsTvHandler } from './ts-tv-handler';
 import { TsBandaLargaHandler } from './ts-banda-larga-handler';

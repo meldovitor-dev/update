@@ -42,13 +42,11 @@ export class TsBandaLargaHandler extends TsHandler {
     const ticket = store.selectSnapshot(TicketState.getTickets(InteractionEnum.bandaLargaListClients));
     if (ticket && ticket.payload && ticket.payload.clients) {
       const clients = ticket.payload.clients
-        .map(el => {
-          return {
+        .map(el => ({
             hostName: el.title,
             vendor: el.subtitle,
             macAddress: el.macAddress
-          };
-        });
+          }));
       const redes = [{
         devices: clients,
       }];
@@ -85,7 +83,7 @@ export class TsBandaLargaHandler extends TsHandler {
     const resCorp = {
       bd: '',
       bdJaAberto: false
-    }
+    };
     if (ticket && ticket.payload) {
       resCorp.bd = ticket.payload.bd === 'null'? '' : ticket.payload.bd;
       resCorp.bdJaAberto = ticket.payload.bdAberto;

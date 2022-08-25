@@ -4,6 +4,7 @@ import { GeneralHelper } from 'src/app/helpers/general.helper';
 import { AnalyticsService } from 'src/app/core/analytics.service';
 
 @Component({
+  // eslint-disable-next-line @angular-eslint/component-selector
   selector: 'tecvirt-phone-input',
   templateUrl: './phone-input.component.html',
   styleUrls: ['./phone-input.component.scss'],

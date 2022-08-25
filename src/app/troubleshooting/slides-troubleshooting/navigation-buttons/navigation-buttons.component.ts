@@ -3,6 +3,7 @@ import { Component, EventEmitter, Output, Input } from '@angular/core';
 import { DIRECTIONS } from '../../general.constants';
 
 @Component({
+    // eslint-disable-next-line @angular-eslint/component-selector
     selector: 'tecvirt-navigation-slides-buttons',
     template: `
     <div class="tecvirt-navigation-slides-buttons">
@@ -15,7 +16,7 @@ import { DIRECTIONS } from '../../general.constants';
         <div class="tecvirt-navigation-slides-buttons__container">
             <button (click)="goRight()" id="next-page" [hidden]="hiddenRight">
                 <ion-icon class="list-arrow" name="ios-arrow-forward"></ion-icon>
-            </button> 
+            </button>
         </div>
     </div>
   `,

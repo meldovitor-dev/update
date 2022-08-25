@@ -82,9 +82,7 @@ describe('MenuSlidesComponent', () => {
     const buttonsAccordion = [];
     const categories = slidesMock
             .map(its => its.section)
-            .filter((elem, index, self) => {
-                return index === self.indexOf(elem);
-            });
+            .filter((elem, index, self) => index === self.indexOf(elem));
     categories.forEach(element => {
       buttonsAccordion.push({
           open: false,

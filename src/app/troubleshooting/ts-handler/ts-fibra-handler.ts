@@ -20,14 +20,12 @@ export class TsFibraHandler extends TsHandler {
       const redes = ticket.payload.wifiList
         .map(el => el.redes)
         .reduce((el, acc) => (acc = [...(acc || []), ...el]))
-        .map(el => {
-          return {
+        .map(el => ({
             ssid: el.ssid,
             wifiIndex: el.wifiIndex,
             devices: el.devices,
             banda: el.banda
-          };
-        });
+          }));
       return redes;
     }
     return [];
@@ -63,12 +61,10 @@ export class TsFibraHandler extends TsHandler {
         .map(el => el.redes)
         .reduce((el, acc) => (acc = [...(acc || []), ...el]))
         .filter(el => el.channelAuto === false)
-        .map(el => {
-          return {
+        .map(el => ({
             wifiIndex: el.wifiIndex,
             banda: el.banda
-          };
-        });
+          }));
       return { redes };
     }
     return [];
@@ -102,12 +98,10 @@ export class TsFibraHandler extends TsHandler {
      redes = ticket.payload.wifiList
         .map(el => el.redes)
         .reduce((el, acc) => (acc = [...(acc || []), ...el]))
-        .map(el => {
-          return {
+        .map(el => ({
             ssid: el.ssid,
             banda: el.banda
-          };
-        });
+          }));
      return { redes };
     }
     return {redes: []};

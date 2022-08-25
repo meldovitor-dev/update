@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/member-ordering */
 import { AnalyticsService } from './../../core/analytics.service';
 import { Store } from '@ngxs/store';
 import { Subject, Observable } from 'rxjs';
@@ -15,6 +16,7 @@ import {
 import { SubSink } from 'subsink';
 import { ScreenSet } from 'src/app/actions/screen.actions';
 @Component({
+    // eslint-disable-next-line @angular-eslint/component-selector
     selector: 'tecvirt-slides-troubleshooting',
     templateUrl: './slides-troubleshooting.component.html',
     styleUrls: ['./slides-troubleshooting.component.scss'],

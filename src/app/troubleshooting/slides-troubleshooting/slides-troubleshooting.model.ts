@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/member-ordering */
 export class SlidesTroubleshootingModel {
     public slide;
     constructor(slide) {
@@ -31,7 +32,7 @@ export class SlidesTroubleshootingModel {
     }
     public getGa() {
         return this.slide ? this.slide.ga : '';
-    }   
+    }
     public hasBreadcrumbs() {
         return (this.slide && this.slide.top && this.slide.top.breadcrumbs);
     }
@@ -39,7 +40,7 @@ export class SlidesTroubleshootingModel {
         if (this.hasBreadcrumbs()) {
             return this.slide.top.breadcrumbs.title || '';
         }
-        return ''
+        return '';
     }
     public getBreadcrumbsElements() {
         if (this.hasBreadcrumbs()) {
@@ -48,7 +49,6 @@ export class SlidesTroubleshootingModel {
         return [];
     }
     public isFullSlideMode() {
-        return (this.slide && this.slide.top && this.slide.top.img && !this.getParagraph() && !this.getTitle())
+        return (this.slide && this.slide.top && this.slide.top.img && !this.getParagraph() && !this.getTitle());
     }
-
 }

@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import { ConclusionModel } from './../troubleshooting-interface';
 import { AlertCalogModel } from '../troubleshooting-interface';
 

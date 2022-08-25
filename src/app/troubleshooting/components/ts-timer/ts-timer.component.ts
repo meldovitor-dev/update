@@ -2,6 +2,7 @@ import { Component, OnInit, Input, AfterContentInit, SimpleChanges, OnChanges } 
 import { TimerTypes } from '../../general.constants';
 
 @Component({
+    // eslint-disable-next-line @angular-eslint/component-selector
     selector: 'tecvirt-ts-timer',
     template: `
       <tecvirt-progress-ring *ngIf="progressRing" [countdown]="countdown"></tecvirt-progress-ring>
@@ -16,7 +17,7 @@ export class TsTimeComponent implements OnInit, AfterContentInit, OnChanges {
     stopwatch = false;
     loading = false;
     constructor() { }
-    
+
     ngOnInit() {
     }
     ngOnChanges(sp: SimpleChanges)  {
