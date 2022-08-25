@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/naming-convention */
+/* eslint-disable @typescript-eslint/dot-notation */
 import { GeneralHelper } from 'src/app/helpers/general.helper';
 import { LinkCatalogModel } from './../../troubleshooting/troubleshooting-interface';
 import { UserState } from 'src/app/states/user.state';
@@ -10,6 +12,7 @@ import { FeatureEnum } from 'src/app/enums/feature.enum';
 import { InAppBrowser } from '@ionic-native/in-app-browser/ngx';
 
 @Component({
+  // eslint-disable-next-line @angular-eslint/component-selector
   selector: 'tecvirt-wifi-info-result',
   templateUrl: './wifi-info-result.component.html',
   styleUrls: ['./wifi-info-result.component.scss'],
@@ -99,7 +102,7 @@ export class WifiInfoResultComponent implements OnInit, OnDestroy {
     this.subs.unsubscribe();
   }
   getProgressbarValue(value) {
-    console.log(value)
+    console.log(value);
     const speed = parseInt(value.replace(/\D/g, ''), 10);
     const plano = this.getSanitizedPlano();
     if (!plano) {
@@ -107,14 +110,14 @@ export class WifiInfoResultComponent implements OnInit, OnDestroy {
     }
     const planoInt = parseInt(this.getSanitizedPlano().replace(/\D/g, ''), 10);
     const percentage = speed / planoInt;
-    console.log(speed, planoInt, )
+    console.log(speed, planoInt, );
     return percentage > 1 ? 1 : percentage;
   }
   goToOiPlace(){
-    this.iab.create('https://www.oiplace.com.br/?utm_source=apptecnicovirtual&utm_medium=interacoes&utm_campaign=conhecaoiplace')
+    this.iab.create('https://www.oiplace.com.br/?utm_source=apptecnicovirtual&utm_medium=interacoes&utm_campaign=conhecaoiplace');
   }
   sendLinkShareEvent(evt){
-    this.btnEvt.emit(evt)
+    this.btnEvt.emit(evt);
   }
   getRedeName() {
     const frequency = this.wifiInfo.rede24 ? '5GHz' : '2.4GHz';

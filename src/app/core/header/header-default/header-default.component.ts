@@ -1,3 +1,4 @@
+/* eslint-disable @angular-eslint/component-selector */
 import { AnalyticsService } from 'src/app/core/analytics.service';
 import { LoginService } from 'src/app/services/login.service';
 import { Component, OnInit, Input } from '@angular/core';
@@ -8,12 +9,10 @@ import { Observable } from 'rxjs';
 import { GeneralHelper } from 'src/app/helpers/general.helper';
 import { ProductCodeEnum } from 'src/app/enums/product.enum';
 
-
 @Component({
-  // eslint-disable-next-line @angular-eslint/component-selector
   selector: 'tecvirt-header-default',
   templateUrl: './header-default.component.html',
-  styleUrls: ['./header-default.component.scss'],
+  styleUrls: ['./header-default.component.scss']
 })
 export class HeaderDefaultComponent implements OnInit {
   @Input() title;
@@ -26,9 +25,9 @@ export class HeaderDefaultComponent implements OnInit {
     private store: Store,
     public loginService: LoginService,
     private analyticsService: AnalyticsService
-  ) { }
+  ) {}
 
-  ngOnInit() { }
+  ngOnInit() {}
 
   getProductName() {
     return this.product && this.product.includes('Fibra')
@@ -60,5 +59,4 @@ export class HeaderDefaultComponent implements OnInit {
   publishMenuGa() {
     this.analyticsService.logEventGA('menu', 'click');
   }
-
 }

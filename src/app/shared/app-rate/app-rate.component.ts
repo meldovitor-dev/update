@@ -5,6 +5,7 @@ import { LocalstorageService } from 'src/app/services/localstorage.service';
 import { InAppBrowserService } from 'src/app/services/in-app-browser.service';
 
 @Component({
+    // eslint-disable-next-line @angular-eslint/component-selector
     selector: 'tecvirt-app-rate',
     templateUrl: './app-rate.component.html',
     styleUrls: ['./app-rate.component.scss']

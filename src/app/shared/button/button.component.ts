@@ -1,6 +1,7 @@
 import { Component, OnInit, Input, AfterContentInit, Output, EventEmitter, SimpleChanges, OnChanges } from '@angular/core';
 
 @Component({
+  // eslint-disable-next-line @angular-eslint/component-selector
   selector: 'tecvirt-button',
   templateUrl: './button.component.html',
   styleUrls: ['./button.component.scss'],

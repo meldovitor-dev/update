@@ -1,13 +1,14 @@
-import { InteractionEnum } from './../../../domain/interactions';
-import { ProductService } from './../../../services/product.service';
-import { TimeoutControlService } from './../../../services/timeout-control.service';
-import { timer, Subject } from 'rxjs';
-import { Component, ViewChild, AfterContentInit, Input, SimpleChanges, OnChanges, OnDestroy, OnInit } from '@angular/core';
+/* eslint-disable @angular-eslint/use-lifecycle-interface */
+/* eslint-disable no-underscore-dangle */
+/* eslint-disable @typescript-eslint/member-ordering */
+import { timer } from 'rxjs';
+import { Component, ViewChild, AfterContentInit, Input, SimpleChanges, OnDestroy } from '@angular/core';
 import { CountdownTimer } from 'src/app/shared/countdown-timer';
 import { SubSink } from 'subsink';
-import { takeWhile, timeout, count } from 'rxjs/operators';
+import { takeWhile } from 'rxjs/operators';
 
 @Component({
+  // eslint-disable-next-line @angular-eslint/component-selector
   selector: 'tecvirt-progress-ring',
   templateUrl: './progress-ring.component.html',
   styleUrls: ['./progress-ring.component.scss'],
@@ -26,10 +27,10 @@ export class ProgressRingComponent implements AfterContentInit, OnDestroy {
 
   ngAfterContentInit(): void {
     this.initVariables();
-    this.checkCountdownInit()
+    this.checkCountdownInit();
   }
   ngOnChanges(changes: SimpleChanges): void {
-    this.checkCountdownInit()
+    this.checkCountdownInit();
   }
 
   initVariables() {

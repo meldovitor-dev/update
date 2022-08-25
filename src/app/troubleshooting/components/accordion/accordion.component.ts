@@ -1,6 +1,8 @@
+/* eslint-disable @typescript-eslint/naming-convention */
 import { Component, OnInit, Output, EventEmitter, Input, AfterContentInit } from '@angular/core';
 
 @Component({
+  // eslint-disable-next-line @angular-eslint/component-selector
   selector: 'tecvirt-accordion',
   template: `
   <tecvirt-accordion-call-guide

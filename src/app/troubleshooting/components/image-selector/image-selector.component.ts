@@ -1,7 +1,9 @@
+/* eslint-disable @typescript-eslint/naming-convention */
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { AnalyticsService } from 'src/app/core/analytics.service';
 
 @Component({
+  // eslint-disable-next-line @angular-eslint/component-selector
   selector: 'tecvirt-image-selector',
   templateUrl: './image-selector.component.html',
   styleUrls: ['./image-selector.component.scss'],

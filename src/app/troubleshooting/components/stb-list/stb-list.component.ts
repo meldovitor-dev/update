@@ -6,6 +6,7 @@ import { FIBRA_FIND_STB } from '../../catalogs/problem-solver/fibra/tv/fibra-fin
 import { CatalogPrefix } from 'src/app/enums/catalog.enum';
 
 @Component({
+  // eslint-disable-next-line @angular-eslint/component-selector
   selector: 'tecvirt-stb-list',
   templateUrl: './stb-list.component.html',
   styleUrls: ['./stb-list.component.scss']

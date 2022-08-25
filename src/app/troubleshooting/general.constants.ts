@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/naming-convention */
 export const DIRECTIONS = {
     TOP: 0,
     FOWARD: 1,

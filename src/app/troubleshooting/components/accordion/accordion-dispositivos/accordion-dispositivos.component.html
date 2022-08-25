@@ -16,7 +16,7 @@
                   <ion-text *ngIf="item.devices.length>1">
                     <p>({{item.devices.length}} dispositivos)</p>
                   </ion-text>
-                  <ion-text *ngIf="item.devices.length==1">
+                  <ion-text *ngIf="item.devices.length===1">
                     <p>({{item.devices.length}} dispositivo)</p>
                   </ion-text>
                   <ion-icon [name]="item.open ? 'ios-arrow-up' : 'ios-arrow-down'" class="icon"></ion-icon>

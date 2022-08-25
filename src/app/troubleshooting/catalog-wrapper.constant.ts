@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/naming-convention */
+/* eslint-disable max-len */
 import { FIBRA_TV_LOGO_OI } from './catalogs/problem-solver/fibra/tv/fibra-tv-logo-oi.catalog';
 import { MANUAL_CONTROLE_DTH } from './catalogs/unlogged-area/controle-dth/manual-controle-DTH-modulo';
 import { FIBRA_TELA_PRETA } from './catalogs/problem-solver/fibra/tv/fibra-tv-tela-preta-catalog';

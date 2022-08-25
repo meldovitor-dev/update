@@ -10,7 +10,7 @@ import { AgendamentoActions } from 'src/app/domain/agendamento.interface';
 export class SchedulingConfirmComponent implements OnInit {
     @Input() agendamento;
     @Input() page;
-    @Input() context: AgendamentoActions;
+    @Input() context;
     @Output() confirmEvent = new EventEmitter();
     constructor() { }
 

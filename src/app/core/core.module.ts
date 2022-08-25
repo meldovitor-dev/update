@@ -16,22 +16,29 @@ const declaredComponents = [
 
 @NgModule({
   declarations: [...declaredComponents],
-  imports: [CommonModule, HttpClientModule, IonicModule],
+  exports: [
+      ...declaredComponents,
+  ],
+  imports: [
+    CommonModule,
+    HttpClientModule,
+    IonicModule,
+  ]
 })
 export class CoreModule {
-  static forRoot(): ModuleWithProviders<CoreModule> {
-    return {
-      ngModule: CoreModule,
-      providers: [
-        SecureStorageService,
-        LoginService,
-        AnalyticsService,
-        MongoAnalyticsService,
-        BackgroundService,
-        CallService,
-        NotificationSQLiteService,
-        LocalNotificationService,
-      ],
-    };
-  }
+    static forRoot(): ModuleWithProviders<CoreModule> {
+        return {
+          ngModule: CoreModule,
+          providers: [
+            SecureStorageService,
+            LoginService,
+            AnalyticsService,
+            MongoAnalyticsService,
+            BackgroundService,
+            CallService,
+            NotificationSQLiteService,
+            LocalNotificationService
+          ],
+        };
+      }
 }

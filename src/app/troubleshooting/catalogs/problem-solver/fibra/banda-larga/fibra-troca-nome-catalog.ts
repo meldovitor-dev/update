@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import { CatalogModel } from 'src/app/troubleshooting/troubleshooting-interface';
 import { CatalogPrefix } from 'src/app/enums/catalog.enum';
 import { TimerTypes } from 'src/app/troubleshooting/general.constants';

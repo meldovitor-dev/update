@@ -145,4 +145,4 @@ export const INTENSIDADE_SINAL: CatalogModel[] = [
     }
   },
   ...DICAS_E_BOAS_PRATICAS
-]
+];

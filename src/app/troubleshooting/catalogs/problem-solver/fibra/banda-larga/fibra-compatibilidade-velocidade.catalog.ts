@@ -11,8 +11,7 @@ const getId = (id) => CatalogPrefix.COMPATIBILIDADE + id;
 const getIdManual = (id) => CatalogPrefix.COMPATIBILIDADE_MANUAL + id;
 const alert = getAlert('feedback-alert');
 const getImage = (img) => `assets/images/troubleshooting/unlogged-area/modem-antena/${img}`;
-const negativeState = (id) => {
-  return {
+const negativeState = (id) => ({
     name: 'negative',
     action: {
       call: 'changeModule',
@@ -20,11 +19,9 @@ const negativeState = (id) => {
         id,
       },
     },
-  };
-};
+  });
 
-const getConnectedWithOiWifi = (negativeId) => {
-  return {
+const getConnectedWithOiWifi = (negativeId) => ({
     call: 'checkIfConnectedToOiWifi',
     params: {
       call: 'checkIfConnectedToOiWifi',
@@ -42,8 +39,7 @@ const getConnectedWithOiWifi = (negativeId) => {
         }
       },
     }
-  };
-}
+  });
 
 const pageConfig: PageConfigModel = {
   feedback: {

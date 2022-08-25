@@ -1,6 +1,7 @@
 import { Component, EventEmitter, Output, Input } from '@angular/core';
 
 @Component({
+  // eslint-disable-next-line @angular-eslint/component-selector
   selector: 'tecvirt-accordion-call-guide',
   templateUrl: './accordion-call-guide.component.html',
   styleUrls: ['./accordion-call-guide.component.scss'],

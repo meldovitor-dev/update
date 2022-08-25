@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/naming-convention */
 export const APPRATE = {
     USER_ACTIONS: {
         RATE_NOW: 1,

@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import { CatalogPrefix } from 'src/app/enums/catalog.enum';
 import { TimerTypes } from 'src/app/troubleshooting/general.constants';
 import { InteractionEnum } from 'src/app/domain/interactions';

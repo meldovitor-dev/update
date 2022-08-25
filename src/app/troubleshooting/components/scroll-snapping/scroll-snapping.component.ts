@@ -6,6 +6,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { TRIPA_COLECTION } from '../../catalogs/problem-solver/fibra/shared/fibra-antena-tripas';
 
 @Component({
+  // eslint-disable-next-line @angular-eslint/component-selector
   selector: 'tecvirt-scroll-snapping',
   templateUrl: './scroll-snapping.component.html',
   styleUrls: ['./scroll-snapping.component.scss'],

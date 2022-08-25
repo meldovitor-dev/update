@@ -1,12 +1,12 @@
-import { Component, OnInit, Input, AfterContentInit, Output, EventEmitter } from '@angular/core';
+/* eslint-disable @typescript-eslint/quotes */
 import { LocationState } from './../../states/location.state';
 import { ConnectionState } from './../../states/connection.state';
 import { Store, Select } from '@ngxs/store';
-
+import { Component, OnInit, Input, AfterContentInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   // eslint-disable-next-line @angular-eslint/component-selector
-  selector: 'tecvirt-header-default',
+  selector: 'tecvirt-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
 })
@@ -15,8 +15,8 @@ export class HeaderComponent implements OnInit, AfterContentInit {
   @Input() title;
   @Input() product;
   @Input() hiddenBack;
-  @Input() useTsHeader = false;
-  @Input() hasMenuSlides = false;
+  @Input() useTsHeader = "false";
+  @Input() hasMenuSlides = "false";
   @Output() backButtonEvt = new EventEmitter<any>();
   @Output() closeButtonEvt = new EventEmitter<any>();
   @Output() slidesMenuEvt = new EventEmitter<any>();
@@ -24,7 +24,7 @@ export class HeaderComponent implements OnInit, AfterContentInit {
   tsHeader = ['troubleshooting', 'diagnostic', 'scheduling', 'deeplink-falha-massiva'];
   constructor(private store: Store) { }
 
-  ngOnInit() { }
+  ngOnInit() {}
   ngAfterContentInit(): void {
   }
   goBackEvt(evt) {
@@ -34,11 +34,9 @@ export class HeaderComponent implements OnInit, AfterContentInit {
     this.closeButtonEvt.emit(evt);
   }
   slidesMenuEvtClicked(evt) {
-    this.slidesMenuEvt.emit(evt);
+      this.slidesMenuEvt.emit(evt);
   }
   isHeaderTS() {
-    return (this.tsHeader.includes(this.store.selectSnapshot(LocationState.getLocation)) || this.useTsHeader);
+    return (this.tsHeader.includes(this.store.selectSnapshot(LocationState.getLocation)) || this.useTsHeader );
   }
-
-
 }

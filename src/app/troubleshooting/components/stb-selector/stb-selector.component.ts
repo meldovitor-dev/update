@@ -2,6 +2,7 @@ import { AnalyticsService } from 'src/app/core/analytics.service';
 import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 
 @Component({
+  // eslint-disable-next-line @angular-eslint/component-selector
   selector: 'tecvirt-stb-selector',
   templateUrl: './stb-selector.component.html',
   styleUrls: ['./stb-selector.component.scss'],

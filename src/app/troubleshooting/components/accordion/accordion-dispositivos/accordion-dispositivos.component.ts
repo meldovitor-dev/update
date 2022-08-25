@@ -4,6 +4,7 @@ import { LocalstorageService } from 'src/app/services/localstorage.service';
 import { AnalyticsService } from 'src/app/core/analytics.service';
 
 @Component({
+  // eslint-disable-next-line @angular-eslint/component-selector
   selector: 'tecvirt-accordion-dispositivos',
   templateUrl: './accordion-dispositivos.component.html',
   styleUrls: ['./accordion-dispositivos.component.scss'],
@@ -43,6 +44,7 @@ export class AccordionDispositivosComponent implements OnInit, OnDestroy {
       this.filteredAccordion[2].networkList.push(network);
       return;
     }
+    // eslint-disable-next-line @typescript-eslint/no-unused-expressions
     (banda === '5GHz') ? this.filteredAccordion[1].networkList.push(network) : this.filteredAccordion[0].networkList.push(network);
   }
   checkUnknownDeviceList(devices) {
@@ -110,7 +112,7 @@ export class AccordionDispositivosComponent implements OnInit, OnDestroy {
       label: '',
       networkList: []
     };
-    this.filteredAccordion = [redes2Hz, redes5Hz, redesNoBand]
+    this.filteredAccordion = [redes2Hz, redes5Hz, redesNoBand];
   }
 
   ngOnDestroy(): void {

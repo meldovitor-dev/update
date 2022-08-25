@@ -7,7 +7,6 @@ import { ProductHelper } from './../helpers/product-helper';
 import { CountdownTimer } from './../shared/countdown-timer';
 import { TimeoutControlService } from './../services/timeout-control.service';
 import { LoginService } from './../services/login.service';
-import { InteractionEnum } from './../domain/interactions';
 import { TicketState } from './../states/ticket.state';
 import { ProductService } from './../services/product.service';
 import { FeatureState } from './../states/feature.state';

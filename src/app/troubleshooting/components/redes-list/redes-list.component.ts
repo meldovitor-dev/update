@@ -1,6 +1,7 @@
 import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 
 @Component({
+  // eslint-disable-next-line @angular-eslint/component-selector
   selector: 'tecvirt-redes-list',
   templateUrl: './redes-list.component.html',
   styleUrls: ['./redes-list.component.scss'],

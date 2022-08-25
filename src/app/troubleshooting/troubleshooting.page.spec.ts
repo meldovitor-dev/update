@@ -21,7 +21,7 @@ describe('TroubleshootingPage', () => {
     selectSnapshot = jasmine.createSpy().and.returnValue({});
   }
   let catalogServiceSpy;
-  let router = new MockRouter();
+  const router = new MockRouter();
   beforeEach(async(() => {
     catalogServiceSpy = jasmine.createSpyObj('CatalogService', ['init', 'resetHistory', 'getPageLayout', 'publicAnalytics']);
 
@@ -43,7 +43,7 @@ describe('TroubleshootingPage', () => {
         ]
     }).compileComponents();
     fixture = TestBed.createComponent(TroubleshootingPage);
-    catalogServiceSpy.init.and.callFake(() => new Promise((resolve, reject) => {resolve()}));
+    catalogServiceSpy.init.and.callFake(() => new Promise<void>((resolve, reject) => {resolve();}));
     catalogServiceSpy.history = [];
     component = fixture.componentInstance;
     fixture.detectChanges();

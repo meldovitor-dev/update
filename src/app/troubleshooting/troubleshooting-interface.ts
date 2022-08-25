@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/naming-convention */
+/* eslint-disable @typescript-eslint/member-delimiter-style */
 import { InteractionEnum } from './../domain/interactions';
 export interface LayoutCatalogModel {
     slides?: any[];
@@ -30,7 +32,7 @@ export interface LayoutCatalogModel {
     interaction?: InteractionEnum;
     accordionContent?: AccordionCatalog[];
     stbSelect?: boolean;
-    stbList?:boolean;
+    stbList?: boolean;
     networkList?: boolean;
     noFeedback?: boolean;
     scrollSnap?: string;

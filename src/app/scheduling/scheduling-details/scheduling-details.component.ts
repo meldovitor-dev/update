@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/naming-convention */
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ActivatedRoute, ParamMap, Router } from '@angular/router';
 import { switchMap, map, tap } from 'rxjs/operators';
@@ -5,13 +6,12 @@ import { Agendamento, AgendamentoActions, AgendamentoSlot } from 'src/app/domain
 import { SchedulingService } from '../scheduling.service';
 import { of } from 'rxjs';
 import { SCHEDULING_CONFIRM_PAGE } from './scheduling-confirm.contants';
-import { ProductService } from 'src/app/services/product.service';
-import { InteractionEnum } from 'src/app/domain/interactions';
 import { CallService } from 'src/app/services/call.service';
 import { Store } from '@ngxs/store';
 import { ScreenSet } from 'src/app/actions/screen.actions';
 
 @Component({
+    // eslint-disable-next-line @angular-eslint/component-selector
     selector: 'tecvirt-scheduling-details',
     templateUrl: './scheduling-details.component.html',
     styleUrls: ['./scheduling-details.component.scss']
