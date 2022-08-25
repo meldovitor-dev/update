@@ -1,5 +1,8 @@
 {
   "name": "front-end v3",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
   "type": "angular"
 }

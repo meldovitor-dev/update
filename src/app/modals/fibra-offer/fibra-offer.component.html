@@ -1,0 +1,36 @@
+<div class="fibra-offer">
+  <div class="fibra-offer-container">
+    <div class="fibra-offer__header">
+      <div></div>
+      <h1>{{modalPage.title}}</h1>
+      <span class="fibra-offer--header__close-btn">
+        <ion-icon slot="end" name="md-close" (click)="closeModal()"></ion-icon>
+      </span>
+    </div>
+    <div class="fibra-offer__image-container" *ngIf="modalPage.src">
+      <img src="./assets/images/offer/{{modalPage.src}}" alt="fibra-tv">
+    </div>
+    <ion-text color="medium">
+      <p>{{modalPage.description}}</p>
+    </ion-text>
+    <div class="fibra-offer-form" *ngIf="modalPage.hasForm">
+      <div class="fibra-offer-form__first">
+        <tecvirt-input-default label='CEP' [parentFormControl]="cepFormControl" (inputChanged)=setCEP($event)
+          mask="cep"></tecvirt-input-default>
+      </div>
+      <div class="fibra-offer-form__second">
+        <tecvirt-input-default label="Número" [parentFormControl]="addressNumberFormControl"
+          (inputChanged)=setNumero($event)></tecvirt-input-default>
+        <ion-item lines="none" class="ion-no-padding" color="light">
+          <ion-label no-address-number> Sem Número</ion-label>
+          <ion-checkbox id="address-no-number" [(ngModel)]="noNumber" (ionChange)="noNumberEvt()"></ion-checkbox>
+        </ion-item>
+      </div>
+    </div>
+    <div class="button-container">
+      <tecvirt-button outline="true" [color]="modalPage.error ? 'dark' : ''" size="large" (clickEvent)="actionButton()"
+        [disabled]="modalPage.hasForm && !cepFormControl.valid" *ngIf="!loading"> {{modalPage.button.txt}}
+      </tecvirt-button>
+      <tecvirt-loading *ngIf="loading"></tecvirt-loading>
+    </div>
+  </div>

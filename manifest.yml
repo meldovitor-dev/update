@@ -1,0 +1,4 @@
+applications:
+- name: tec-virt
+  memory: 32M
+  path: ./www/

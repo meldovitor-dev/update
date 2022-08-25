@@ -1,0 +1,5 @@
+<div class="info-container" (click)="openPopover($event)">
+  <ion-icon name="information-circle"></ion-icon>
+  <ion-text color="medium"><p>{{infoData.label}}</p></ion-text>
+</div>
+<div class="baloon" *ngIf="showPopover" appClickOutside (clickOutside)="closePopover($event)">{{infoData.popoverText}}</div>

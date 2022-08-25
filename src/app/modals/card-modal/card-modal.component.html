@@ -1,0 +1,10 @@
+<div class="card-modal">
+    <div class="card-modal__header">
+        <h1>{{title}}</h1>
+        <span class="card-modal--header__close-btn">
+            <ion-icon slot="end" name="md-close" (click)="dismiss()"></ion-icon>
+        </span>
+    </div>
+    <ion-text color="medium" *ngIf="paragraph"><p>{{paragraph}}</p></ion-text>
+    <tecvirt-button [label]="button ? button.label : 'Ok, entendi!'" (clickEvent)="button ? actionButton(button) : dismiss()" color="white" troubleshooting="true" size="large" [data]="{gaAction: 'entendi'}"></tecvirt-button>
+</div>

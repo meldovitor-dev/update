@@ -1,0 +1,19 @@
+<div class="phone-number-modal">
+  <div class="phone-number-modal__header">
+      <div class="dummy"></div>
+      <ion-text color="info"><h1>LIGAR PRO ATENDIMENTO</h1></ion-text>
+      <span class="phone-number-modal--header__close-btn">
+          <ion-icon slot="end" name="md-close" (click)="dismiss()"></ion-icon>
+      </span>
+  </div>
+  <div class="phone-number-modal__container">
+    <ion-text color="medium"><p>Fale com um dos nossos especialistas pelo telefone</p></ion-text>
+    <div appClipboardDirective [clipboardTxt]="phoneNumber" class="phone-number-modal__container-phone">
+        <span number>{{phoneNumber}}</span>
+        <div class="phone-number-modal__container-copy">
+          <ion-icon src="./assets/icon/copiar.svg" (mouseenter)="showText = true" (mouseleave)="showText = false"></ion-icon>
+          <ion-text color="medium" *ngIf="showText"><p>Copiar</p></ion-text>
+        </div>
+    </div>
+  </div>
+</div>

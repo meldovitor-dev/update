@@ -1,0 +1,47 @@
+div[notification-area]{
+    position: relative;
+    display: flex;
+    cursor: pointer;
+    .notification-icon{
+        background-image: url("./../../../assets/icon/central-notificacao/sino_desativado.svg");
+        width: 25px;
+        height: 30px;
+        background-size: 95%;
+        background-repeat: no-repeat;
+    }
+    .new-notification-icon{
+        background-image: url("./../../../assets/icon/central-notificacao/sino_ativado.svg");
+    }
+    .notifications-badge {
+        background-color: red;
+        position: absolute;
+        border-radius: 50%;
+        bottom: 6px;
+        right: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 15px;
+        min-height: 15px;
+        p {
+            margin: 0;
+            padding: 1px 0.3rem;
+            font-size: 0.7rem;
+            color: white;
+            font-weight: bold;
+        }
+    }
+    .ion-activatable {
+        position: relative;
+        overflow: hidden;
+      }
+}
+
+.circle {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

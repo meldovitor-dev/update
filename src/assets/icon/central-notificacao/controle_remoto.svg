@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="61px" height="60px" viewBox="0 0 61 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Slice Copy 12</title>
+    <g id="prototipo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-6" transform="translate(21.153163, 0.732318)">
+            <g id="Group-10">
+                <rect id="Rectangle" stroke="#00C0D2" stroke-width="2" fill="#F5F5F5" x="1" y="1.56661262" width="18.6930154" height="39.3860309" rx="2"></rect>
+                <g id="Group-2" transform="translate(4.213297, 23.702909)" fill="#00C0D2">
+                    <rect id="Rectangle" x="6.62679788e-14" y="6.62679788e-14" width="3.0666053" height="3.0666053"></rect>
+                    <rect id="Rectangle-Copy-2" x="4.59990795" y="6.62679788e-14" width="3.0666053" height="3.0666053"></rect>
+                    <rect id="Rectangle-Copy-3" x="9.19981589" y="6.62679788e-14" width="3.0666053" height="3.0666053"></rect>
+                    <rect id="Rectangle-Copy-6" x="6.62679788e-14" y="5.02474021" width="3.0666053" height="3.0666053"></rect>
+                    <rect id="Rectangle-Copy-5" x="4.59990795" y="5.02474021" width="3.0666053" height="3.0666053"></rect>
+                    <rect id="Rectangle-Copy-4" x="9.19981589" y="5.02474021" width="3.0666053" height="3.0666053"></rect>
+                    <rect id="Rectangle-Copy-12" x="6.62679788e-14" y="10.0494804" width="3.0666053" height="3.0666053"></rect>
+                    <rect id="Rectangle-Copy-11" x="4.59990795" y="10.0494804" width="3.0666053" height="3.0666053"></rect>
+                    <rect id="Rectangle-Copy-10" x="9.19981589" y="10.0494804" width="3.0666053" height="3.0666053"></rect>
+                </g>
+                <circle id="Oval" fill="#00C0D2" cx="10.3465077" cy="15.4257024" r="4.51483973"></circle>
+                <circle id="Oval-Copy-2" fill="#FFFFFF" cx="10.3465077" cy="15.4257024" r="2.38882605"></circle>
+                <line x1="6.01978631" y1="11.2870993" x2="15.134534" y2="20.401847" id="Line" stroke="#F5F5F5" stroke-width="0.5" stroke-linecap="square"></line>
+                <line x1="5.45543134" y1="10.9108627" x2="15.2375841" y2="20.6930154" id="Line-Copy" stroke="#F5F5F5" stroke-width="0.5" stroke-linecap="square" transform="translate(10.346508, 15.801939) rotate(-90.000000) translate(-10.346508, -15.801939) "></line>
+                <circle id="Oval-Copy" fill="#00C0D2" cx="14.8613475" cy="6.01978631" r="1.50494658"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

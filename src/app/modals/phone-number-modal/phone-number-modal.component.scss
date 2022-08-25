@@ -1,0 +1,58 @@
+div.phone-number-modal {
+  background-color: var(--ion-color-light);
+  padding: 20px;
+  padding-top: 5px;
+  border-radius: 5px;
+  margin: auto 20px;
+  height: 50%;
+    .phone-number-modal__header {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        h1 {
+            font-size: 1em;
+        }
+        ion-icon {
+          font-size: 24px;
+          margin-top: 12px;
+          cursor: pointer;
+        }
+    }
+    .phone-number-modal__container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      height: 30vh;
+      .phone-number-modal__container-phone {
+        display: flex;
+        justify-content: center;
+        span {
+          font-size: 2rem;
+          text-align: center;
+        }
+      }
+      .phone-number-modal__container-copy {
+        display: none;
+        padding-top: 30px;
+        ion-icon {
+          font-size: 20px;
+          cursor: pointer;
+          position: absolute;
+        }
+        p {
+          margin: 2px 0 0 25px;
+          font-size: .8rem;
+          position: absolute;
+        }
+      }
+    }
+}
+@media (min-width: 600px) {
+  .phone-number-modal__container-copy {
+    display: flex !important;
+  }
+  span[number] {
+    font-size: 4rem !important;
+  }
+}

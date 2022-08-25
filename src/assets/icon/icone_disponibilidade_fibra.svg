@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="76px" height="31px" viewBox="0 0 76 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <g id="LOGIN-Fibra-TV" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="entrada2" transform="translate(-173.000000, -803.000000)">
+            <g id="Group-6" transform="translate(33.000000, 803.506878)">
+                <g id="Group-3" transform="translate(141.500000, 0.000000)">
+                    <g id="Group-5" transform="translate(0.000000, 8.475945)">
+                        <g id="Group-4" transform="translate(69.816520, 10.217261) rotate(-300.000000) translate(-69.816520, -10.217261) translate(62.816520, 3.717261)">
+                            <circle id="Oval" fill="#00AB0F" cx="5.57154623" cy="1.76278677" r="1.35411275"></circle>
+                            <circle id="Oval-Copy-3" fill="#00AB0F" cx="11.671213" cy="6.41062068" r="1.35411275"></circle>
+                            <circle id="Oval-Copy-4" fill="#00AB0F" cx="12.1026964" cy="11.1575373" r="1.35411275"></circle>
+                            <path d="M1.72368468,12.1278604 C3.45638428,9.72726131 4.29542711,7.290504 4.24081316,4.81758844" id="Path-4" stroke="#00AB0F" stroke-width="0.96" transform="translate(2.983501, 8.472724) rotate(11.000000) translate(-2.983501, -8.472724) "></path>
+                            <path d="M1.04939822,11.8421156 C3.7399873,10.0226615 6.20358904,8.66353412 8.44020343,7.76473343" id="Path-4-Copy" stroke="#00AB0F" stroke-width="0.96"></path>
+                            <path d="M0.5378517,12.3490493 C1.99876232,10.9874882 4.71798448,10.5976466 8.69551819,11.1795244" id="Path-4-Copy-2" stroke="#00AB0F" stroke-width="0.96"></path>
+                        </g>
+                        <path d="M8.15994163,4.51627463 C-1.18396788,5.02202909 -2.90272027,14.1408839 5.08778077,16.2783761 C13.0782818,18.4158684 29.7799119,9.0420171 40.2690037,6.4261439 C55.3426491,2.66692951 60.624628,7.25543718 62.5043128,7.85289396" id="Path-3" stroke="#00AB0F" stroke-width="2"></path>
+                    </g>
+                    <g id="Group-34" transform="translate(6.326257, 0.000000)">
+                        <g id="Group" transform="translate(1.000000, 0.000000)" stroke="#00AB0F" stroke-width="2">
+                            <rect id="Rectangle" x="1" y="1" width="43.1410213" height="24.1056509" rx="1.92"></rect>
+                        </g>
+                        <g id="Group-14" transform="translate(0.772883, 8.855211)">
+                            <polygon id="Rectangle" fill="#00AB0F" points="36.0624415 17 39.5041525 17 44.0663432 20.7789626 42.2859676 20.8022368"></polygon>
+                            <polygon id="Rectangle-Copy" fill="#00AB0F" points="8.78173372 17 5.34002273 17 0.777832031 20.7789626 2.55820765 20.8022368"></polygon>
+                            <rect id="Rectangle-Copy-2" stroke="#00AB0F" stroke-width="1.5" fill="#F3F3F3" x="8.04762775" y="0.972384039" width="11.6513276" height="19.5" rx="2.5"></rect>
+                            <rect id="Rectangle-Copy-3" stroke="#00AB0F" stroke-width="2" fill="#F3F3F3" x="11.751241" y="1.22238404" width="4.29195263" height="1" rx="0.5"></rect>
+                            <rect id="Rectangle-Copy-4" stroke="#00AB0F" stroke-width="2" fill="#F3F3F3" x="11.751241" y="18.8399612" width="4.29195263" height="1" rx="0.5"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

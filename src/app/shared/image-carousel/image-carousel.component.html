@@ -1,0 +1,41 @@
+<div image-carousel *ngIf="sliders.length">
+  <ion-text color="medium"><p class="text-title">VÍDEOS EXPLICATIVOS:</p></ion-text>
+  <ion-grid class="pwa-carousel">
+      <ion-row>
+        <ion-col size="1" left-arrow>
+          <span class="slider-nav" (click)="slidePrev(sliders,slideWithNav)" *ngIf="shouldHaveArrow">
+            <ion-icon [color]="isFirst ? 'medium' : 'dark-variation'" name="ios-arrow-dropleft-circle"></ion-icon>
+          </span>
+        </ion-col>
+        <ion-col size="10">
+          <ion-slides pager="false" tappable [options]="slideOpts" (ionSlideDidChange)='slideDidChange($event, slideWithNav)' #slideWithNav>
+            <ion-slide *ngFor="let s of sliders" (click)="itemSelected(s)">
+              <div class="slide-container padding-right">
+                <img width="250" height="140.625" [src]="s.thumbnail" [alt]="s.label">
+                <ion-label>{{s.label}}</ion-label>
+              </div>
+            </ion-slide>
+          </ion-slides>
+        </ion-col>
+        <ion-col size="1">
+          <span class="slider-nav" (click)="slideNext(sliders,slideWithNav)" *ngIf="shouldHaveArrow">
+            <ion-icon [color]="isLast ? 'medium' : 'dark-variation'" name="ios-arrow-dropright-circle"></ion-icon>
+          </span>
+        </ion-col>
+      </ion-row>
+  </ion-grid>
+  <ion-grid class="mobile-carousel">
+      <ion-row>
+        <ion-col size="12">
+          <ion-slides carousel pager [options]="slideOptsTwo">
+            <ion-slide *ngFor="let s of sliders">
+              <div class="slide-container padding-slides" (click)="itemSelected(s)">
+                <img width="200" height="112.5" [src]="s.thumbnail" [alt]="s.label">
+                <ion-label>{{s.label}}</ion-label>
+              </div>
+            </ion-slide>
+          </ion-slides>
+        </ion-col>
+      </ion-row>
+  </ion-grid>
+</div>

@@ -1,0 +1,46 @@
+<div class="login-messages">
+
+    <h1 [innerHTML]="sanitizeTitle( page.title)" class="title" *ngIf="page.title"></h1>
+    <p [innerHTML]="page.paragraph"></p>
+    <div class="image-container">
+      <img *ngIf="page.img" [src]="page.img" alt="Oi-image">
+    </div>
+    <p [innerHTML]="page.imageCaption" class="image-caption" *ngIf="page.imageCaption" ></p>
+    <div class="carousel-container" *ngIf="page.carousel">
+        <tecvirt-image-carousel [sliders]="getHowToSlides()"></tecvirt-image-carousel>
+    </div>
+    <div class="button-container">
+        <tecvirt-button *ngFor="let btn of (page.buttons || [])"
+        color="green"
+        [outline]="btn.greenStyle ? false : true"
+        [data]="btn"
+        size="large"
+        class="login-messages-flex-btn"
+        (clickEvent)="onClick(btn)"
+        [label]="sanitizeTxt(btn.txt)"
+        >
+            <ion-text color="dark">
+                <span [innerHTML]="sanitizeTxt(btn.txt)">
+                </span>
+            </ion-text>
+        </tecvirt-button>
+        <div *ngIf="page.portfolioButtons">
+            <tecvirt-button *ngFor="let btn of (getPortfolioItens((user$ | async) ? (user$ | async)?.portfolio : []) || [])"
+            color="green"
+            outline= true
+            [data]="{gaAction: btn.ga}"
+            size="large"
+            class="login-messages-flex-btn"
+            (clickEvent)="selectProduct(btn)"
+            >
+                <ion-text color="dark">
+                    <span [innerHTML]="btn.displayName">
+                    </span>
+                </ion-text>
+            </tecvirt-button>
+        </div>
+        <a (click)="skipLogin(page.skipLoginButton)" class="login-link-skip" *ngIf="page.skipLoginButton">
+            {{page.skipLoginButton.txt}}
+        </a>
+    </div>
+</div>

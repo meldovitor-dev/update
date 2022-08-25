@@ -1,0 +1,15 @@
+<div home-footer>
+  <div class="elipse-container">
+    <div class="elipse"></div>
+  </div>
+  <div *ngIf="!pending" class="footer-slides-wrapper">
+    <tecvirt-footer-tips></tecvirt-footer-tips>
+    <div class="safe-bottom"></div>
+  </div>
+  <div class="home-footer-error-page" *ngIf="pending">
+    <p [innerHtml]="pending?.paragraph"></p>
+    <tecvirt-footer-login *ngIf="pending.isLogin" [pending]="pending" (resolvePendenciesEvt)="resolvePendingAction($event)" class="full-width"></tecvirt-footer-login>
+    <tecvirt-button color="green" *ngIf="pending?.button && !pending.isLogin" [label]="pending?.button.txt" [data]="pending?.button" (click)="resolvePendingAction(pending.button)"></tecvirt-button>
+  </div>
+
+</div>

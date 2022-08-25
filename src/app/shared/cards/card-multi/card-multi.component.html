@@ -1,0 +1,42 @@
+<ion-card home-card color="white" class="card" *ngIf="features && features.length">
+  <ion-card-content>
+    <ion-grid *ngIf="!loading">
+      <ion-row>
+        <ion-col size="9">
+          <ion-row>
+            <ion-col>
+              <ion-card-subtitle card-title>{{title | uppercase}}</ion-card-subtitle>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col class="ion-no-padding">
+              <ion-card multi-card-button button *ngFor="let feature of (features || [])" (click)="disableButton() ? $event.stopPropagation() : onClick(feature);
+                disableButton() ? false : null">
+                <div class="button">
+                  <img [src]="getIcon(feature)" alt="button-icon">
+                  <div class="button__right-border">
+                  </div>
+                  <ion-label class="label-button" [class.isDisabled]="disableButton()">{{feature.displayName}}
+                  </ion-label>
+                </div>
+              </ion-card>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+        <ion-col size="3">
+          <div class="right-content">
+            <span class="icon-{{icon}}"></span>
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col *ngIf="showLabel()" size="9">
+          <div class="small-text" [innerHTML]="labelText" (click)="presentModal()"></div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <div class="loading" *ngIf="loading">
+      <tecvirt-loading small="true" color="primary" label="Carregando"></tecvirt-loading>
+    </div>
+  </ion-card-content>
+</ion-card>

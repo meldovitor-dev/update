@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Slice Copy 4</title>
+    <defs>
+        <rect id="path-1" x="3.60438923" y="0.678588867" width="4.3481065" height="2.01048455" rx="1.00524228"></rect>
+        <filter x="-379.5%" y="-721.2%" width="859.0%" height="1741.4%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.158981643 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="prototipo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-35" transform="translate(7.272727, 2.000000)">
+            <g id="Group-34" transform="translate(4.777778, 0.000000)">
+                <g id="Group" stroke="#00C0D2" stroke-width="1.6">
+                    <path d="M0,8.5 L0,2 C-1.3527075e-16,0.8954305 0.8954305,2.02906125e-16 2,0 L38.9756745,0 C40.080244,-6.46995335e-16 40.9756745,0.8954305 40.9756745,2 L40.9756745,21.6967756 C40.9756745,22.8013451 40.080244,23.6967756 38.9756745,23.6967756 L24.1443707,23.6967756 L24.1443707,23.6967756" id="Rectangle"></path>
+                </g>
+                <g id="Group-14" transform="translate(30.938257, 23.469444)" fill="#00C0D2">
+                    <polygon id="Rectangle" points="0.478240741 6.13089826e-14 3.60237098 0 7.74358967 3.43026229 6.1274966 3.45138889"></polygon>
+                </g>
+            </g>
+            <g id="Group" transform="translate(0.385742, 7.000000)">
+                <g id="Group-38" transform="translate(7.055556, 6.388889)" stroke="#00C0D2">
+                    <path d="M4.41111111,0 L19.6666667,0 C20.7712362,1.53715886e-15 21.6666667,0.8954305 21.6666667,2 L21.6666667,11.3333333 C21.6666667,12.4379028 20.7712362,13.3333333 19.6666667,13.3333333 L3.19744231e-14,13.3333333 L3.19744231e-14,13.3333333" id="Rectangle-Copy-3" stroke-width="1.6"></path>
+                    <circle id="Oval" cx="18.0949531" cy="6.66666667" r="1.11111111"></circle>
+                </g>
+                <g id="Group-37" transform="translate(0.466667, 0.447591)">
+                    <rect id="Rectangle" stroke="#00C0D2" stroke-width="1.6" x="0.556884967" y="1" width="10.443115" height="18.2746311" rx="2"></rect>
+                    <g id="Rectangle-Copy-21">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use stroke="#00C0D2" stroke-width="1" fill="#00C0D2" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    </g>
+                    <rect id="Rectangle-Copy-4" fill="#00C0D2" transform="translate(5.778442, 17.148057) scale(1, -1) translate(-5.778442, -17.148057) " x="3.27844248" y="16.8702792" width="5" height="1" rx="0.5"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="37px" height="37px" viewBox="0 0 37 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Slice</title>
+    <g id="Apresentacao_pwa" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-10" transform="translate(0.265269, 0.000000)">
+            <g id="Group-8-Copy-3" transform="translate(0.002224, 0.355021)">
+                <circle id="Oval" fill="#E24B4B" cx="17.9244391" cy="17.9244391" r="17.9244391"></circle>
+                <path d="M29.5111459,4.24792325 C33.3881909,7.53581768 35.8488783,12.4427662 35.8488783,17.9244391 C35.8488783,27.8238335 27.8238335,35.8488783 17.9244391,35.8488783 C12.4299076,35.8488783 7.51279993,33.376633 4.2248123,29.4838389 C7.34949071,32.1340868 11.3946088,33.7328569 15.8131397,33.7328569 C25.7125341,33.7328569 33.7375788,25.7078121 33.7375788,15.8084177 C33.7375788,11.4704809 32.1966,7.49245888 29.6321873,4.39189665 Z" id="Combined-Shape" fill="#B22222" opacity="0.5"></path>
+                <path d="M24.6459521,26.0362374 C23.0287956,24.1322951 20.6172175,22.9241964 17.9234728,22.9241964 C15.1167674,22.9241964 12.6163898,24.2357414 11.0017785,26.2793927" id="Oval-Copy-4" stroke="#3E4347" stroke-width="2.34588826" stroke-linecap="round"></path>
+                <circle id="Oval-Copy-2" fill="#3E4347" cx="11.2165407" cy="14.6066627" r="2.201755"></circle>
+                <circle id="Oval-Copy-3" fill="#3E4347" cx="24.6459521" cy="14.6066627" r="2.201755"></circle>
+            </g>
+            <path d="M19.5692299,9.62859599 L21.1913438,11.8215733 C22.8807107,10.0506515 24.6105139,9.03375943 26.3807534,8.77089724" id="Path-2" stroke="#3E4347" stroke-width="1.40753296" stroke-linecap="round"></path>
+            <path d="M9.01609002,9.62859599 L10.6382039,11.8215733 C12.3275708,10.0506515 14.057374,9.03375943 15.8276135,8.77089724" id="Path-2-Copy" stroke="#3E4347" stroke-width="1.40753296" stroke-linecap="round" transform="translate(12.421852, 10.296235) scale(-1, 1) translate(-12.421852, -10.296235) "></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,22 @@
+<tecvirt-header title="Notificação" [hiddenBack]="false" useTsHeader="true" (backButtonEvt)="goToPreviousPage()"(closeButtonEvt)="closeRender()"></tecvirt-header>
+<ion-content color="light" class="full-height">
+  <ion-grid utility-render color="light">
+    <ion-row class="content-padding">
+      <ion-col size="12" utility-render>
+        <h1 utility-render-title *ngIf="currentPage?.title" [innerHTML]="currentPage?.title"></h1>
+        <p utility-render-paragraph *ngIf="currentPage?.paragraph" [innerHTML]="currentPage?.paragraph"></p>
+        <img *ngIf="currentPage?.image" utility-render-image [src]="currentPage?.image" [alt]="currentPage?.image">
+        <p utility-render-caption *ngIf="currentPage?.imageCaption" [innerHTML]="currentPage?.imageCaption"></p>
+      </ion-col>
+      <ion-col size="12">
+        <ion-list button-troubleshotting color="light">
+          <ion-item lines="none" class="ion-text-center ion-no-padding" *ngFor="let btn of currentPage.buttons, index as i">
+            <ion-label class="label-no-margin" >
+              <tecvirt-button id="button-{{i}}" [label]="btn.text" [data]="btn" (clickEvent)="buttonClick(btn)" color="white" size="large" troubleshooting="true"></tecvirt-button>
+            </ion-label>
+          </ion-item>
+         </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

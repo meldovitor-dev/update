@@ -1,0 +1,17 @@
+<div class="offline-handler" login>
+    <div class="offline-handler__header">
+        <h1>Você está offline!</h1>
+        <span class="offline-handler--header__close-btn">
+            <ion-icon slot="end" name="md-close" (click)="offlineContinue()"></ion-icon>
+        </span>
+    </div>
+    <ion-text color="medium"><p>
+        Conecte-se a uma rede de internet ou 3G/4G para resolver seu problema mais rapidamente.<br>
+        Se preferir, você ainda pode continuar offline para encontrar uma solução.
+    </p></ion-text>
+    <div class="offline-handler__loading">
+        <tecvirt-loading color="info" label="Verificando conexão"></tecvirt-loading>
+    </div>
+    <!-- <tecvirt-button label="Conectar-se" (clickEvent)="openWifi()"></tecvirt-button> -->
+    <tecvirt-button label="Continuar offline" (clickEvent)="offlineContinue()" color="white"></tecvirt-button>
+</div>

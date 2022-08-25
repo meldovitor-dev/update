@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="605px" height="415px" viewBox="0 0 605 415" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+    <title>69_ts_tv_cabo_coaxial copy 40</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="50%" cy="50%" fx="50%" fy="50%" r="50%" gradientTransform="translate(0.500000,0.500000),scale(0.027897,1.000000),rotate(90.000000),scale(1.000000,18.616626),translate(-0.500000,-0.500000)" id="radialGradient-1">
+            <stop stop-color="#040404" offset="0%"></stop>
+            <stop stop-color="#151515" stop-opacity="0" offset="100%"></stop>
+        </radialGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#383838" offset="0%"></stop>
+            <stop stop-color="#959595" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="14.124954%" y1="32.3389567%" x2="81.7079161%" y2="62.6724473%" id="linearGradient-3">
+            <stop stop-color="#C8C8C8" offset="0%"></stop>
+            <stop stop-color="#939393" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-4" x="5.68434189e-14" y="0.5" width="411.5" height="241.040039"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-3-Copy" transform="translate(-169.000000, 61.693146)">
+            <g id="Group-2">
+                <g id="Group-8">
+                    <g id="Group" transform="translate(0.669006, 0.000000)">
+                        <ellipse id="Oval" fill="url(#radialGradient-1)" opacity="0.300000012" cx="397.472279" cy="276.287039" rx="396.863826" ry="11.0713084"></ellipse>
+                        <path d="M536.205564,287.011167 C755.387403,287.011167 933.06939,282.054373 933.06939,275.939858 C933.06939,269.825343 755.387403,264.86855 536.205564,264.86855 C317.023725,264.86855 139.341738,269.825343 139.341738,275.939858 C139.341738,282.054373 317.023725,287.011167 536.205564,287.011167 Z" id="Oval-Copy" fill="url(#radialGradient-1)" opacity="0.300000012"></path>
+                        <path d="M367.738497,225.023232 L380.123022,215.572037 C382.318233,213.896772 385.455873,214.318271 387.131138,216.513481 C388.040879,217.705576 388.367542,219.243049 388.021072,220.702048 L371.368601,290.826138 C371.181921,291.612252 370.807514,292.341416 370.277435,292.951203 L368.42812,295.078596 C367.879621,295.709572 366.923467,295.776433 366.292491,295.227934 C365.961748,294.940423 365.771832,294.52369 365.771832,294.085451 L365.771832,228.998012 C365.771832,227.438928 366.499094,225.969076 367.738497,225.023232 Z" id="Rectangle-Copy-2" fill="url(#linearGradient-2)" transform="translate(376.964115, 255.072916) rotate(49.000000) translate(-376.964115, -255.072916) "></path>
+                        <path d="M564.908378,221.926873 L577.292904,212.475678 C579.488114,210.800413 582.625754,211.221912 584.301019,213.417123 C585.210761,214.609217 585.537424,216.14669 585.190953,217.605689 L568.538482,287.729779 C568.351803,288.515893 567.977396,289.245057 567.447316,289.854844 L565.598001,291.982238 C565.049502,292.613214 564.093349,292.680074 563.462373,292.131575 C563.13163,291.844065 562.941713,291.427331 562.941713,290.989093 L562.941713,225.901653 C562.941713,224.342569 563.668975,222.872718 564.908378,221.926873 Z" id="Rectangle-Copy-3" fill="url(#linearGradient-2)" transform="translate(574.133996, 251.976558) scale(-1, 1) rotate(49.000000) translate(-574.133996, -251.976558) "></path>
+                        <rect id="Rectangle" stroke="url(#linearGradient-3)" stroke-width="3" fill="#000000" x="268.063042" y="1.5" width="419.427068" height="248.058491" rx="5"></rect>
+                        <rect id="Rectangle-Copy" fill="#010101" x="270.218162" y="3.5261024" width="415.116827" height="244.006286"></rect>
+                    </g>
+                </g>
+            </g>
+            <g id="0444584" transform="translate(273.000000, 4.500000)">
+                <mask id="mask-5" fill="white">
+                    <use xlink:href="#path-4"></use>
+                </mask>
+                <use id="Mask" fill="#000000" xlink:href="#path-4"></use>
+            </g>
+        </g>
+        <g id="Group-13" transform="translate(270.500000, 133.693146)">
+            <circle id="Oval" fill="#D8D8D8" opacity="0.300000012" cx="47" cy="47" r="47"></circle>
+            <path d="M56.6832816,31.3665631 L72.8291796,63.6583592 C73.5701474,65.1402947 72.9694743,66.9423138 71.4875388,67.6832816 C71.0709725,67.8915647 70.6116333,68 70.145898,68 L37.854102,68 C36.1972477,68 34.854102,66.6568542 34.854102,65 C34.854102,64.5342647 34.9625372,64.0749255 35.1708204,63.6583592 L51.3167184,31.3665631 C52.0576862,29.8846277 53.8597053,29.2839546 55.3416408,30.0249224 C55.922223,30.3152135 56.3929905,30.7859809 56.6832816,31.3665631 Z" id="Triangle" fill="#000000" transform="translate(54.000000, 47.000000) rotate(-270.000000) translate(-54.000000, -47.000000) "></path>
+        </g>
+    </g>
+</svg>

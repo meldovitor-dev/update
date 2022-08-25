@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">front-end v3</string>
+    <string name="title_activity_main">front-end v3</string>
+    <string name="package_name">br.com.oi.tecnicovirtual</string>
+    <string name="custom_url_scheme">br.com.oi.tecnicovirtual</string>
+</resources>

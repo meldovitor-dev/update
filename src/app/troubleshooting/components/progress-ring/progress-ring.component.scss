@@ -1,0 +1,29 @@
+  .progress-ring {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    position: relative;
+
+    .progress-ring__circle {
+      transition: 0.35s stroke-dashoffset;
+      // axis compensation
+      transform: rotate(-90deg);
+      transform-origin: 50% 50%;
+    }
+
+    .progress-ring__percentage{
+        position: absolute;
+        color: #00C0D2;
+        font-size: 1.8rem;
+    }
+  }
+  
+  
+  input {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 80px;
+  }
+  

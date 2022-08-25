@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="605px" height="415px" viewBox="0 0 605 415" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+    <title>69_ts_tv_cabo_coaxial copy 30</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="66.314086%" y2="52.9531268%" id="linearGradient-1">
+            <stop stop-color="#E7E7E7" offset="0%"></stop>
+            <stop stop-color="#C2C2C2" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="50%" x2="100%" y2="50%" id="linearGradient-2">
+            <stop stop-color="#EEEEEE" offset="0%"></stop>
+            <stop stop-color="#D8D8D8" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="54.9747982%" x2="100%" y2="54.9747982%" id="linearGradient-3">
+            <stop stop-color="#EEEEEE" offset="0%"></stop>
+            <stop stop-color="#D8D8D8" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-4-Copy" transform="translate(27.857636, 83.786852)">
+            <g id="Group-3">
+                <g id="Group-2" transform="translate(207.669369, 37.277136)">
+                    <rect id="Rectangle" fill="#B4B4B4" x="3.56163166" y="83.8252807" width="25.7086711" height="24.6042445" rx="4"></rect>
+                    <rect id="Rectangle-Copy" fill="#B4B4B4" x="110.03266" y="83.8252807" width="25.7086711" height="24.6042445" rx="4"></rect>
+                    <rect id="Rectangle" fill="url(#linearGradient-1)" x="21.5937551" y="54.2433745" width="95.1695678" height="141.719292" rx="21"></rect>
+                    <circle id="Oval" fill="#00C0D2" cx="40.7470589" cy="84.8163361" r="2.97545528"></circle>
+                    <circle id="Oval-Copy" fill="#00C0D2" cx="55.1992703" cy="84.8163361" r="2.97545528"></circle>
+                    <circle id="Oval-Copy-2" fill="#00C0D2" cx="69.6514816" cy="84.8163361" r="2.97545528"></circle>
+                    <circle id="Oval-Copy-3" fill="#818181" cx="84.103693" cy="84.8163361" r="2.97545528"></circle>
+                    <circle id="Oval-Copy-5" fill="#818181" cx="98.5559043" cy="84.8163361" r="2.97545528"></circle>
+                    <rect id="Rectangle" fill="url(#linearGradient-2)" x="2.50466314e-13" y="8.52651283e-14" width="12.2495483" height="108.429525" rx="6.12477417"></rect>
+                    <rect id="Rectangle" fill="url(#linearGradient-3)" x="125.798132" y="8.52651283e-14" width="12.2495483" height="108.429525" rx="6.12477417"></rect>
+                </g>
+                <circle id="Oval-Copy-6" stroke="#DFDFDF" stroke-width="2" cx="276.951201" cy="205.986717" r="11.4835238"></circle>
+                <circle id="Oval" stroke="#00C0D2" stroke-width="2" cx="276.939955" cy="205.997962" r="9.46989056"></circle>
+                <g id="icon_blarga_sconexao-copy-4" transform="translate(76.458815, 113.642389) rotate(-270.000000) translate(-76.458815, -113.642389) translate(-36.041185, 38.142389)">
+                    <g id="offline_icon-copy-4" transform="translate(0.131828, 0.131828)">
+                        <g id="Group-9" transform="translate(0.485069, 0.048376)">
+                            <circle id="Oval" fill="#00C0D2" cx="112.355982" cy="134.127725" r="14.2825951"></circle>
+                            <path d="M222.990061,49.2555809 C195.545133,19.0004163 155.916753,-4.88498131e-15 111.850587,-4.88498131e-15 C67.4023554,-4.88498131e-15 27.4691959,19.3313229 5.32907052e-15,50.0450773" id="Oval" stroke="#636363" stroke-width="10" opacity="0.1" stroke-linecap="round"></path>
+                            <path d="M188.534982,78.7944984 C169.6588,57.9854801 142.403034,44.9172977 112.09503,44.9172977 C81.5242469,44.9172977 54.0588585,58.2130723 35.1659849,79.3375014" id="Oval-Copy-2" stroke="#636363" stroke-width="10" opacity="0.1" stroke-linecap="round"></path>
+                            <path d="M147.429631,107.324315 C138.671688,97.6695978 126.025887,91.6063803 111.963945,91.6063803 C97.7800825,91.6063803 85.0370232,97.7751933 76.2713358,107.576251" id="Oval-Copy-3" stroke="#00C0D2" stroke-width="10" stroke-linecap="round"></path>
+                        </g>
+                    </g>
+                </g>
+                <g id="icon_blarga_sconexao-copy-5" transform="translate(455.661715, 112.640378) rotate(-270.000000) translate(-455.661715, -112.640378) translate(343.161715, 37.140378)">
+                    <g id="offline_icon-copy-5" transform="translate(0.131828, 0.131828)">
+                        <g id="Group-9" transform="translate(0.485069, 0.048376)">
+                            <circle id="Oval" fill="#719B8F" cx="112.355982" cy="134.127725" r="14.2825951"></circle>
+                            <path d="M222.990061,49.2555809 C195.545133,19.0004163 155.916753,-4.88498131e-15 111.850587,-4.88498131e-15 C67.4023554,-4.88498131e-15 27.4691959,19.3313229 5.32907052e-15,50.0450773" id="Oval" stroke="#719B8F" stroke-width="10" stroke-linecap="round"></path>
+                            <path d="M188.534982,78.7944984 C169.6588,57.9854801 142.403034,44.9172977 112.09503,44.9172977 C81.5242469,44.9172977 54.0588585,58.2130723 35.1659849,79.3375014" id="Oval-Copy-2" stroke="#719B8F" stroke-width="10" stroke-linecap="round"></path>
+                            <path d="M153.434384,107.281795 C143.198348,95.9976354 128.418293,88.9111185 111.983094,88.9111185 C95.4053973,88.9111185 80.5116705,96.1210524 70.2665834,107.576251" id="Oval-Copy-3" stroke="#719B8F" stroke-width="10" stroke-linecap="round"></path>
+                        </g>
+                    </g>
+                </g>
+                <g id="icon_blarga_sconexao-copy-6" transform="translate(455.661715, 112.640378) rotate(-270.000000) translate(-455.661715, -112.640378) translate(343.161715, 37.140378)">
+                    <g id="offline_icon-copy-6" transform="translate(0.131828, 0.131828)">
+                        <g id="Group-9" transform="translate(0.485069, 0.048376)">
+                            <circle id="Oval" fill="#00C0D2" cx="112.355982" cy="134.127725" r="14.2825951"></circle>
+                            <path d="M222.990061,49.2555809 C195.545133,19.0004163 155.916753,-4.88498131e-15 111.850587,-4.88498131e-15 C67.4023554,-4.88498131e-15 27.4691959,19.3313229 5.32907052e-15,50.0450773" id="Oval" stroke="#00C0D2" stroke-width="10" stroke-linecap="round"></path>
+                            <path d="M188.534982,78.7944984 C169.6588,57.9854801 142.403034,44.9172977 112.09503,44.9172977 C81.5242469,44.9172977 54.0588585,58.2130723 35.1659849,79.3375014" id="Oval-Copy-2" stroke="#00C0D2" stroke-width="10" stroke-linecap="round"></path>
+                            <path d="M153.434384,107.281795 C143.198348,95.9976354 128.418293,88.9111185 111.983094,88.9111185 C95.4053973,88.9111185 80.5116705,96.1210524 70.2665834,107.576251" id="Oval-Copy-3" stroke="#00C0D2" stroke-width="10" stroke-linecap="round"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

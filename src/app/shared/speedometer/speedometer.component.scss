@@ -1,0 +1,68 @@
+$speedometerBorder: 10px;
+$speedometerSpeed: 1.6s;
+
+.speedometer-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.speedometer-container {
+    width: 200px;
+    height:100px;
+    background: transparent;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.speedometer {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    border-radius: 99999em;
+    border-left: $speedometerBorder #BABABA solid;
+    border-top: $speedometerBorder #BABABA solid;
+    border-right: $speedometerBorder #BABABA solid;
+    border-bottom: $speedometerBorder #BABABA solid;
+    bottom: -100%;
+    transform: rotate(-136deg);
+}
+.weak {
+    transition: $speedometerSpeed ease-in-out;
+    transform: rotate(-80deg);
+    border-top: $speedometerBorder #FF944D solid;
+    border-left: $speedometerBorder #FF944D solid;
+}
+.medium {
+    transition: $speedometerSpeed ease-in-out;
+    transform: rotate(-40deg);
+    border-top: $speedometerBorder #00C0D2 solid;
+    border-left: $speedometerBorder #00C0D2 solid;
+}
+.strong {
+    transition: $speedometerSpeed ease-in-out;
+    transform: rotate(45deg);
+    border-top: $speedometerBorder #17D615 solid;
+    border-left: $speedometerBorder #17D615 solid;
+}
+.no-signal {
+    transition: $speedometerSpeed ease-in-out;
+    transform: rotate(-136deg);
+    border-left: $speedometerBorder #BABABA solid;
+    border-top: $speedometerBorder #BABABA solid;
+    border-right: $speedometerBorder #BABABA solid;
+    border-bottom: $speedometerBorder #BABABA solid;
+}
+.speedometer-label {
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    span {
+        text-transform: CAPITALIZE;
+        font-size: 1.4em;
+        font-weight: bold;
+    }
+}

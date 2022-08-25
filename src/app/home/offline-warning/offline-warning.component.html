@@ -1,0 +1,25 @@
+<tecvirt-header title="{{ (feature$ | async)?.displayName }}" (backButtonEvt)="goToHome()" (closeButtonEvt)="goToHome()"
+  useTsHeader="true"></tecvirt-header>
+<ion-content color="light">
+  <ion-grid fixed full-grid>
+    <ion-row>
+      <ion-col size="12" size-xs="12" size-md="12" size-lg="6" offset-lg="3">
+        <div class="offline-container" *ngIf="page">
+          <h1>
+            {{page.title}}
+          </h1>
+          <p [innerHTML]="page.paragraph"></p>
+          <div class="offline-btn-container" *ngFor="let btn of (page.buttons || [])">
+            <tecvirt-button [color]="(btn.customClasses=== 'outline')? '' : 'green'" [label]="btn.txt"
+              *ngIf="!btn.isLink" [data]="btn" size="large" (clickEvent)="onClick(btn)">
+              {{btn.txt}}
+            </tecvirt-button>
+            <a class="offline-btn-link" *ngIf="btn.isLink" (click)="onClick(btn)">
+              {{btn.txt}}
+            </a>
+          </div>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

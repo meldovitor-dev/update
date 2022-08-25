@@ -1,0 +1,17 @@
+<tecvirt-header title="Visitas Técnicas" (backButtonEvt)="backPage()" (closeButtonEvt)="goToHome()"></tecvirt-header>
+<ion-content color="light">
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col size="12" size-xs="12" size-md='4' size-lg='4' offset-lg="4" offset-md="4">
+        <!-- loading -->
+        <tecvirt-loading label="carregando" *ngIf="loading; else schedulePage"></tecvirt-loading>
+        <ng-template #schedulePage>
+            <!-- slots -->
+            <tecvirt-scheduling-slots [context]="context" *ngIf="!!agendamento && !page" (slotEvent)="setSlot($event)" [agendamento]="agendamento"></tecvirt-scheduling-slots>
+            <!-- confirm scheduling -->
+            <tecvirt-scheduling-confirm [context]="context" (confirmEvent)="onClick($event)" [page]="page" [agendamento]="newAgendamento || agendamento"></tecvirt-scheduling-confirm>
+        </ng-template>
+    </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

@@ -1,27 +1,58 @@
-#container {
-  text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+div[home-page] {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100%;
+    ion-grid{
+        --ion-grid-padding:0 !important;
+    }
+    ion-col{
+        padding: 0 !important;
+    }
+}
+.home-problems {
+    width: 100%;
+}
+div[desktop-unlogged-area-title]{
+    color: #909090;
+    padding: 1.5rem 8% 1rem 8%;
+    font-size: 0.8rem;
+    margin: 0;
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+div[main-content] {
+    z-index: 1;
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
+@media (min-width: 600px) {
+    tecvirt-wildcard-area {
+      display: none;
+    }
+    ion-row{
+      background: linear-gradient(to bottom right, rgba(167, 213, 7, 1) 0%, rgba(80, 183, 72, 1) 30%);
+      background-size: auto 90%;
+      background-repeat-y: no-repeat;
+      background-position-y: center;
+      margin-bottom: 2%;
+    }
+    .home-problems {
+        padding-left: 4rem;
+        padding-bottom: 10%;
+    }
+    .black-area {
+        position: absolute;
+        top: 1%;
+        right: 2%;
+        width: 28%;
+        height: 50%;
+        border-radius: 5px;
+        background: var(--ion-color-dark);
+    }
+    div[desktop-unlogged-area-title] {
+        font-size: 1rem !important;
+    }
+    .home-carousel-container {
+        width: 60%;
+        padding-left: 4%;
+      }
 }

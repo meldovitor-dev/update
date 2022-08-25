@@ -1,0 +1,38 @@
+.ts-full-heigth-grid{
+    height: 100%;
+}
+.content-padding {
+    padding: 0 5vw;
+}
+.top-start{
+    justify-content: flex-start !important;
+}
+div[background] {
+    display: none;
+    .top-left-bg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        img {
+            width: 65%;
+            max-width: 600px;
+        }
+    }
+    .bottom-rigth-bg {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        justify-content: flex-end;
+        img {
+            width: 65%;
+            max-width: 600px;
+        }
+    }
+}
+@media (min-width: 600px) {
+    div[background] {
+        display: block;
+        z-index: -1;
+    }
+}

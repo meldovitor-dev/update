@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="61px" height="60px" viewBox="0 0 61 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Slice Copy</title>
+    <g id="prototipo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-17" transform="translate(11.048340, 2.000000)" stroke="#00C0D2" stroke-width="2">
+            <polygon id="Star-Copy" points="20.4516602 23.2047448 11.928774 27.6854912 13.5565004 18.195118 6.66134067 11.4739984 16.1902171 10.0893716 20.4516602 1.4547448 24.7131032 10.0893716 34.2419796 11.4739984 27.3468199 18.195118 28.9745463 27.6854912"></polygon>
+            <line x1="12.1767578" y1="5.43374871" x2="7.81347656" y2="-8.12683254e-14" id="Line-2" stroke-linecap="round"></line>
+            <line x1="39.285712" y1="23.2754653" x2="33.5112305" y2="20.1546473" id="Line-2-Copy" stroke-linecap="round"></line>
+            <line x1="6.22717475" y1="22.584306" x2="0.186523438" y2="19.8701172" id="Line-2-Copy-4" stroke-linecap="round" transform="translate(3.500000, 21.145996) scale(-1, 1) translate(-3.500000, -21.145996) "></line>
+            <line x1="33.5112305" y1="1.04805054e-13" x2="29.1381836" y2="5.29218589" id="Line-2-Copy-2" stroke-linecap="round"></line>
+            <line x1="21.137207" y1="29.7373047" x2="21.137207" y2="35.8198622" id="Line-2-Copy-3" stroke-linecap="round"></line>
+        </g>
+    </g>
+</svg>

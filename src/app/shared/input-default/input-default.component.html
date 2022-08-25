@@ -1,0 +1,16 @@
+<div class="input-default-container">
+  <span class="default-input-has-error--message" *ngIf="
+      !parentFormControl.valid &&
+      parentFormControl.errors &&
+      parentFormControl.errors.error
+    ">
+    {{ parentFormControl.errors.error }}
+  </span>
+  <ion-item input [color]="color" class="ion-no-padding">
+    <ion-text [color]="textColor">
+      <ion-label position="floating">{{label}}</ion-label>
+    </ion-text>
+    <ion-input [color]="parentFormControl.valid ? textColor : 'danger'" [type]="type" id="{{ cypress }}"
+      [formControl]="parentFormControl" (ionChange)="inputChangedCb($event)" clearInput [maxlength]="maxLength" [minlength]="minLength"></ion-input>
+  </ion-item>
+</div>

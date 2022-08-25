@@ -1,0 +1,36 @@
+<div class="container">
+  <div snap *ngFor="let step of page.passos; let i = index">
+    <ion-text color="info">
+      <h1 class="step-title">Passo {{i+1}}:</h1>
+    </ion-text>
+    <div class="substep" *ngFor="let substep of step.sub; let j = index">
+      <p [innerHTML]="(i+1)+'.'+(j+1)+'  '+substep.text"></p>
+      <img *ngIf="substep?.image" core-ts-image [src]="substep?.image" [alt]="substep?.image">
+      <p class="tripa-paragraph" [innerHTML]="substep.paragraph"></p>
+      <div *ngIf="substep.card">
+        <ion-card *ngFor="let item of substep.card" color="white">
+          <ion-card-content>
+            <div class="table-container">
+              <div class="table-container__header">
+                <div class="table-container__cell">Banda suportada</div>
+                <div class="table-container__cell">Transmissão (Tx)</div>
+                <div class="table-container__cell">Recepção (Rx)</div>
+              </div>
+              <div class="table-container__value" *ngFor="let value of item.table">
+                <div class="table-container__cell" *ngFor="let cell of value">{{cell}}</div>
+              </div>
+            </div>
+            <ion-card-subtitle [innerHTML]="item.subtitle"></ion-card-subtitle>
+            <p class="tripa-paragraph" [innerHTML]="item.paragraph"></p>
+          </ion-card-content>
+        </ion-card>
+      </div>
+    </div>
+  </div>
+  <div class="button-container">
+    <tecvirt-button *ngIf="showGoHomeButton" label="Voltar pro início" [data]="{gaAction: 'voltar_inicio'}" (clickEvent)="onClick()"
+      color="white" size="large" troubleshooting="true"></tecvirt-button>
+    <tecvirt-button *ngIf="!showGoHomeButton" label="Continuar" [data]="{gaAction: 'seguir'}" (clickEvent)="onClick()"
+      color="white" size="large" troubleshooting="true"></tecvirt-button>
+  </div>
+</div>

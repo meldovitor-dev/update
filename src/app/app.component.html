@@ -1,3 +1,6 @@
-<ion-app>
-  <ion-router-outlet></ion-router-outlet>
+<ion-app class="tecvirt-font">
+  <!-- <ion-split-pane contentId="main-content"> -->
+    <tecvirt-menu></tecvirt-menu>
+    <ion-router-outlet id="main-content" (activate)="routerActived($event)"></ion-router-outlet>
+  <!-- </ion-split-pane> -->
 </ion-app>

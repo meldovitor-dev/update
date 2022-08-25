@@ -1,0 +1,23 @@
+<ion-list>
+    <ion-item *ngFor="let item of (notificationService.notifications | async)" class="ion-no-padding no-padding" [button]="!!item.layout" [class.newNotification]='item.unread'>
+      <div notification-card>
+        <div class="icon-area" *ngIf="item.icon">
+          <ion-icon [src]="item.icon"></ion-icon>
+        </div>
+        <ion-label>{{item.title}}</ion-label>
+        <p [innerHTML]='item.paragraph'></p>
+        <div class="button-container" *ngIf="item.button">
+          <tecvirt-button outline="true" (clickEvent)="notificationClick(item)" size="default">{{item.button.text}}</tecvirt-button>
+        </div>
+        <ion-text color="medium"><small>{{getDate(item.creationDate)}}</small></ion-text>
+      </div>
+    </ion-item>
+    <div *ngIf="!(notificationService.notifications | async).length" class="no-notification-container">
+      <p>Você está atualizado!</p>
+      <img src="./../../../../../assets/images/notificacao/empty_state.svg" alt="no-notification">
+      <p>Te avisaremos quando tiver uma nova notificação</p>
+      <div class="button-container">
+        <tecvirt-button outline="true" color="dark"(clickEvent)="closeModal()"> Fechar</tecvirt-button>
+      </div>
+    </div>
+  </ion-list>

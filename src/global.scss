@@ -24,3 +24,193 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+/* FONTS */
+@font-face {
+    font-family: 'SimplonBP';
+    font-style: normal;
+    font-weight: normal;
+    src: url('./assets/fonts/SimplonBP-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'SimplonBP';
+    font-style: normal;
+    font-weight: bold;
+    src: url('./assets/fonts/SimplonBP-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'SimplonBP';
+    font-style: italic;
+    font-weight: normal;
+    src: url('./assets/fonts/SimplonBP-LightItalic.ttf');
+}
+
+@font-face {
+    font-family: 'SimplonBP';
+    font-style: italic;
+    font-weight: bold;
+    src: url('./assets/fonts/SimplonBP-BoldItalic.ttf');
+}
+
+
+/* IOS SAFE AREA */
+// body {
+//     background-color: var(--ion-color-primary);
+// }
+// ion-app {
+//     margin-top: env(safe-area-inset-top);
+//     margin-bottom: env(safe-area-inset-bottom)
+// }
+/* IOS SAFE AREA */
+
+ion-app.tecvirt-font {
+    --ion-font-family: 'SimplonBP'
+}
+ion-slides {
+    width: 100% !important;
+}
+.tec-virt-videoEmbed-modal {
+    --background: transparent;
+    .modal-wrapper.sc-ion-modal-md , .modal-wrapper.sc-ion-modal-ios{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 35%;
+        .ion-page {
+            justify-content: center;
+        }
+    }
+    @media (min-width: 600px) {
+        .modal-wrapper.sc-ion-modal-md, .modal-wrapper.sc-ion-modal-ios {
+            height: 55% !important;
+            width: 50% !important;
+            border-radius: 0px !important;
+            --box-shadow: none;
+        }
+    }
+}
+.tec-virt-loading-modal {
+  background: var(--ion-color-light);
+  @media (min-width: 600px) {
+    .modal-wrapper.sc-ion-modal-md {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+.tec-virt-reduced-modal {
+    --background: transparent !important;
+    --box-shadow: none !important;
+    @media (min-width: 600px) {
+        .modal-wrapper.sc-ion-modal-md {
+            height: 95vh !important;
+            border-radius: 20px !important;
+        }
+    }
+}
+.tec-virt-modal-wider {
+  --background: transparent !important;
+  --box-shadow: none !important;
+  @media (min-width: 600px) {
+    .modal-wrapper.sc-ion-modal-md {
+      width: 60vw !important;
+      height: 95vh !important;
+      border-radius: 20px !important;
+    }
+  }
+}
+@media (min-width: 600px) {
+    .modal-wrapper.sc-ion-modal-md {
+        border-radius: 20px !important;
+    }
+}
+.safe-margin {
+    padding-top: 2rem;
+}
+.grecaptcha-badge {
+    visibility: hidden !important;
+}
+.flex-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ion-grid[full-grid]{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.split-pane-visible >.split-pane-side {
+    max-width: 300px!important;
+  }
+.sc-ion-alert-ios-h, .sc-ion-alert-ios-s {
+    .alert-wrapper{
+        padding-bottom: 20px !important;
+    }
+}
+.sc-ion-alert-md-h,  .sc-ion-alert-md-s,
+.sc-ion-alert-ios-h, .sc-ion-alert-ios-s {
+    .alert-wrapper{
+        background: var(--ion-color-light);
+        position: fixed;
+        bottom: 0;
+        max-width: 100%;
+        min-width: 100%;
+        min-height: 170px;
+        padding-bottom: 10px;
+        display: flex;
+        justify-content: space-evenly;
+        border-radius: 0;
+        text-align: center !important;
+        .alert-title{
+            text-align: center !important;
+            font-size: 20px !important;
+        }
+        .alert-message {
+            font-size: 16px !important;
+        }
+        .alert-button-group {
+            display: flex;
+            justify-content: center;
+            button{
+                background: white;
+                color: #121212;
+                height: 4rem;
+                min-width: 42% !important;
+                max-width: 42% !important;
+                margin: 0 10px;
+                border: 1px solid #CCCCCC;
+                border-radius: 5px;
+                font-size: 16px !important;
+                text-align: start;
+                font-weight: 400;
+                text-transform: inherit;
+                .alert-button-inner {
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}
+.safe-margin {
+    --padding-top: 1rem;
+}
+
+@media (min-width: 600px) {
+    .sc-ion-alert-md-h,  .sc-ion-alert-md-s,
+    .sc-ion-alert-ios-h, .sc-ion-alert-ios-s {
+        .alert-wrapper{
+            .alert-button-group {
+                button{
+                    min-width: 160px !important;
+                    max-width: 160px !important;
+                }
+            }
+        }
+    }
+  }

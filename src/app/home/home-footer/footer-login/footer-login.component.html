@@ -1,0 +1,7 @@
+<div class="login-container">
+  <tecvirt-terms-of-use (termsUpdated)="termsUpdated($event)" theme="dark"></tecvirt-terms-of-use>
+  <tecvirt-input-default cypress="input-cpf-or-cnpj" color="dark" [parentFormControl]="cpfControl" label="CPF ou CNPJ do titular da conta" mask="cpfOrCnpj"></tecvirt-input-default>
+  <div class="safe-margin"></div>
+  <tecvirt-button color="green" *ngIf="pending?.button" [label]="pending?.button.txt" [disabled]='shouldDisable()' [data]="pending?.button" (clickEvent)="validCpfOrCnpj()">
+  </tecvirt-button>
+</div>

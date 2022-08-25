@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Slice</title>
+    <defs>
+        <rect id="path-1" x="6.85383838" y="0" width="10.54557" height="2.45075312" rx="1.22537656"></rect>
+        <filter x="-185.9%" y="-718.1%" width="471.7%" height="1699.5%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="0.6" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="6" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.158981643 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="prototipo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-37" transform="translate(17.315789, 2.000000)">
+            <rect id="Rectangle" stroke="#00C0D2" stroke-width="2" x="8.61648415e-15" y="3.70508818e-13" width="24.2532468" height="44.3219137" rx="2.4"></rect>
+            <g id="Rectangle-Copy-21">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use stroke="#00C0D2" stroke-width="1.2" fill="#00C0D2" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+            <rect id="Rectangle-Copy-4" fill="#00C0D2" transform="translate(12.126623, 40.464982) scale(1, -1) translate(-12.126623, -40.464982) " x="6.06331169" y="39.7912804" width="12.1266234" height="1.3474026" rx="0.673701299"></rect>
+        </g>
+    </g>
+</svg>

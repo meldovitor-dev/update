@@ -1,0 +1,11 @@
+<div class="terms-of-use">
+    <ion-checkbox color="green" [(ngModel)]="userTerms" (ionChange)="termsUpdatedEvt($event)" slot="start"></ion-checkbox>
+    <ion-label>
+        <span class="terms-of-use--content">
+            <ion-text color="black">
+                Li e aceito os
+            </ion-text>
+            <a (click)="openTerms()" class="terms-of-use--content__active">Termos de Uso.</a>
+        </span>
+    </ion-label>
+</div>

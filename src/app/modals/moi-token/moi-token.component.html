@@ -1,0 +1,28 @@
+<div class="moi-token-wrapper">
+  <div class="moi-token-header">
+    <ion-icon slot="start" name="" decoy></ion-icon>
+    <h4 class="moi-token-header__title">Login {{sanitize(selectedProduct | async)}}</h4>
+    <ion-icon slot="end" name="close" (click)="dismiss()"></ion-icon>
+  </div>
+  <div class="moi-token-body" *ngIf="!tokenService.error.getValue()">
+    <h4 class="moi-token-body__title">
+      Estamos realizando o seu login pelo app Minha Oi. Aguarde!
+    </h4>
+    <div class="loading-container">
+      <tecvirt-loading label="Carregando..." color="info"></tecvirt-loading>
+    </div>
+  </div>
+  <div class="moi-token-body" *ngIf="tokenService.error.getValue()">
+    <h4 [innerHTML]="errorPage.title" class="moi-token-body__title" *ngIf="errorPage.title"></h4>
+    <p [innerHTML]="errorPage.paragraph"></p>
+    <div class="button-container">
+      <tecvirt-button *ngFor="let btn of (errorPage.buttons || [])" color="green" outline="true" [data]="btn" size="large"
+        (clickEvent)="dismiss(btn)">
+        <ion-text color="dark">
+          <span [innerHTML]="btn.txt">
+          </span>
+        </ion-text>
+      </tecvirt-button>
+    </div>
+  </div>
+</div>

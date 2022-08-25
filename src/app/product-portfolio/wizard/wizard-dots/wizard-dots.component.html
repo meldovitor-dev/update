@@ -1,0 +1,3 @@
+<div class="wizard-dots">
+    <div class="wizard-dots__dot" (click)="onClick(idx)" [class.wizard-dots__dot--active]="isActive(idx)" *ngFor="let item of pages, index as idx"></div>
+</div>

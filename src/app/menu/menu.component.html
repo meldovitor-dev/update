@@ -1,0 +1,22 @@
+<ion-menu contentId="main-content" type="overlay" (ionDidOpen)="updateMenuState()" (ionDidClose)="updateMenuState()">
+    <div class="max-height">
+        <div app-menu>
+            <div *ngIf="(selectedProduct | async) as prd">
+              <div class="menu-card">
+                <tecvirt-menu-header [app]='(app | async)'></tecvirt-menu-header>
+                <div class="menu__line-divider"></div>
+                <tecvirt-menu-login [product]="prd" [user]="(user | async)"></tecvirt-menu-login>
+                <div class="menu__line-divider"></div>
+                <tecvirt-menu-product-list [product]="prd" [user]="(user | async)"  [users]="(users | async)"></tecvirt-menu-product-list>
+              </div>
+              <div class="menu-list">
+              <tecvirt-menu-list [user]="(user | async)"></tecvirt-menu-list>
+              </div>
+            </div>
+            <ion-menu-toggle class="share-content">
+              <tecvirt-shared-button></tecvirt-shared-button>
+              <tecvirt-install-pwa-button></tecvirt-install-pwa-button>
+            </ion-menu-toggle>
+          </div>
+    </div>
+  </ion-menu>

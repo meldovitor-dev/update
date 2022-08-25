@@ -1,0 +1,28 @@
+<div stb-selector>
+    <p>
+       <a (click)="findSTB()">Veja como achar</a> o número de série do seu decodificador.
+    </p>
+    <div *ngFor="let stb of stbContent; let i = index">
+        <ion-card color="white" button='!stb.done' (click)="selectSTB(stb)" [class.card-selected]='stb.checked' class="max-width">
+          <div class="card-stb">
+            <div icon>
+                <ion-checkbox  *ngIf="!stb.done" color='info' mode='ios' [checked]="stb.checked"></ion-checkbox>
+                <ion-icon name="checkmark" class="icon" *ngIf="stb.done"></ion-icon>
+            </div>
+            <span class="label-button" [class.stb-done]='stb.done'>
+                {{ stb.serialNumber }}
+                <span *ngIf="stb.done">
+                    Decodificador já reiniciado
+                </span>
+            </span>
+          </div>
+          </ion-card>
+    </div>
+    <div class="ion-margin"></div>
+    <div class="button-container">
+      <tecvirt-button size='large' outline="true" [disabled]="!this.currentSelected" (clickEvent)="clickEvent()" [data]="btnResetData">Reiniciar decodificador</tecvirt-button>
+      <tecvirt-button *ngIf="!anyStbDone" size='large' outline="true" (clickEvent)="noMoreEvent()"[data]="btnPularData">Pular esta etapa</tecvirt-button>
+      <tecvirt-button *ngIf="anyStbDone"  size='large' outline="true" (clickEvent)="successEvent()" [data]="btnSuccessData">Não tenho mais nenhum com problema</tecvirt-button>
+    </div>
+
+  </div>

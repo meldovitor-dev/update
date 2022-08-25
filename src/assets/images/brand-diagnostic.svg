@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="414px" height="513px" viewBox="0 0 414 513" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>iPhone 11 Copy 94</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="7.19073239%" y1="15.2806563%" x2="74.5565033%" y2="82.723044%" id="linearGradient-1">
+            <stop stop-color="#FFF100" offset="0%"></stop>
+            <stop stop-color="#D7E410" offset="7%"></stop>
+            <stop stop-color="#A7D424" offset="18%"></stop>
+            <stop stop-color="#81C734" offset="27%"></stop>
+            <stop stop-color="#66BE3F" offset="36%"></stop>
+            <stop stop-color="#56B946" offset="44%"></stop>
+            <stop stop-color="#50B748" offset="50%"></stop>
+            <stop stop-color="#50B748" offset="100%"></stop>
+        </linearGradient>
+        <path d="M-110.862664,496.491732 C-168.139438,560.192983 4.97802084,567.375694 157.596566,567.375694 C191.400232,567.375694 337.092397,593.603152 364.777385,585.621325 C485.458113,550.828005 482.570602,426.848512 522.448446,315.125748 C570.469165,181.287499 478.011235,21.6606209 392.527131,-64.3581144 C352.590008,-104.545011 333.791534,-121.242358 257.866417,-133.649148 C5.10501804,-174.989323 -63.9121202,-9.04696217 -0.627835349,157.223813 C62.6564495,323.494588 -42.2806158,420.217143 -110.862664,496.491732 Z" id="path-2"></path>
+        <filter x="-1.5%" y="-1.4%" width="103.0%" height="102.8%" filterUnits="objectBoundingBox" id="filter-3">
+            <feGaussianBlur stdDeviation="9.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.283790428 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="iPhone-11-Copy-94" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Path" fill-rule="nonzero" transform="translate(206.768537, 223.538950) scale(-1, 1) rotate(-105.000000) translate(-206.768537, -223.538950) ">
+            <use fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,26 @@
+.emotion-scale-container {
+  display: flex;
+  width: 100%;
+  padding-top: 20px;
+  .emotion-scale-item {
+    flex-basis: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    ion-icon {
+      font-size: 30px;
+    }
+    .emotion-scale-item__text {
+      font-size: 0.7rem;
+      padding: 10px 0;
+    }
+  }
+  .selected-item {
+    background-color: var(--ion-color-info);
+    color: white;
+  }
+}

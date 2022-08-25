@@ -1,0 +1,9 @@
+
+<div class="container">
+  <div class="container-close">
+      <ion-icon slot="end" name="close" (click)="onClick()"></ion-icon>
+  </div>
+  <div class="container-box">
+    <iframe width="100%" height="95%" [src]="videoURL | youtube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</div>

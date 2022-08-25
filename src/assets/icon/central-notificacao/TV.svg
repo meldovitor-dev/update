@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="61px" height="60px" viewBox="0 0 61 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Slice Copy 11</title>
+    <g id="prototipo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-35-Copy" transform="translate(8.634451, 0.732318)">
+            <g id="Group-34" transform="translate(0.459259, 0.000000)">
+                <g id="Group" stroke="#00C0D2" stroke-width="2">
+                    <rect id="Rectangle" x="1" y="1" width="40.3415304" height="22.4866682" rx="2"></rect>
+                </g>
+                <g id="Group-14" transform="translate(5.102866, 24.251759)" fill="#00C0D2">
+                    <polygon id="Rectangle" points="27.3608488 6.33526153e-14 30.5891167 0 34.868376 3.54460437 33.1984132 3.56643519"></polygon>
+                    <polygon id="Rectangle-Copy" points="7.50752723 6.35505923e-14 4.27925932 0 0 3.54460437 1.66996284 3.56643519"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

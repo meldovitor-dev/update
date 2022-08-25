@@ -1,0 +1,4 @@
+<ion-content color="light"  *ngIf="loading">
+    <tecvirt-loading label="Carregando" layout="fullscreen"></tecvirt-loading>
+</ion-content>
+<ion-router-outlet id="diagnostic-content" (activate)="routerActived($event)"></ion-router-outlet>

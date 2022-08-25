@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="41px" height="30px" viewBox="0 0 41 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 39</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-39" transform="translate(1.316978, 0.902855)">
+            <g id="Group-9" transform="translate(18.346083, 14.869147) rotate(-360.000000) translate(-18.346083, -14.869147) translate(0.000000, 1.619147)">
+                <circle id="Oval" fill="#545454" cx="18.4180022" cy="24.3948651" r="2.10513494"></circle>
+                <path d="M36.6921652,7.08207093 C31.8428178,2.68146074 25.4048705,0 18.3406344,0 C11.2816881,0 4.8480929,2.67744648 0,7.07218825" id="Oval" stroke="#545454" stroke-width="1.5" stroke-linecap="round"></path>
+                <path d="M30.912928,12.9655783 C27.588658,9.98931236 23.1982584,8.17947024 18.3851476,8.17947024 C13.4260195,8.17947024 8.91563971,10.1007898 5.55777983,13.2396573" id="Oval-Copy-2" stroke="#545454" stroke-width="1.5" stroke-linecap="round"></path>
+                <path d="M24.9377338,18.5943258 C23.1635125,17.0947727 20.8697083,16.1907747 18.364764,16.1907747 C15.9096404,16.1907747 13.6573417,17.0591712 11.8982705,18.5055615" id="Oval-Copy-3" stroke="#545454" stroke-width="1.5" stroke-linecap="round"></path>
+            </g>
+            <circle id="Oval" fill="#545454" cx="33.1943584" cy="5.65" r="5.65"></circle>
+            <polyline id="Path" stroke="#F3F3F3" stroke-width="1.5" stroke-linecap="round" points="30.5755189 5.97440172 32.076111 7.47499377 35.813198 3.82500623"></polyline>
+        </g>
+    </g>
+</svg>

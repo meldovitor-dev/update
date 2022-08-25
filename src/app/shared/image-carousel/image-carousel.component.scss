@@ -1,0 +1,65 @@
+div[image-carousel] {
+  width: 100%;
+}
+.text-title {
+  padding: 1rem 8%;
+  font-size: 0.8rem;
+  margin: 0;
+}
+.content-container {
+  display: flex;
+}
+
+.slider-nav{
+  ion-icon{
+    font-size: 24px;
+    height: 100%;
+    margin-top: -1.4rem;
+  }
+}
+.slide-container {
+  display: flex;
+  flex-direction: column;
+  ion-label {
+    font-size: 0.7em;
+    padding-top: .5em;
+    text-align: initial;
+  }
+}
+
+.padding-slides {
+  padding: 0 5%;
+  padding-bottom: 2.5rem;
+}
+.padding-right {
+  padding: 0 10px;
+}
+.safe-margin {
+  padding-bottom: 20px;
+}
+ion-col[left-arrow] {
+  text-align: end;
+}
+ion-slides[carousel] {
+  --bullet-background: black;
+  --bullet-background-active: var(--ion-color-info);
+}
+
+.pwa-carousel {
+  display: none;
+}
+.mobile-carousel {
+  padding-left: 4%;
+}
+
+@media (min-width: 600px) {
+  .text-title {
+    font-size: 1rem !important;
+  }
+  .pwa-carousel {
+    display: block;
+  }
+  .mobile-carousel {
+    display: none;
+  }
+}

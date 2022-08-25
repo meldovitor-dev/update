@@ -1,0 +1,73 @@
+<ion-card *ngIf='!hiddenCnpj()' color="white" button (click)="onClick()" home-card card-agendamento>
+  <ion-card-content *ngIf="(!agendamentos.length || !validScheduling) && !loading">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="9">
+          <ion-row>
+            <ion-col>
+              <ion-card-subtitle card-title>VISITAS TÉCNICAS</ion-card-subtitle>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <p card-agendamento>Veja aqui as suas Visitas Técnicas</p>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+        <ion-col size="3">
+          <div class="callendar-wrapper">
+            <span class="callendar-icon"></span>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card-content>
+  <ion-card-content *ngIf="agendamentos.length && validScheduling">
+    <ion-card-subtitle class="safe-margin-card">SUAS VISITAS TÉCNICAS</ion-card-subtitle>
+    <ion-card
+      color="white"
+      *ngIf="!!validScheduling"
+      class="inside-card"
+    >
+      <ion-card-content class="card">
+        <div class="date-cell">
+          <div class="box-theme">
+            <div class="content">
+              <h3 class="group-date number-day-theme">
+                {{ validScheduling?.when | date: "dd/MM" }}
+              </h3>
+              <h3 class="group-date week-day-theme">
+                {{ validScheduling?.when | date: "EEEE" | uppercase }}
+              </h3>
+            </div>
+          </div>
+          <div class="box-theme">
+            <span class="period-theme"
+              >Período da {{ getPeriod(validScheduling?.periodo) }}</span
+            >
+            <span class="small-theme">AGENDADA</span>
+          </div>
+        </div>
+      </ion-card-content>
+    </ion-card>
+    <ion-label *ngIf="(agendamentos || []).length && validScheduling">
+      <span>
+        <ion-badge color="light" *ngIf="agendamentos.length > 1">
+          +{{ agendamentos.length - 1 }} visita{{
+            agendamentos.length > 2 ? "s" : ""
+          }}
+        </ion-badge>
+      </span>
+      VER MAIS DETALHES
+    </ion-label>
+  </ion-card-content>
+    <ion-card-content *ngIf="loading">
+        <div class="loading">
+            <tecvirt-loading
+              small="true"
+              color="primary"
+              label="Carregando"
+            ></tecvirt-loading>
+          </div>
+    </ion-card-content>
+</ion-card>

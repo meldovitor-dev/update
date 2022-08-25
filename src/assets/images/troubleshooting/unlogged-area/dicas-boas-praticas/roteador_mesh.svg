@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="438px" height="300px" viewBox="0 0 438 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>69_ts_tv_cabo_coaxial copy 30</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#E8E8E8" offset="0%"></stop>
+            <stop stop-color="#CCCCCC" offset="100%"></stop>
+        </linearGradient>
+        <circle id="path-2" cx="64.5120739" cy="96.2317954" r="3.81540722"></circle>
+        <filter x="-235.9%" y="-235.9%" width="571.8%" height="571.8%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="2.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-4">
+            <stop stop-color="#E8E8E8" offset="0%"></stop>
+            <stop stop-color="#CCCCCC" offset="100%"></stop>
+        </linearGradient>
+        <circle id="path-5" cx="73.8687869" cy="110.189079" r="4.36878689"></circle>
+        <filter x="-206.0%" y="-206.0%" width="512.0%" height="512.0%" filterUnits="objectBoundingBox" id="filter-6">
+            <feMorphology radius="2.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="MESH-+-repetidor" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-3-Copy" transform="translate(60.554399, 14.500000)">
+            <g id="Group-2-Copy" opacity="0.699999988" transform="translate(0.000000, 120.873118)">
+                <g id="Group-5" transform="translate(0.000000, 0.185756)">
+                    <path d="M5.43058044,129.498565 C4.92450131,129.498565 4.51035423,129.390959 4.51035423,129.259431 L4.51035423,123.336673 C4.51035423,123.205145 4.92450131,123.09754 5.43058044,123.09754 L28.6978798,123.09754 C29.2039589,123.09754 29.6179928,123.205145 29.6179928,123.336673 L29.6179928,129.259431 C29.6179928,129.390959 29.2039589,129.498565 28.6978798,129.498565 L5.43058044,129.498565 Z" id="Fill-48-Copy" fill="#8E8E8E" transform="translate(17.064174, 126.298052) scale(1, -1) translate(-17.064174, -126.298052) "></path>
+                    <path d="M90.9769657,129.498565 C90.4708866,129.498565 90.0567395,129.390959 90.0567395,129.259431 L90.0567395,123.336673 C90.0567395,123.205145 90.4708866,123.09754 90.9769657,123.09754 L114.244265,123.09754 C114.750344,123.09754 115.164378,123.205145 115.164378,123.336673 L115.164378,129.259431 C115.164378,129.390959 114.750344,129.498565 114.244265,129.498565 L90.9769657,129.498565 Z" id="Fill-48-Copy-2" fill="#8E8E8E" transform="translate(102.610559, 126.298052) scale(1, -1) translate(-102.610559, -126.298052) "></path>
+                    <path d="M4.4413313,126.589008 C1.99881765,126.589008 0,124.460958 0,121.859814 L4.36666667,4.72919402 C4.36666667,2.12805002 6.36548432,0 8.80799797,0 L112.370732,0 C114.813246,0 116.811517,2.12805002 116.811517,4.72919402 L121.178184,121.859814 C121.178184,124.460958 119.179912,126.589008 116.737399,126.589008 L4.4413313,126.589008 Z" id="Fill-48" fill="url(#linearGradient-1)"></path>
+                </g>
+                <g id="Oval">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                    <use fill="#00C0D2" fill-rule="evenodd" xlink:href="#path-2"></use>
+                </g>
+            </g>
+            <g id="Group-2" transform="translate(107.414634, 101.873118)">
+                <g id="Group-5" transform="translate(0.000000, 0.212697)">
+                    <path d="M6.21822188,148.2808 C5.63874196,148.2808 5.16452775,148.157587 5.16452775,148.006982 L5.16452775,141.225198 C5.16452775,141.074594 5.63874196,140.951381 6.21822188,140.951381 L32.8601677,140.951381 C33.4396476,140.951381 33.9137322,141.074594 33.9137322,141.225198 L33.9137322,148.006982 C33.9137322,148.157587 33.4396476,148.2808 32.8601677,148.2808 L6.21822188,148.2808 Z" id="Fill-48-Copy" fill="#8E8E8E" transform="translate(19.539130, 144.616090) scale(1, -1) translate(-19.539130, -144.616090) "></path>
+                    <path d="M104.172098,148.2808 C103.592618,148.2808 103.118404,148.157587 103.118404,148.006982 L103.118404,141.225198 C103.118404,141.074594 103.592618,140.951381 104.172098,140.951381 L130.814044,140.951381 C131.393524,140.951381 131.867608,141.074594 131.867608,141.225198 L131.867608,148.006982 C131.867608,148.157587 131.393524,148.2808 130.814044,148.2808 L104.172098,148.2808 Z" id="Fill-48-Copy-2" fill="#8E8E8E" transform="translate(117.493006, 144.616090) scale(1, -1) translate(-117.493006, -144.616090) "></path>
+                    <path d="M5.08549386,144.949246 C2.28872251,144.949246 0,142.512547 0,139.534138 L5,5.41510766 C5,2.4366985 7.28872251,0 10.0854939,0 L128.668777,0 C131.465549,0 133.753645,2.4366985 133.753645,5.41510766 L138.753645,139.534138 C138.753645,142.512547 136.465549,144.949246 133.668777,144.949246 L5.08549386,144.949246 Z" id="Fill-48" fill="url(#linearGradient-4)"></path>
+                </g>
+                <g id="Oval">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                    <use fill="#00C0D2" fill-rule="evenodd" xlink:href="#path-5"></use>
+                </g>
+            </g>
+            <g id="Group-4" transform="translate(272.396586, 73.000000) rotate(-93.000000) translate(-272.396586, -73.000000) translate(202.896586, 8.000000)" stroke="#00C0D2" stroke-linecap="round" stroke-width="10">
+                <g id="icon_blarga_sconexao-copy-3" transform="translate(69.200000, 65.052669) rotate(-219.000000) translate(-69.200000, -65.052669) translate(5.600000, 33.852669)">
+                    <g id="offline_icon-copy-3" transform="translate(0.633962, 0.633962)">
+                        <g id="Group-9" transform="translate(0.271698, 0.671698)">
+                            <path d="M124.901706,27.5891492 C109.52919,10.6425568 87.3324501,-4.88498131e-15 62.6500082,-4.88498131e-15 C37.7535623,-4.88498131e-15 15.3861091,10.827905 5.32907052e-15,28.0313637" id="Oval"></path>
+                            <path d="M105.602648,44.1345556 C95.0296771,32.4789604 79.7631147,25.1591801 62.7869259,25.1591801 C45.6635486,25.1591801 30.2795721,32.6064399 19.6972523,44.4387037" id="Oval-Copy-2"></path>
+                            <path d="M85.9420198,60.0909258 C80.2085879,53.7704163 71.9299498,49.8011001 62.7242283,49.8011001 C53.4386905,49.8011001 45.096382,53.8395449 39.3578803,60.255857" id="Oval-Copy-3"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <g id="Group-4-Copy" transform="translate(69.693731, 76.337925) rotate(-93.000000) translate(-69.693731, -76.337925) translate(27.193731, 36.337925)" stroke="#00C0D2" stroke-linecap="round" stroke-width="7.2">
+                <g id="icon_blarga_sconexao-copy-4" transform="translate(42.764900, 39.639396) rotate(-219.000000) translate(-42.764900, -39.639396) translate(4.264900, 20.139396)">
+                    <g id="offline_icon-copy-4" transform="translate(0.380377, 0.380377)">
+                        <g id="Group-9" transform="translate(0.163019, 0.403019)">
+                            <path d="M74.9410234,16.5534895 C65.7175138,6.38553411 52.3994701,-2.93098879e-15 37.5900049,-2.93098879e-15 C22.6521374,-2.93098879e-15 9.23166549,6.49674301 3.19744231e-15,16.8188182" id="Oval"></path>
+                            <path d="M63.3615886,26.4807334 C57.0178063,19.4873763 47.8578688,15.095508 37.6721555,15.095508 C27.3981292,15.095508 18.1677433,19.563864 11.8183514,26.6632222" id="Oval-Copy-2"></path>
+                            <path d="M51.5652119,36.0545555 C48.1251527,32.2622498 43.1579699,29.8806601 37.634537,29.8806601 C32.0632143,29.8806601 27.0578292,32.3037269 23.6147282,36.1535142" id="Oval-Copy-3"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

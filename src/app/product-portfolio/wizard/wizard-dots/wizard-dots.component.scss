@@ -1,0 +1,19 @@
+.wizard-dots {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.wizard-dots__dot {
+    content: '';
+    width: 10px;
+    height: 10px;
+    min-width: 10px;
+    min-height: 10px;
+    background: #C4C4C4;
+    border-radius: 99999em;
+    margin: 0 10px;
+}
+.wizard-dots__dot--active {
+    background: #00AB0F;
+}
+

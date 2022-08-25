@@ -1,0 +1,19 @@
+<div class="accordion-wrapper">
+  <div class="accordion-list" *ngFor="let item of (accordionContent || []); let i= index">
+    <button outline id="accordion-{{i}}" class="accordion-dropdown-button" (click)="expandAccordion(item)">
+      <div class="accordion-dropdown-button-left-content">
+        <span [class]="getAccordionIconClass(item)"></span>
+        <div class="accordion-dropdown-button-left-content-text">
+          <span  class="accordion-dropdown-button-text" [innerHTML]="item.title"></span>
+          <p class="accordion-dropdown-button-subtext">{{item.subtitle}}</p>
+        </div>
+      </div>
+      <ion-icon class="list-arrow" [name]="item.open ? 'ios-arrow-up' : 'ios-arrow-down'"></ion-icon>
+    </button>
+    <div class="accordion-paragraph-list" *ngIf="item.open">
+      <hr class="accordion-divider">
+      <p class="accordion-paragraph" id="paragraph-{{i}}-{{j}}"
+        *ngFor="let txt of (item.paragraphs || []); let j = index" [innerHTML]="txt"></p>
+    </div>
+  </div>
+</div>

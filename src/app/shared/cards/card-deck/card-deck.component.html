@@ -1,0 +1,23 @@
+<div class="fitcontent" *ngIf="(product$ | async )?.features as features">
+  <ion-grid fixed card-deck>
+    <ion-row>
+        <ion-col card size="12" size-xs="12" size-sm="12" size-md="12" size-lg="12" class="ion-no-padding">
+            <tecvirt-card-diagnostic [tickets]="(ticketHome$ | async)"></tecvirt-card-diagnostic>
+        </ion-col>
+      <ion-col card size="12" size-xs="12" size-sm="12" size-md="12" size-lg="12" class="ion-no-padding"
+        *ngFor="let feature of getFeatureThatIsACardAgendamento((product$ | async )?.features)">
+        <tecvirt-card-agendamento [tickets]="(ticketHome$ | async)" [feature]="feature"></tecvirt-card-agendamento>
+      </ion-col>
+      <ion-col card size="12" size-xs="12" size-sm="12" size-md="12" size-lg="12" class="ion-no-padding">
+          <tecvirt-card-multi [tickets]="(ticketHome$ | async)" [features]='getFeatureThatIsACardMulti((product$ | async )?.features)'></tecvirt-card-multi>
+        </ion-col>
+      <ion-col card size="12" size-xs="12" size-sm="12" size-md="12" size-lg="12" class="ion-no-padding"
+        *ngFor="let feature of getFeatureThatIsACardSingle((product$ | async )?.features)">
+        <tecvirt-card-single [tickets]="(ticketHome$ | async)" [card]="getCard(feature)" [feature]='feature'></tecvirt-card-single>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ng-template #elseMarginBlock>
+    <div class="card-deck-safe-margin-bottom"></div>
+  </ng-template>
+</div>

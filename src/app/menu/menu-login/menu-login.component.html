@@ -1,0 +1,16 @@
+<div class="login" *ngIf="!user.authorization">
+    <ion-menu-toggle class="login-container" (click)='doLogin()'>
+      <ion-icon [src]="iconLogin"></ion-icon>
+      <h5>Login {{sanitize(product)}}</h5>
+    </ion-menu-toggle>
+</div>
+<div class="login" *ngIf="user.authorization">
+  <div class="login__user">
+  <h6 class="login__user--title">Dados de {{getProductName()}}:</h6>
+    <div class="login__user--info">{{getKeyCpfOrCnpj()}}: <ion-text color="info"><p>{{getCpfOrCnpj()}}</p></ion-text></div>
+    <div appClipboardDirective [clipboardTxt]="getIdentifier()" class="login__user--info">{{getKeyIdentifier()}}:
+      <ion-text color="info"><p>{{getIdentifier()}}</p></ion-text>
+      <ion-icon src="./assets/icon/copiar.svg"></ion-icon>
+    </div>
+  </div>
+</div>

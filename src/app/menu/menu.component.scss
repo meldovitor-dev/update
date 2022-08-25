@@ -1,0 +1,35 @@
+div[app-menu] {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background:var(--ion-color-light);
+  height: 100%;
+  font-family: 'SimplonBP';
+}
+.menu-card {
+  padding: 30px 20px 15px 20px;
+  background: var(--ion-color-white);
+  box-shadow: 0 -5px 10px gray;
+  .menu__line-divider {
+    height: 5px;
+    border-bottom: 1px solid #D8D8D8;
+  }
+}
+.menu-list {
+  padding: 5px 20px;
+}
+.share-content {
+  padding: 10px 20px;
+}
+
+.max-height {
+  height:100%;
+  background: #F3F3F3;
+  overflow: auto;
+}
+
+@media (min-width: 600px) {
+  .max-height {
+    overflow: hidden;
+  }
+}

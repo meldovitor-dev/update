@@ -1,0 +1,11 @@
+.step-timer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    p{
+        color: var(--ion-color-secondary);
+        font-size: 5rem;
+        margin: 0;
+    }
+}

@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar background>
+    <div class="header-content">
+      <div left-header>
+          <div class="notification-bell"></div>
+          <ion-text color="white"><p>Notificações</p></ion-text>
+      </div>
+      <ion-icon slot="end" name="md-close" (click)="closeModal()" ></ion-icon>
+    </div>
+  </ion-toolbar>
+</ion-header>
+<ion-content notification color="light" *ngIf="!showUtilityRender">
+  <tecvirt-notification-list (clickEvent)="notificationClick($event)"></tecvirt-notification-list>
+</ion-content>
+<tecvirt-utility-render *ngIf="showUtilityRender" [pageCatalog]="selectedNotification.catalog" (clickEvent)="closeRender()"></tecvirt-utility-render>

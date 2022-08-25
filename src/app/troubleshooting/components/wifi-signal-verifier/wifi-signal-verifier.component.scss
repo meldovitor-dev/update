@@ -1,0 +1,41 @@
+div[speedometer-container]{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .wifi-info {
+        display: flex;
+        border: 1px solid #979797;
+        border-radius: 5px;
+        padding: 10px;
+        width: fit-content;
+        margin-bottom: 2rem;
+        ion-text {
+            font-weight: bold;
+            margin-right: 5px;
+        }
+    }
+    h1{
+        font-weight: 400;
+        font-size: 25px;
+    }
+    p{
+        margin-top: 5px;
+        line-height: 1.3rem;
+    }
+}
+h1[tips] {
+    font-weight: normal;
+}
+ion-list[button-wifi-signal]{
+  background: transparent;
+  width: 100%;
+  margin-top: 5%;
+  ion-item{
+      --ion-item-background: transparent;
+      --inner-padding-end: 0 !important;
+      --background: var(--ion-color-light);
+  }
+  .label-no-margin{
+      margin: 0;
+  }
+}

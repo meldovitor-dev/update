@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="8px" height="11px" viewBox="0 0 8 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Rectangle</title>
+    <g id="LOGIN-Fibra-Internet" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="entrada2" transform="translate(-45.000000, -275.000000)" fill="#FFFFFF">
+            <path d="M44.4761963,275.380791 L48.8321679,275.380791 C49.9367374,275.380791 50.8321679,276.276222 50.8321679,277.380791 L50.8321679,281.736763 C50.8321679,282.531991 50.1875082,283.17665 49.3922802,283.17665 C49.0103983,283.17665 48.6441572,283.024948 48.3741259,282.754917 L45.9160839,280.296875 L43.458042,277.838833 C42.8957309,277.276522 42.8957309,276.364835 43.458042,275.802524 C43.7280733,275.532493 44.0943143,275.380791 44.4761963,275.380791 Z" id="Rectangle" transform="translate(45.916084, 280.296875) rotate(-315.000000) translate(-45.916084, -280.296875) "></path>
+        </g>
+    </g>
+</svg>

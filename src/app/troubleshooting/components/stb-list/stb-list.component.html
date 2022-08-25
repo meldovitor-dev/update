@@ -1,0 +1,17 @@
+<div stb-list>
+  <p>
+     <a (click)="findSTB()">Veja como achar</a> o número de série do seu decodificador.
+  </p>
+  <div *ngFor="let stb of stbContent; let i = index">
+      <ion-card color="white" class="max-width">
+        <div class="card-stb">
+          <div icon>
+            <ion-icon name="checkmark" class="icon"></ion-icon>
+          </div>
+          <span class="label-button">
+              {{ stb.serialNumber }}
+          </span>
+        </div>
+        </ion-card>
+  </div>
+</div>

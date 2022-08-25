@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="70px" height="73px" viewBox="0 0 70 73" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>visita_pendente</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="visita_pendente" transform="translate(0.500000, 0.000000)" fill-rule="nonzero">
+            <g id="icon-home-_x2F_-agendamento" transform="translate(0.000000, 4.000000)">
+                <g id="agendamento">
+                    <g id="Group-6" fill="#00C0D2">
+                        <g id="offline_icon">
+                            <g id="Oval">
+                                <circle cx="34.5" cy="34.5" r="34.5"></circle>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="noun_21227_cc" transform="translate(20.000000, 18.000000)" fill="#FFFFFF">
+                        <g id="Group">
+                            <path d="M27.4,4.3 L23.4,4.3 L23.4,1.7 C23.4,1 22.8,0.4 22.1,0.4 C21.4,0.4 20.8,1 20.8,1.7 L20.8,4.3 L8.1,4.3 L8.1,1.7 C8.1,1 7.5,0.4 6.8,0.4 C6.1,0.4 5.5,1 5.5,1.7 L5.5,4.3 L1.5,4.3 C0.8,4.3 0.2,4.9 0.2,5.6 L0.2,31.4 C0.2,32.1 0.8,32.7 1.5,32.7 L27.4,32.7 C28.1,32.7 28.7,32.1 28.7,31.4 L28.7,5.6 C28.7,4.9 28.1,4.3 27.4,4.3 Z M26.1,30.1 L2.8,30.1 L2.8,6.9 L5.5,6.9 L5.5,8.6 C5.5,9.3 6.1,9.9 6.8,9.9 C7.5,9.9 8.1,9.3 8.1,8.6 L8.1,6.9 L20.7,6.9 L20.7,8.6 C20.7,9.3 21.3,9.9 22,9.9 C22.7,9.9 23.3,9.3 23.3,8.6 L23.3,6.9 L26,6.9 L26.1,30.1 L26.1,30.1 Z" id="Shape"></path>
+                            <circle id="Oval_1_" cx="6.8" cy="15.6" r="1.2"></circle>
+                            <circle id="Oval_2_" cx="11.9" cy="15.6" r="1.2"></circle>
+                            <circle id="Oval_3_" cx="17" cy="15.6" r="1.2"></circle>
+                            <circle id="Oval_4_" cx="22.1" cy="15.6" r="1.2"></circle>
+                            <circle id="Oval_5_" cx="6.8" cy="20.1" r="1.2"></circle>
+                            <circle id="Oval_6_" cx="11.9" cy="20.1" r="1.2"></circle>
+                            <circle id="Oval_7_" cx="17" cy="20.1" r="1.2"></circle>
+                            <circle id="Oval_8_" cx="22.1" cy="20.1" r="1.2"></circle>
+                            <circle id="Oval_9_" cx="6.8" cy="24.5" r="1.2"></circle>
+                            <circle id="Oval_10_" cx="11.9" cy="24.5" r="1.2"></circle>
+                            <circle id="Oval_11_" cx="17" cy="24.5" r="1.2"></circle>
+                            <circle id="Oval_12_" cx="22.1" cy="24.5" r="1.2"></circle>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <circle id="Oval_13_" fill="#FFB700" cx="57" cy="12" r="12"></circle>
+            <path d="M58.564,14.22 L58.564,5.4 L56.674,5.4 L56.674,14.22 L58.564,14.22 Z M58.834,18 L58.834,15.588 L56.422,15.588 L56.422,18 L58.834,18 Z" id="!" fill="#FFFFFF"></path>
+        </g>
+    </g>
+</svg>

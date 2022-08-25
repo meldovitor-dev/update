@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="14px" viewBox="0 0 20 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Group 33</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iPhone-11-Copy-123" transform="translate(-46.000000, -118.000000)" stroke="#434343">
+            <g id="Group-39" transform="translate(30.676097, 100.972054)">
+                <g id="Group-33" transform="translate(16.000000, 18.027946)">
+                    <path d="M4.28571429,3.1703404 L4.28571429,1.5851702 C4.28571429,0.709704873 4.99541916,3.82864977e-16 5.87088449,0 L15.8577009,0 C16.9622704,7.78148667e-16 17.8577009,0.8954305 17.8577009,2 L17.8577009,10 C17.8577009,11.1045695 16.9622704,12 15.8577009,12 L5.91085379,12 C5.01331403,12 4.28571429,11.2724003 4.28571429,10.3748605 L4.28571429,8.74972098" id="Rectangle"></path>
+                    <line x1="0" y1="6" x2="12.2142857" y2="6" id="Line-5" stroke-linecap="round"></line>
+                    <line x1="9.00795201" y1="3.02699498" x2="12.2142857" y2="6" id="Line-5-Copy" stroke-linecap="round"></line>
+                    <line x1="9.00795201" y1="6" x2="12.2142857" y2="8.97300502" id="Line-5-Copy-2" stroke-linecap="round" transform="translate(10.611119, 7.486503) scale(1, -1) translate(-10.611119, -7.486503) "></line>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

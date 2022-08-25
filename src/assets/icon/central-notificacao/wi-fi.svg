@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="61px" height="60px" viewBox="0 0 61 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Slice Copy 14</title>
+    <g id="prototipo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icone_fibra_internet_menu" transform="translate(10.980000, 1.732318)">
+            <circle id="Oval" fill="#00C0D2" fill-rule="nonzero" cx="19.9297826" cy="22.9776121" r="2.21"></circle>
+            <path d="M33.3388642,13.2843615 C30.0381675,9.64568835 25.2722134,7.36058082 19.9725441,7.36058082 C14.6269249,7.36058082 9.82431621,9.68548521 6.52070089,13.3793112" id="Oval-Copy-2" stroke="#00C0D2" stroke-width="2" stroke-linecap="round"></path>
+            <path d="M38.9488104,8.41712957 C34.2672041,3.25614784 27.5073219,0.0150218248 19.9904341,0.0150218248 C12.4083728,0.0150218248 5.59650088,3.31259449 0.910754841,8.55180332" id="Oval-Copy-5" stroke="#00C0D2" stroke-width="2" stroke-linecap="round"></path>
+            <path d="M27.2011598,18.2656615 C25.4112826,16.2925088 22.8268363,15.0533577 19.9529709,15.0533577 C17.0541883,15.0533577 14.4498653,16.3140896 12.6584054,18.3171501" id="Oval-Copy-3" stroke="#00C0D2" stroke-width="2" stroke-linecap="round"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,56 @@
+div[wildcard-area]{
+    position: absolute;
+    top: 1vh;
+    right: 3vw;
+    color: #696969;
+    width: 55vw;
+    text-align: right;
+    h3{
+        margin:0;
+        font-size: 15px;
+    }
+    ::ng-deep .wildcard{
+       p{
+        font-size: 12px;
+        margin: 0;
+        }
+        small{
+            font-size: 10px;
+        }
+    }
+    .user-info {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      font-weight: normal;
+      color: #909090;
+      font-size: 0.7rem;
+      margin: 0 5px 3px 0;
+      ion-text {
+        padding-left: 5px;
+        font-weight: bold;
+      }
+      p {
+        margin: 0;
+      }
+    }
+    .user-title {
+      font-size: 0.9rem;
+      margin: 0 5px 3px 0;
+    }
+    .user {
+      ion-icon {
+        padding-right: 5px;
+        font-size: 20px;
+      }
+      .user-header{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        ion-icon {
+          padding-right: 0;
+        font-size: 16px;
+        }
+      }
+    }
+}

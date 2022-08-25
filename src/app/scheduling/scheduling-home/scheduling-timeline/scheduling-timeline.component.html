@@ -1,0 +1,15 @@
+<div
+  class="scheduling-messages"
+  *ngFor="let information of informations || []; last as isLast"
+>
+  <div class="scheduling-messages__left">
+    <div class="timeline__icon--{{ information.icon }}"></div>
+    <div
+      class="scheduling-messages__dots"
+      [class.scheduling-messages__dots--hidden]="isLast"
+    ></div>
+  </div>
+  <div class="scheduling-messages__right">
+    <p [innerHTML]="information.message"></p>
+  </div>
+</div>

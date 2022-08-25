@@ -1,0 +1,10 @@
+<ion-grid core-ts>
+  <ion-row>
+    <ion-col size="12" core-ts>
+      <h1 core-ts-title *ngIf="layout?.title" [innerHTML]="layout?.title"></h1>
+      <p core-ts-paragraph *ngIf="layout?.paragraph" [innerHTML]="layout?.paragraph"></p>
+      <img *ngIf="layout?.image" core-ts-image [src]="layout?.image" [alt]="layout?.image">
+      <p core-ts-caption *ngIf="layout?.imageCaption" [innerHTML]="layout?.imageCaption"></p>
+    </ion-col>
+  </ion-row>
+</ion-grid>

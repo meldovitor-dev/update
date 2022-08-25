@@ -1,0 +1,26 @@
+.automatic-step-container {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    font-size: 1.8em;
+    font-weight: normal;
+    text-align: center;
+  }
+  p {
+    text-align: center;
+  }
+}
+.automatic-step-container-center {
+    @extend .automatic-step-container;
+    justify-content: center;
+}
+.tecvirt-button-automatic {
+    display: block;
+    width: 100%;
+}
+.text-align-left {
+    text-align: left !important;
+}

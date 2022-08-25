@@ -1,0 +1,54 @@
+div[background] {
+    display: none;
+}
+.black-area {
+  display: none;
+  position: absolute;
+  top: 6%;
+  right: 15%;
+  width: 310px;
+  height: fit-content;
+  border-radius: 5px;
+  background: var(--ion-color-dark);
+  .black-area__content {
+    padding: 20px 35px;
+    line-height: 22px;
+  }
+}
+.pwa-benefits-container {
+  padding: 0 5vw;
+}
+.privacy-footer {
+  border-top: 1px solid #cacaca;
+  padding: 5px 10px;
+  font-size: .9em;
+  margin-bottom: 20px;
+  ::ng-deep a {
+    text-decoration: none;
+  }
+}
+div[product-portfolio-page]{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100%;
+}
+.grid-index{
+  z-index: 1;
+}
+
+
+@media (min-width: 600px) {
+    div[background] {
+      display: flex;
+    }
+    .black-area {
+      display: flex;
+    }
+    .pwa-benefits-container {
+      display: none;
+    }
+    .safe-bottom-margin{
+      margin-bottom: 120px;
+    }
+  }

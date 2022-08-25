@@ -1,0 +1,21 @@
+<ion-header no-border>
+  <ion-toolbar color='light'>
+      <ion-buttons slot="start">
+          <ion-menu-button menu-button (click)="publishMenuGa()"></ion-menu-button>
+      </ion-buttons>
+      <div header-title>
+          <div decoy></div>
+          <ion-label class="header--title" id="header-label">{{title | uppercase}}</ion-label>
+          <div class='right-content'>
+              <span class="connection-badge conection-on"  *ngIf="(connection$ | async)?.connected" mode="ios" >{{(connection$ | async )?.connectionType | uppercase}}</span>
+              <span class="connection-badge conection-off" *ngIf="!(connection$ | async)?.connected" mode="ios" >OFFLINE</span>
+              <tecvirt-notification-area></tecvirt-notification-area>
+          </div>
+      </div>
+      <div class="header-info" *ngIf="loginService.isLoggedIn()">
+          <p class="user-title">Dados de {{getProductName()}}:</p>
+          <div class="user-info">{{getKeyCpfOrCnpj()}}: <ion-text color="info"><p> {{getCpfOrCnpj()}}</p></ion-text></div>
+          <div class="user-info">{{getKeyIdentifier()}}: <ion-text color="info"><p> {{getIdentifier()}}</p></ion-text></div>
+      </div>
+  </ion-toolbar>
+</ion-header>

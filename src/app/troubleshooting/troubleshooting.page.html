@@ -1,0 +1,45 @@
+<tecvirt-header title="{{(feature$ | async )?.displayName}}" [hasMenuSlides]="page?.slides" (slidesMenuEvt)="slidesMenuClicked()" [hiddenBack]='hiddenBackButton()' (backButtonEvt)='goBack()'(closeButtonEvt)='goToHome()' *ngIf="(!conclusionPage)"></tecvirt-header>
+<ion-content [color]="getThemePage()">
+  <div background>
+      <div class="top-left-bg">
+        <img src="./assets/images/troubleshooting/top-left-brand.png" alt="">
+      </div>
+      <div class="bottom-rigth-bg">
+        <img src="./assets/images/troubleshooting/bottom-right-brand.png" alt="">
+      </div>
+  </div>
+  <ion-grid fixed full-grid *ngIf="(!conclusionPage)" [class.top-start]="page && page.contentTop">
+    <ion-row *ngIf="isLoading()" class="content-padding">
+        <tecvirt-loading label="Carregando" layout="fullscreen"></tecvirt-loading>
+    </ion-row>
+    <ion-row *ngIf="page && !page.slides" class="content-padding">
+      <ion-col size="12" size-xs="12" size-md='12' size-lg='6' offset-lg="3">
+        <div #tsAnchor id="tsAnchor"></div>
+        <tecvirt-core-troubleshooting [layout]="page"></tecvirt-core-troubleshooting>
+        <tecvirt-ts-timer   *ngIf="page.loading" [type]='page.loading' [countdown]="countdown" [loadingLabel]="page.loadingLabel"></tecvirt-ts-timer>
+        <tecvirt-accordion  *ngIf="page.accordion" [type]="page?.accordion" (buttonClickedEvt)="buttonAccordionClick($event)" [accordionContent]="(queryResult || page?.accordionContent || [])"></tecvirt-accordion>
+        <tecvirt-wifi-label *ngIf="page.wifiLabel" [selectedNetwork]='getData("rede")'></tecvirt-wifi-label>
+        <tecvirt-ts-input   *ngIf="page.input" [inputType]='page.input' [selectedNetwork]='getData("rede")'(changeNetworkConfigEvt)='changeNetworkConfig($event)'></tecvirt-ts-input>
+        <tecvirt-redes-list *ngIf="page.networkList" [redesContent]="queryResult" (buttonClickedEvt)="buttonListRedeClick($event)"></tecvirt-redes-list>
+        <tecvirt-stb-selector *ngIf="page.stbSelect" [stbContent]="queryResult" (buttonClickedEvt)="buttonStbClick($event)" (selectStbEvent)=buttonSelectStb($event)></tecvirt-stb-selector>
+        <tecvirt-stb-list   *ngIf="page.stbList" [stbContent]="queryResult" (buttonClickedEvt)="buttonStbClick($event)" ></tecvirt-stb-list>
+        <tecvirt-scroll-snapping *ngIf="page.scrollSnap" [content]="page.scrollSnap" (clickEvt)="buttonClick($event)"></tecvirt-scroll-snapping>
+        <tecvirt-wifi-signal-dependencies *ngIf="page.wifiDependencies" [wifiList]="getData('dataList')" (wifiDependeciesEvt)="checkWifiDependencies($event)"></tecvirt-wifi-signal-dependencies>
+        <tecvirt-wifi-signal-verifier *ngIf="page.wifiInfo" [nearModem]="getData('nearModem')" (buttonClickEvt)="buttonClick($event)"></tecvirt-wifi-signal-verifier>
+        <tecvirt-link-shared *ngIf="page.linkShare" [linkShared]="page.linkShare" (linEvt)="buttonClick($event)"></tecvirt-link-shared>
+        <tecvirt-wifi-info-result *ngIf="page.wifiInfoResult" (btnEvt)="buttonClick($event)"[dualBandCnt]="getData('dualBandCnt')"[redes]="getData('dataList')"></tecvirt-wifi-info-result>
+        <tecvirt-image-selector *ngIf="page.imageSelector" [optionsArray]="page.imageSelector" (buttonClickedEvt)="buttonImageSelectorClick($event)"></tecvirt-image-selector>
+      </ion-col>
+      <ion-col size="12" size-xs="12" size-md='12' size-lg='6' offset-lg="3">
+        <tecvirt-buttons-list-troubleshooting [alphabetical]='page.alphabetical' (clickEvent)="buttonClick($event)" [buttons]="page.buttons">
+        </tecvirt-buttons-list-troubleshooting>
+      </ion-col>
+    </ion-row>
+    <ion-row *ngIf="page && page.slides && page.slides.length" class="ts-full-heigth-grid">
+      <ion-col size="12" size-xs="12" size-md='12' size-lg='6' offset-lg="3">
+        <tecvirt-slides-troubleshooting [changeSlidesFromOutside]="slidesChangeSubject" [slides]="page?.slides"></tecvirt-slides-troubleshooting>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <tecvirt-conclusion-troubleshooting *ngIf="conclusionPage" (btnEvt)='conclusionBtn($event)' [conclusionParams]="conclusionParams"></tecvirt-conclusion-troubleshooting>
+</ion-content>

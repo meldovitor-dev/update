@@ -1,0 +1,35 @@
+<div class="scheduling-confirm" *ngIf="page">
+  <span class="scheduling-icon-{{page.icon}}" [class.extra-space-top]="page.skipDisplay" *ngIf="!!page.icon"></span>
+  <h3 class="scheduling-confirm__title" [class.scheduling-center]="!!page.icon">
+      {{ getTitle() }}
+  </h3>
+  <p class="scheduling-confirm__paragraph">
+      {{ page.paragraph }}
+  </p>
+  <small *ngIf="isCancelAction() && page.success" class="scheduling-small">
+      {{getTextCancel()}}
+  </small>
+  <tecvirt-scheduling-display *ngIf="!page.skipDisplay"
+    [agendamento]="agendamento"
+  ></tecvirt-scheduling-display>
+  <div class="scheduling-confirm__description" *ngIf="page.description">
+    <p>
+      <strong>
+        {{ page.description.title }}
+      </strong>
+    </p>
+    <p>
+      {{ page.description.paragraph }}
+    </p>
+  </div>
+  <tecvirt-button
+    (clickEvent)="onClick(button)"
+    size="large"
+    [data]="button"
+    outline="true"
+    class="schedulling-confirm__button"
+    *ngFor="let button of page.buttons || []"
+  >
+    {{ button.txt }}
+  </tecvirt-button>
+</div>

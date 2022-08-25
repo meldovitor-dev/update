@@ -1,0 +1,23 @@
+.text-doing {
+    font-size: 1.2em;
+    color: var(--ion-color-secondary);
+}
+.text-todo {
+    font-size: 0.8em;
+    color: gray;
+}
+.text-done {
+    font-size: 1em;
+}
+ion-item {
+    --inner-padding-end: 0px !important;
+    background: var(--ion-color-light);
+}
+ion-list {
+    margin-top: 15vh;
+    padding: 0 !important;
+}
+
+.safe-bottom {
+    padding-bottom: 10px;
+}

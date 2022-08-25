@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="414px" height="134px" viewBox="0 0 414 134" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Path Copy</title>
+    <defs>
+        <linearGradient x1="45.4890029%" y1="6.87667089%" x2="57.8170203%" y2="147.587454%" id="linearGradient-1">
+            <stop stop-color="#B2D71F" offset="0%"></stop>
+            <stop stop-color="#B2D71F" offset="0%"></stop>
+            <stop stop-color="#B0D61F" offset="0%"></stop>
+            <stop stop-color="#ADD520" offset="12.3959413%"></stop>
+            <stop stop-color="#50B748" offset="100%"></stop>
+        </linearGradient>
+        <path d="M221.334572,336.627969 C226.478111,302.903903 229.312675,282.734928 236.022613,234.991242 C241.825689,190.826093 270.501074,-10.3357548 278.953647,-73.3530578 C103.572853,-102.037315 204.703957,-83.7881713 149.388811,-91.9203622 C135.954482,-39.2297753 142.282477,23.0448041 166.001222,85.3625528 C204.490877,186.48884 184.751506,263.541339 147.084881,326.192855 C184.126561,331.388479 179.822089,330.783525 221.334572,336.627969 Z" id="path-2"></path>
+        <filter x="-9.2%" y="-2.9%" width="118.3%" height="105.8%" filterUnits="objectBoundingBox" id="filter-3">
+            <feGaussianBlur stdDeviation="9.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="6" dy="0" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.211101399 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="BANDA-LARGA" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iPhone-11-Copy-120" transform="translate(0.000000, -81.000000)" fill-rule="nonzero">
+            <g id="Path-Copy" transform="translate(210.698458, 122.353803) scale(1, -1) rotate(-278.000000) translate(-210.698458, -122.353803) ">
+                <use fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+                <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+            </g>
+        </g>
+    </g>
+</svg>

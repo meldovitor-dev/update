@@ -1,0 +1,4 @@
+<tecvirt-header-default [title]="title" [product]="product" *ngIf="!isHeaderTS()"></tecvirt-header-default>
+<tecvirt-header-ts [slidesMenu]="hasMenuSlides" (slidesMenuEvt)="slidesMenuEvtClicked($event)" *ngIf="isHeaderTS()"
+  [title]="title" [hiddenBack]="hiddenBack" (backButtonEvt)="goBackEvt($event)" (closeButtonEvt)="goHomeEvt($event)">
+</tecvirt-header-ts>

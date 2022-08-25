@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="61px" height="60px" viewBox="0 0 61 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Slice Copy 8</title>
+    <g id="prototipo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-29" transform="translate(11.000000, 1.345154)" stroke="#00C0D2" stroke-width="2">
+            <g id="Group-4-Copy-2" transform="translate(33.580645, 17.048387) rotate(-270.000000) translate(-33.580645, -17.048387) translate(17.080645, 10.048387)" stroke-linecap="round">
+                <g id="icon_blarga_sconexao-copy-4" transform="translate(0.000000, 0.311662)">
+                    <g id="offline_icon-copy-4" transform="translate(0.155147, 0.155147)">
+                        <g id="Group-9" transform="translate(0.066492, 0.164382)">
+                            <path d="M25.8437644,10.5492688 C23.2562785,7.69683601 19.5201464,5.90549191 15.3656235,5.90549191 C11.1750796,5.90549191 7.41021315,7.72803362 4.82043927,10.6237019" id="Oval-Copy-2"></path>
+                            <path d="M30.2415197,6.73374281 C26.5715096,2.68794014 21.2722951,0.147152937 15.3796479,0.147152937 C9.43590976,0.147152937 4.09593935,2.73218986 0.422683976,6.83931641" id="Oval-Copy-5"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <g id="Group-4-Copy-3" transform="translate(7.548387, 17.048387) scale(-1, 1) rotate(-270.000000) translate(-7.548387, -17.048387) translate(-8.951613, 10.048387)" stroke-linecap="round">
+                <g id="icon_blarga_sconexao-copy-5" transform="translate(0.000000, 0.311662)">
+                    <g id="offline_icon-copy-5" transform="translate(0.155147, 0.155147)">
+                        <g id="Group-9" transform="translate(0.066492, 0.164382)">
+                            <path d="M25.8437644,10.5492688 C23.2562785,7.69683601 19.5201464,5.90549191 15.3656235,5.90549191 C11.1750796,5.90549191 7.41021315,7.72803362 4.82043927,10.6237019" id="Oval-Copy-2"></path>
+                            <path d="M30.2415197,6.73374281 C26.5715096,2.68794014 21.2722951,0.147152937 15.3796479,0.147152937 C9.43590976,0.147152937 4.09593935,2.73218986 0.422683976,6.83931641" id="Oval-Copy-5"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <circle id="Oval" cx="20.5645161" cy="15.9534877" r="5.75806452"></circle>
+        </g>
+    </g>
+</svg>

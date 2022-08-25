@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="54px" height="103px" viewBox="0 0 54 103" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 32</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-32">
+            <g id="Group-7" transform="translate(-0.000000, 0.000000)">
+                <g id="Group-4" transform="translate(-0.000000, 0.000000)">
+                    <g id="Group-5" transform="translate(-0.000000, 0.000000)">
+                        <g id="Group-3" transform="translate(-0.000000, 0.000000)">
+                            <g id="Group-2" transform="translate(-0.000000, 0.000000)">
+                                <rect id="Rectangle" stroke="#00C0D2" stroke-width="2.47" x="1.235" y="1.235" width="51.4687866" height="100.53" rx="8.05338947"></rect>
+                                <g id="Rectangle-Copy-3" transform="translate(23.572281, 0.053170)" fill="#00C0D2">
+                                    <path d="M0,0 L6.79422465,0 L6.79422465,2.61379526 C6.79422465,4.48996859 5.27328565,6.01090758 3.39711232,6.01090758 C1.52093899,6.01090758 6.73854176e-16,4.48996859 0,2.61379526 L0,0 L0,0 Z"></path>
+                                </g>
+                                <rect id="Rectangle-Copy-4" fill="#00C0D2" x="16.4187618" y="96.2382191" width="21.6392467" height="1.76560833" rx="0.882804167"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <g id="Group-17-Copy" transform="translate(9.873207, 36.287617)">
+                <circle id="Oval" fill="#00C0D2" cx="15.8943679" cy="15.6563594" r="3.48061574"></circle>
+                <path d="M32.9252416,16.4626208 C32.9252416,7.37056638 25.5546752,2.13517847e-13 16.4626208,2.13517847e-13 C7.37056638,2.13517847e-13 -5.33794618e-14,7.37056638 -5.33794618e-14,16.4626208" id="Oval" stroke="#00C0D2" stroke-width="2.47" stroke-linecap="round"></path>
+                <path d="M34.9319166,3.77973397 C35.1555738,3.99247102 35.1732565,4.34317157 34.972132,4.57732653 L20.3343033,21.6191056 C19.8118279,22.2273865 18.8951687,22.2969456 18.2868879,21.7744701 C18.2580651,21.7497132 18.2302253,21.7238344 18.2034327,21.6968935 C17.5945587,21.084649 17.5972909,20.0947369 18.2095354,19.4858629 C18.2112224,19.4841851 18.2129133,19.4825112 18.214608,19.4808412 L34.1403497,3.78673674 C34.3590856,3.57118241 34.7094014,3.56808326 34.9319166,3.77973397 Z" id="Rectangle" fill="#00C0D2" transform="translate(26.213507, 13.105292) rotate(33.000000) translate(-26.213507, -13.105292) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

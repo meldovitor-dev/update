@@ -1,0 +1,28 @@
+<ion-content success>
+  <div class="feedback" *ngIf="shouldPresentFeedback">
+    <div class="feedback-background">
+    </div>
+    <div class="feedback-container">
+      <tecvirt-client-feedback (closeEvt)="closeFeedback()"></tecvirt-client-feedback>
+    </div>
+  </div>
+  <div class="container">
+    <h1 core-ts-title>Perfeito!</h1>
+    <ion-icon name="checkmark"></ion-icon>
+    <p core-ts-paragraph>
+      Obrigado por usar o app. 😃
+      <br>
+      Juntos, nós conseguimos resolver o problema.
+    </p>
+    <div class="phone-button container-button">
+      <ion-button id="button-0" (click)="onClick()" expand="block" fill="outline" color="white">
+        <span>Voltar pro início</span>
+      </ion-button>
+    </div>
+    <div class="desktop-button container-button">
+      <ion-button id="button-0" (click)="onClick()" expand="block" fill="outline" color="dark">
+        <span>Voltar pro início</span>
+      </ion-button>
+    </div>
+  </div>
+</ion-content>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="37px" height="37px" viewBox="0 0 37 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Slice Copy 2</title>
+    <g id="Apresentacao_pwa" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-16" transform="translate(0.768596, 0.355021)">
+            <g id="Group-8-Copy-2">
+                <circle id="Oval" fill="#FFCA28" cx="17.9244391" cy="17.9244391" r="17.9244391"></circle>
+                <path d="M29.5121417,4.24876778 C33.3886122,7.53665791 35.8488783,12.4432356 35.8488783,17.9244391 C35.8488783,27.8238335 27.8238335,35.8488783 17.9244391,35.8488783 C12.4299076,35.8488783 7.51279993,33.376633 4.2248123,29.4838389 C7.34949071,32.1340868 11.3946088,33.7328569 15.8131397,33.7328569 C25.7125341,33.7328569 33.7375788,25.7078121 33.7375788,15.8084177 C33.7375788,11.4704809 32.1966,7.49245888 29.6321873,4.39189665 Z" id="Combined-Shape" fill="#DE9A1F" opacity="0.5"></path>
+                <circle id="Oval-Copy-2" fill="#3E4347" cx="11.2165407" cy="13.6066627" r="2.201755"></circle>
+                <circle id="Oval-Copy-3" fill="#3E4347" cx="24.6459521" cy="13.6066627" r="2.201755"></circle>
+            </g>
+            <line x1="10.0873195" y1="24.0806264" x2="26.0393597" y2="24.0806264" id="Line" stroke="#3E4347" stroke-width="2.34588826" stroke-linecap="round"></line>
+        </g>
+    </g>
+</svg>

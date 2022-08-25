@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="61px" viewBox="0 0 60 61" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Slice Copy 21</title>
+    <g id="prototipo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-30" transform="translate(11.145323, 2.500000)" stroke="#00C0D2" stroke-width="2">
+            <g id="Group-19" transform="translate(12.473521, 9.771429)">
+                <path d="M9.64728162,2.72053722 L16.7765115,16.8342926 C17.0255204,17.3272561 16.8277561,17.9287436 16.3347925,18.1777524 C16.1949881,18.2483714 16.0405501,18.285163 15.8839221,18.285163 L1.62546231,18.285163 C1.07317756,18.285163 0.625462311,17.8374478 0.625462311,17.285163 C0.625462311,17.1285351 0.662253979,16.9740971 0.732872905,16.8342926 L7.8621028,2.72053722 C8.11111167,2.2275737 8.71259913,2.02980938 9.20556265,2.27881825 C9.39619372,2.37511103 9.55098884,2.52990615 9.64728162,2.72053722 Z" id="Triangle" transform="translate(8.754692, 9.619319) rotate(-270.000000) translate(-8.754692, -9.619319) "></path>
+            </g>
+            <circle id="Oval" cx="19" cy="19" r="19"></circle>
+        </g>
+    </g>
+</svg>

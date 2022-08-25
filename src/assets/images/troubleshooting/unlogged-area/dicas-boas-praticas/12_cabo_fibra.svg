@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="592px" height="330px" viewBox="0 0 592 330" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>decodificador_desligar_tomada copy 7</title>
+    <defs>
+        <linearGradient x1="48.8743902%" y1="3.5904605%" x2="48.2279091%" y2="11.1152692%" id="linearGradient-1">
+            <stop stop-color="#7F7F7F" offset="0%"></stop>
+            <stop stop-color="#454545" offset="100%"></stop>
+        </linearGradient>
+        <radialGradient cx="50%" cy="50%" fx="50%" fy="50%" r="50%" id="radialGradient-2">
+            <stop stop-color="#35FF00" offset="0%"></stop>
+            <stop stop-color="#00FF27" stop-opacity="0" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="MESH-+-repetidor" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-4-Copy" transform="translate(141.453297, 51.947133)">
+            <g id="Group-2" transform="translate(3.955255, 60.566091)" stroke="#65FF5C">
+                <path d="M7.49035214,6.46946443 C4.51612355,4.50184363 2.55512448,2.54084455 1.60735491,0.586467198" id="Path-6"></path>
+                <path d="M7.49035214,6.46946443 C6.55935525,6.14315454 5.82879904,5.162655 5.2986835,3.52796581 C4.82895965,2.07950326 5.00196069,0.789164576 5.2986835,0" id="Path-6-Copy"></path>
+                <path d="M4.68712044,9.10900042 C3.75612355,8.78269053 3.02556733,7.80219099 2.4954518,6.1675018 C2.02572795,4.71903925 2.19872898,3.42870056 2.4954518,2.63953599" id="Path-6-Copy-2" transform="translate(3.445791, 5.874268) scale(-1, 1) rotate(-255.000000) translate(-3.445791, -5.874268) "></path>
+            </g>
+            <path d="M129.424938,62.0233517 C117.187755,47.0285233 103.942349,43.2798163 89.6887204,50.7772304 C68.3082772,62.0233517 43.8277468,86.559072 10.3972359,66.4173298" id="Path-5" stroke="#C9C9C9" stroke-width="3"></path>
+            <g id="Group-3" transform="translate(119.431345, 0.000000)">
+                <path d="M20.6381925,-2.08031123e-13 L149.461104,89.097612 L128.430058,97.3149109 C124.324091,98.9192038 119.688652,98.3717134 116.069416,95.8549989 L0.847456827,15.7329029 L0.847456827,15.7329029 L20.6381925,-2.08031123e-13 Z" id="Rectangle-Copy-2" fill="#7F7F7F" transform="translate(75.154280, 49.168160) scale(-1, -1) translate(-75.154280, -49.168160) "></path>
+                <path d="M130.834645,83.1501835 L151.230717,99.6543007 L151.230717,99.6543007 L144.700744,223.052867 L124.680504,208.737227 L124.680504,86.0869339 C124.680504,84.0005249 126.371873,82.3091561 128.458282,82.3091561 C129.323331,82.3091561 130.162178,82.6060353 130.834645,83.1501835 Z" id="Rectangle-Copy" fill="url(#linearGradient-1)" transform="translate(137.955611, 152.538109) scale(-1, 1) translate(-137.955611, -152.538109) "></path>
+                <path d="M5.93009696,9.59414956 L125.521372,92.5004091 C129.084699,94.9706735 131.210477,99.031 131.210477,103.366839 L131.210477,223.052867 L131.210477,223.052867 L7.91860404e-13,127.257798 L7.91860404e-13,12.6988439 C7.92087356e-13,10.6124349 1.69136872,8.92106614 3.77777778,8.92106614 C4.54701224,8.92106614 5.29791634,9.15589242 5.93009696,9.59414956 Z" id="Rectangle" fill="#5E5E5E"></path>
+                <polygon id="Rectangle" fill="#D8D8D8" points="0.847456827 90.825067 130.972864 185.930472 130.972864 192.964277 0.847456827 97.8588728"></polygon>
+            </g>
+            <circle id="Oval" fill="url(#radialGradient-2)" cx="9.53160731" cy="59.2846083" r="2.50181341"></circle>
+            <circle id="Oval-Copy" fill="url(#radialGradient-2)" cx="3.9552553" cy="59.2846083" r="3.9552553"></circle>
+            <circle id="Oval-Copy-2" fill="url(#radialGradient-2)" cx="3.1739769" cy="66.4138405" r="3.1739769"></circle>
+        </g>
+    </g>
+</svg>

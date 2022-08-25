@@ -1,0 +1,47 @@
+<div class="scheduling-slots-wrapper">
+    <div class="scheduling-slots" *ngIf="page.slots">
+        <h4>
+            {{ getDayMessage() }}
+        </h4>
+        <tecvirt-loading class="scheduling-slots__loading" small="true" label="carregando" *ngIf="loading"></tecvirt-loading>
+        <div class="scheduling-slots__card-deck" [@enterAnimation]="slots.length">
+            <a [class.scheduling-slots__card-active]="item.selected" class="scheduling-slots__card" *ngFor="let item of (slots || []); index as idx" (click)="selectDay(idx)">
+                    <span>
+                        {{item.semana}}
+                    </span>
+                    <span>
+                        <strong>{{item.dia}}</strong>
+                    </span>
+                </a>
+        </div>
+        <h4 *ngIf="!!selectedDay">
+            Selecione o período da visita:
+        </h4>
+        <div class="scheduling-slots__card-deck--period" *ngIf="!!selectedDay" [@enterAnimation]="(selectedDay.periodos || []).length">
+            <a [class.scheduling-slots__card-active]="item.selected" class="scheduling-slots__card--period" *ngFor="let item of (selectedDay.periodos || []); index as idx" (click)="selectPeriod(idx)">
+                    <span class="scheduling-slots__card--period-item">
+                        {{item.turno}}
+                    </span>
+                    <span>
+                        {{item.horario}}
+                    </span>
+                </a>
+        </div>
+
+    </div>
+    <div *ngIf="!page.slots" class="scheduling-slots__no-option">
+        <span class="scheduling-icon-{{page.icon}}">
+        </span>
+        <h3>{{page.title}}</h3>
+        <p>{{page.paragraph}}</p>
+    </div>
+    <div class="scheduling-slots__buttons">
+        <tecvirt-button *ngIf="page.slots" [data]="{gaAction: context}" (clickEvent)="proceed()" size="large" outline="true" class="schedulling-buttons__button" [disabled]="isReagendarDisabled()">
+            {{getButtonText()}}
+        </tecvirt-button>
+        <tecvirt-button (clickEvent)="onClick(btn)" [data]="btn"
+        size="large" outline="true" class="schedulling-buttons__button" *ngFor="let btn of (page.buttons || [])">
+            {{ btn.txt }}
+        </tecvirt-button>
+    </div>
+</div>

@@ -1,0 +1,33 @@
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    color: var(--ion-color-white);
+    font-size: 1.2rem;
+    padding: 0 1rem;
+    height: 100%;
+    width: 100%;
+    div[left-header] {
+        display: flex;
+        align-items: center;
+        p {
+            margin: 0;
+        }
+        .notification-bell {
+            margin-right: 10px;
+            width: 25px;
+            height: 30px;
+            background-size: 95%;
+            background-repeat: no-repeat;
+            background-image: url("../../../../assets/icon/central-notificacao/sino_branco.svg");
+        }
+    }
+    ion-icon {
+        margin-right: 10px;
+        font-size: 24px;
+        cursor: pointer;
+    }
+}
+ion-toolbar[background] {
+    --background: linear-gradient(270deg, #a7d507 0%, #50b748 90%);
+}

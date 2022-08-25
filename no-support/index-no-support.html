@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <title>
+      Técnico Virtual | Suporte da Oi para Fibra, Internet, TV, Fixo
+    </title>
+
+    <base href="/" />
+    <meta
+      name="description"
+      content="Acesse agora o Técnico Virtual da Oi e resolva problemas sem visita técnica para Oi Fibra, Internet banda larga, TV e Fixo."
+    />
+    <meta
+      name="viewport"
+      content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
+    <link rel="icon" type="image/png" href="assets/icon/favicon.ico" />
+
+    <!-- add to homescreen for ios -->
+    <meta name="apple-mobile-web-tecvirt-capable" content="yes" />
+    <meta name="apple-mobile-web-tecvirt-status-bar-style" content="black" />
+
+    <link rel="manifest" href="manifest.webmanifest" />
+    <meta name="theme-color" content="#565656" />
+    <link rel="canonical" href="https://www.oi.com.br/pwa/tecnico-virtual/" />
+    <meta
+      name="google-site-verification"
+      content="Q1AdP_cCSDDyL6ySUnhUR_BEg9XBtl5r8cSgrV6AmWQ"
+    />
+
+    <style>
+      /* FONTS */
+      @font-face {
+        font-family: "SimplonBP";
+        font-style: normal;
+        font-weight: normal;
+        src: url("./assets/fonts/SimplonBP-Regular.ttf");
+      }
+
+      @font-face {
+        font-family: "SimplonBP";
+        font-style: normal;
+        font-weight: bold;
+        src: url("./assets/fonts/SimplonBP-Bold.ttf");
+      }
+
+      @font-face {
+        font-family: "SimplonBP";
+        font-style: italic;
+        font-weight: normal;
+        src: url("./assets/fonts/SimplonBP-LightItalic.ttf");
+      }
+
+      @font-face {
+        font-family: "SimplonBP";
+        font-style: italic;
+        font-weight: bold;
+        src: url("./assets/fonts/SimplonBP-BoldItalic.ttf");
+      }
+
+      html,
+      body {
+        padding: 0;
+        margin: 0;
+        font-family: "SimplonBP";
+        background: #f4f5f8;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      h1,
+      h2,
+      h3,
+      p {
+        font-weight: normal;
+        text-align: center;
+      }
+      h1 {
+        font-size: 2rem;
+        margin-bottom: 0;
+      }
+      p {
+        color: #6d6d6d;
+        font-size: 1.2rem;
+      }
+      .main-content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+      }
+      .main__section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .main__section > img{
+        height: 45vh;
+      }
+      .product-list {
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+      .product-list > li {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+      }
+      .product-list > li > img {
+        max-width: 15vw;
+        width: 85%;
+        height: 85%;
+        padding-bottom: 5px;
+      }
+      .background {
+        position: fixed;
+        justify-content: flex-end;
+      }
+      .background > img {
+        max-width: 20vh;
+      }
+      .bg-top {
+        top: 0;
+        right: 0;
+      }
+      .bg-bottom {
+        bottom: -5px;
+        left: 0;
+      }
+      @media (max-width: 600px) {
+        .background {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body class="main-content">
+    <section>
+      <div class= "background bg-top">
+          <img src="./assets/images/no-support/ameba_cima.png" alt="">
+      </div>
+    </section>
+    <main class="main">
+      <section class="main__section">
+        <img src="./assets/images/no-support/laptop.png" alt="">
+        <h1>Ops! Esse navegador não é compatível.</h1>
+        <p>Pra que você tenha a melhor experiência, acesse o site por um desses navegadores:</p>
+        <ul class="product-list">
+          <li><img src="./assets/images/no-support/chrome.png">Chrome</li>
+          <li><img src="./assets/images/no-support/safari.png">Safari</li>
+          <li><img src="./assets/images/no-support/firefox.png">Firefox</li>
+          <li><img src="./assets/images/no-support/opera.png">Ópera</li>
+        </ul>
+      </section>
+    </main>
+    <section >
+      <div class= "background bg-bottom">
+          <img src="./assets/images/no-support/ameba_baixo.png" alt="">
+      </div>
+    </section>
+  </body>
+</html>

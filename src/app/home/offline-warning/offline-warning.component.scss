@@ -1,0 +1,24 @@
+.offline-container {    
+    padding: 1rem;
+    h1 {
+        margin-bottom: 10%;
+        font-weight: normal;
+        font-size: 1.9em;
+        padding-left: 2rem;
+    }
+    p {
+        color: gray;
+        margin-bottom: 15%;
+        padding-left: 2rem;
+    }
+    a {
+        display: block;
+        text-align: center;
+        margin-top: 30px;
+        cursor: pointer;
+    }
+}
+
+.offline-btn-container{
+    text-align: center;
+}

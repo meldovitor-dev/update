@@ -1,0 +1,45 @@
+<div class="slides-wrapper" slide-troubleshoting>
+    <ion-slides (ionSlideWillChange)="slideHandler($event)" #SliderRender [pager]="!isFullSlideMode()"
+        class="ts-full-heigth-slides">
+        <ion-slide *ngFor="let page of pages; let i = index">
+            <div class="slide-container">
+                <div class="top-full-image-slide" *ngIf="isFullSlideMode()">
+                    <img [src]="page?.getTopImage()" class="top-full-image-slide__img">
+                </div>
+                <div class="slide-top-section" [class.top-column-mode]="!hasBottomSection()" *ngIf="!isFullSlideMode()">
+                    <h2 id="title-slide-{{i}}" [innerHTML]="page?.getTitle()">
+                    </h2>
+                    <div class="top-container-section">
+                        <img [src]="page?.getTopImage()" *ngIf="(page.getTopImage())" class="image-guide">
+                        <div *ngIf="page.hasBreadcrumbs()" class="full-width">
+                            <div class="bc-container">
+                                <h5>
+                                    {{page.getBreadcrumbsTitle()}}
+                                </h5>
+                                <tecvirt-breadcrumb [elements]="page.getBreadcrumbsElements()"></tecvirt-breadcrumb>
+                            </div>
+                            <p id="paragraph2-slide-{{i}}" [innerHTML]="page.getParagraph(1)"></p>
+                        </div>
+                        <p id="paragraph-slide-{{i}}" [class.remove-bottom-margin]="page.hasBreadcrumbs()"
+                            [innerHTML]="page?.getParagraph()"></p>
+                    </div>
+                </div>
+                <div class="slide-bottom-section" *ngIf="hasBottomSection()">
+                    <a (click)="togglePicture()" id="button-thumbnail-{{i}}" *ngIf="hasThumbnail()"
+                        [class]="fullImage.landscape ? 'thumb-bottom' : 'thumb-right'" >
+                        <span>{{thumbImage.description}} </span>
+                        <div>
+                            <img [src]="thumbImage.src">
+                        </div>
+                    </a>
+                    <img [src]="fullImage?.src" [class.horizontal-img]="fullImage.landscape"
+                        [class.vertical-img]="!fullImage.landscape"  [@fadeInAnimation]="togglePic">
+                </div>
+            </div>
+        </ion-slide>
+    </ion-slides>
+    <tecvirt-navigation-slides-buttons [noDivider]="!hasBottomSection()" currentGAPageName=""
+        [hiddenLeft]="!getCurrentSlide()" [hiddenRight]="getTotalSlides() === getCurrentSlide()"
+        (buttonClicked)="navegateButtonClicked($event)">
+    </tecvirt-navigation-slides-buttons>
+</div>

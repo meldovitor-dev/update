@@ -1,0 +1,24 @@
+<ion-card home-card class="card" color="white" [hidden]="hideCard" [@openClose]="hideCard ? 'closed' : 'open'" (click)="onClick()">
+  <ion-card-content class="has-block" [class.resolved]="falhaResolved" *ngIf="page">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="7">
+          <div class="content-wrapper">
+            <h3>
+              {{ page.title }}
+            </h3>
+            <span class="small-p">
+              Atualizado às {{ timestamp | date: "HH:mm" }}
+            </span>
+          </div>
+        </ion-col>
+        <ion-col size="5">
+          <div class="content-wrapper">
+            <span class="icon-{{ page.icon }}"></span>
+            <span class="info-p">VER MAIS DETALHES</span>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card-content>
+</ion-card>

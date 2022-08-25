@@ -1,0 +1,29 @@
+
+<ion-content get-portfolio color="light">
+  <div class="container">
+    <div class="logo-area">
+      <img src="./../../../assets/icons/icon-512x512.png" alt="">
+      <h2 class="logo-area__title">Técnico Virtual</h2>
+    </div>
+    <tecvirt-input-default
+      (inputChanged)="cleanErrors()"
+      cypress="input-cpf-or-cnpj-modal"
+      [parentFormControl]="cpfOrCnpjFormControl"
+      label="CPF ou CNPJ do titular"
+      mask="cpfOrCnpj"
+    ></tecvirt-input-default>
+    <div class="safe-margin"></div>
+    <tecvirt-button
+      color="green"
+      label="Avançar"
+      (clickEvent)="getPortfolio()"
+      [disabled]="isDisabled()"
+      [data]="{ga: ''}"
+      [loading]="loadingButton"
+    ></tecvirt-button>
+    <div class="safe-margin"></div>
+    <ion-text color="primary">
+      <a (click)="closeModal()" class="login-link-skip">Continuar sem CPF ou CNPJ</a>
+    </ion-text>
+  </div>
+</ion-content>

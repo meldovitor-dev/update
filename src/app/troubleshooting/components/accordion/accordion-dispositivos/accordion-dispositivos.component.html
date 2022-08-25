@@ -1,0 +1,62 @@
+  <div class="info-sameSSID-container" *ngIf="sameSSID">
+    <p class="info-sameSSID">As suas redes foram cadastradas com nomes iguais, então por isso seus dispositivos vão aparecer duplicados nestas redes.</p>
+  </div>
+  <div container *ngFor="let networkBand of filteredAccordion;">
+    <p class="band-label" *ngIf="networkBand.networkList.length && networkBand.label">{{networkBand.label}}</p>
+    <div accordion-dispositivos id="accordion-{{i}}" *ngFor="let item of networkBand.networkList; let i= index">
+      <ion-list class="ion-no-padding" lines='full'>
+        <ion-list-header>
+          <a class="accordion-header" (click)="expandAccordion(item)">
+            <div class="accordion-header__content">
+              <div>
+                <ion-label>{{item.ssid || 'Rede Wi-Fi'}}</ion-label>
+              </div>
+              <div>
+                <div class="rigth-area" *ngIf="!item.done">
+                  <ion-text *ngIf="item.devices.length>1">
+                    <p>({{item.devices.length}} dispositivos)</p>
+                  </ion-text>
+                  <ion-text *ngIf="item.devices.length==1">
+                    <p>({{item.devices.length}} dispositivo)</p>
+                  </ion-text>
+                  <ion-icon [name]="item.open ? 'ios-arrow-up' : 'ios-arrow-down'" class="icon"></ion-icon>
+                </div>
+                <div class="rigth-area green-text" *ngIf="item.done">
+                  <ion-text>
+                    <p>Senha alterada</p>
+                  </ion-text>
+                  <ion-icon name="checkmark" class="icon"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </a>
+        </ion-list-header>
+        <div *ngIf="item.open && !item.done" devicesList>
+          <ion-item *ngFor="let device of item.devices" (click)='unknownDeviceClick(device)'>
+            <div item>
+              <ion-checkbox class="radius-checkbox" mode="ios" id="update-device-index" [(ngModel)]="device.unknown"
+                color="danger"></ion-checkbox>
+              <div class="device-item">
+                <h1>{{device.hostName}}</h1>
+                <p class="accordion-paragraph" *ngIf="!!device.vendor">{{device.vendor}}</p>
+              </div>
+              <div class="unknown-device" [hidden]=!device.unknown>
+                <ion-icon name="warning" color="danger" slot="end"></ion-icon>
+                <p>NÃO RECONHECIDO</p>
+              </div>
+            </div>
+          </ion-item>
+          <div class="wifi-device-content-reduced" *ngIf="!item.devices.length">
+            <span class="wifi-device-sticker-container">
+              <ion-icon name="alert"></ion-icon>
+            </span>
+            Não encontramos dispositivos<br />
+            conectados nesta rede Wi-Fi.
+          </div>
+          <div button-item>
+            <tecvirt-button outline="true" (clickEvent)='clickEvent(item)'>Trocar senha desta rede</tecvirt-button>
+          </div>
+        </div>
+      </ion-list>
+    </div>
+  </div>

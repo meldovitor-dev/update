@@ -1,0 +1,6 @@
+<div class="emotion-scale-container">
+  <div class="emotion-scale-item" *ngFor="let item of emotionList" [class.selected-item]="currentSelected == item" (click)="onClick(item)">
+    <ion-icon [src]=item.icon></ion-icon>
+    <span class="emotion-scale-item__text" [innerHTML]="item.label"></span>
+  </div>
+</div>

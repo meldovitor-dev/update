@@ -1,0 +1,22 @@
+.tecvirt-scheduling-display {
+    $colorSecondary: #D8D8D8;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3em;
+    hr {
+        background: $colorSecondary;
+        width: 100%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .tecvirt-scheduling-display__label {
+        font-size: 0.6em;
+        color: gray;
+        margin-bottom: 15px;
+    }
+    .tecvirt-scheduling-display__multi-attr{
+        display: flex;
+        justify-content: space-between;
+    }
+}

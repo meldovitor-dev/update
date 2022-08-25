@@ -1,0 +1,104 @@
+div.fibra-offer {
+    background-color: var(--ion-color-light);
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 5px;
+    margin: auto 10px;
+    .fibra-offer-container {
+        height: 100%;
+        .fibra-offer__header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            h1 {
+                text-align: center;
+                font-weight: normal;
+                font-size: 1.1em;
+                margin: 10px;
+            }
+            .fibra-offer--header__close-btn {
+              cursor: pointer;
+            }
+        }
+        .fibra-offer__image-container{
+            width: 75%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        p {
+            margin-bottom: 5vh;
+        }
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            min-height: 70px;
+            tecvirt-button {
+                display: block;
+                width: 100% !important;
+            }
+        }
+    }
+    .fibra-offer-form {
+        display: flex;
+    
+        ion-item[inputs-address] {
+          border: 1px solid #6F6F6F;
+          border-radius: 1.5vw;
+          margin: 1vw;
+    
+          .item-inner {
+            border-bottom-width: 0px !important;
+            border-bottom-color: transparent !important;
+            box-shadow: none !important;
+          }
+        }
+    
+        ion-label[stacked],
+        .label-md[stacked],
+        .label-ios[stacked] {
+          color: #4A4A4A;
+        }
+    
+        .label-md,
+        .label-ios {
+          padding-right: 0;
+          margin-right: 0;
+          white-space: normal;
+        }
+    
+        ion-label[no-address-number] {
+          color: #4A4A4A;
+          font-size: 0.7em;
+        }
+    
+        ion-checkbox {
+          margin-left: 5px !important;
+          margin-right: 5px !important;
+        }
+    
+        ion-item[no-number-item] {
+          padding: 0 !important;
+          margin: 0 !important;
+          width: 100%;
+          .item-cover {
+            padding-right: 0 !important;
+          }
+        }
+    
+        .fibra-offer-form__first {
+          width: 60%;
+          padding-right: 10px;
+        }
+    
+        .fibra-offer-form__second {
+          width: 40%;
+        }
+      }
+}

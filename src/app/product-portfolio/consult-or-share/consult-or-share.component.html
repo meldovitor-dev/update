@@ -1,0 +1,19 @@
+<div class="consult-or-share">
+  <div class="consult-or-share__consult">
+    <ion-icon src="./assets/icon/icone_disponibilidade_fibra.svg" color="primary"></ion-icon>
+    <ion-text color="primary">
+      <h5>VOCÊ AINDA NÃO TEM OI FIBRA?</h5>
+    </ion-text>
+    <p>Aproveite a internet com ultra velocidade,
+      modem WiFi Up e TV em alta definição.</p>
+    <ion-button (click)="checkAvailability()" expand="block" color="warning" mode="md">
+      <span consult-or-share__consult--label>
+        Consultar disponibilidade
+      </span>
+    </ion-button>
+  </div>
+  <div class="consult-or-share__line--divider" *ngIf="showSharedButton"></div>
+  <div class="consult-or-share__share">
+      <tecvirt-shared-button  *ngIf="showSharedButton"></tecvirt-shared-button>
+  </div>
+</div>
