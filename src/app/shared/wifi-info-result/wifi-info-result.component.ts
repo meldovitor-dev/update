@@ -1,5 +1,4 @@
 import { GeneralHelper } from 'src/app/helpers/general.helper';
-import { LinkCatalogModel } from './../../troubleshooting/troubleshooting-interface';
 import { UserState } from 'src/app/states/user.state';
 import { Store } from '@ngxs/store';
 import { Component, Input, OnInit, Output, EventEmitter, OnDestroy } from '@angular/core';

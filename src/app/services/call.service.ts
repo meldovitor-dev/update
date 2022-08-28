@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unused-expressions */
 import { ModalController, Platform } from '@ionic/angular';
 import { ConnectionState } from './../states/connection.state';
-import { REGIONS } from './../troubleshooting/general.constants';
+// import { REGIONS } from './../troubleshooting/general.constants';
 import { UserState } from './../states/user.state';
 import { GeneralHelper } from './../helpers/general.helper';
 import { ProductHelper } from './../helpers/product-helper';
@@ -54,9 +54,9 @@ export class CallService {
       return atendimento.telefone_default_r1;
     }
     const region = GeneralHelper.getUserRegion(terminal);
-    if (region === REGIONS.TWO) {
-      return atendimento.telefone_default_r2;
-    }
+    // if (region === REGIONS.TWO) {
+    //   return atendimento.telefone_default_r2;
+    // }
     return atendimento.telefone_default_r1;
   }
   getPhoneTVDTH(atendimento) {

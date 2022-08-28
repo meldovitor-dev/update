@@ -1,7 +1,7 @@
 import { InAppBrowserService } from './../../services/in-app-browser.service';
 import { AnalyticsService } from 'src/app/core/analytics.service';
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { LinkCatalogModel } from 'src/app/troubleshooting/troubleshooting-interface';
+// import { LinkCatalogModel } from 'src/app/troubleshooting/troubleshooting-interface';
 import { NativeSettingsService } from 'src/app/services/native-settings.service';
 
 @Component({
@@ -11,7 +11,7 @@ import { NativeSettingsService } from 'src/app/services/native-settings.service'
 })
 export class LinkSharedComponent implements OnInit {
 
-  @Input() linkShared: LinkCatalogModel;
+  @Input() linkShared: any;
   @Output() linEvt = new EventEmitter<any>();
   constructor(public analyticsService: AnalyticsService,
     public iab: InAppBrowserService,

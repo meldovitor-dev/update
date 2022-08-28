@@ -4,7 +4,7 @@ import { Plugins } from '@capacitor/core';
 import { TECNICO_VIRTUAL_API } from 'src/environments/server-urls';
 import { DeviceService } from './device.service';
 import { RequestProviderService } from './request-provider.service';
-import { NetworkWifiInfoInterface, WifiInfoInterface } from '../troubleshooting/troubleshooting-interface';
+// import { NetworkWifiInfoInterface, WifiInfoInterface } from '../troubleshooting/troubleshooting-interface';
 
 export type WifiModel = {
   SSID: string,
@@ -23,7 +23,7 @@ export enum WifiLevelEnum {
   providedIn: 'root'
 })
 export class WifiManagerService {
-  wifiInfo$ = new BehaviorSubject<WifiInfoInterface>({});
+  wifiInfo$ = new BehaviorSubject<any>({});
   constructor(public device: DeviceService,
     private req: RequestProviderService) { }
 
@@ -166,7 +166,7 @@ export class WifiManagerService {
     });
   }
 
-  async updateWifiInfo(info: NetworkWifiInfoInterface) {
+  async updateWifiInfo(info: any) {
     const { frequency } = info;
     const value = this.wifiInfo$.value;
     frequency === '5 GHz' ? value.rede5 = info : value.rede24 = info;
