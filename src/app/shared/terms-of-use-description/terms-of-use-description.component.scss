@@ -1,0 +1,37 @@
+ion-content[terms-content] {
+  --padding-start: 30px;
+  --padding-end: 30px;
+  text-align: justify;
+
+  .terms-of-use-top {
+    display: flex;
+    justify-content: space-between;
+
+    .terms-content--h2 {
+      font-weight: normal;
+    }
+
+    .terms-content--icon-close {
+      position: relative;
+      top: 10px;
+      right: -10px;
+      font-size: 40px;
+      cursor: pointer;
+    }
+  }
+
+  .terms-content--p {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+
+    ::ng-deep a {
+      text-decoration: none;
+    }
+
+  }
+}
+
+.term-content--hr {
+  border-top: 1px solid grey;
+  width: 100%;
+}

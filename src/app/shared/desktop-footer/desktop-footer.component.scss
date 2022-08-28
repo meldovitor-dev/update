@@ -1,0 +1,48 @@
+::ng-deep div[background-container] {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  justify-content: flex-end;
+  height: fit-content;
+  width: fit-content;
+  z-index: -1;
+
+  .background {
+    z-index: -1;
+    width: 500px;
+    height: 188px;
+    background-image: url("./../../../assets/images/home-background/home-footer-brand.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+  }
+}
+
+::ng-deep div.desktop-footer {
+  display: none;
+  margin-left: 10%;
+  width: 100%;
+  font-size: 0.9rem;
+  color: #979797;
+  position: relative;
+  z-index: 0;
+
+  p {
+    padding-top: 1rem;
+    border-top: 1px solid #979797;
+
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  ::ng-deep div[background-container] {
+    display: flex;
+  }
+
+  ::ng-deep div.desktop-footer {
+    display: block;
+  }
+}

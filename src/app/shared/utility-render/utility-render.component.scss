@@ -1,0 +1,60 @@
+ion-grid[utility-render] {
+  .content-padding {
+    padding: 0 5vw;
+  }
+}
+
+.full-height {
+  height: 100vh;
+}
+
+ion-col[utility-render] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  img {
+    display: block;
+    text-align: center;
+  }
+
+  h1 {
+    font-weight: 400;
+    font-size: 25px;
+    width: 100%;
+  }
+
+  p {
+    color: #909090;
+    line-height: 1.3rem;
+    width: 100%;
+  }
+}
+
+ion-item,
+ion-list {
+  --ion-background-color: var(--ion-color-light);
+}
+
+ion-list[button-troubleshotting] {
+  background: transparent;
+
+  ion-item {
+    --ion-item-background: transparent;
+    --inner-padding-end: 0 !important;
+  }
+
+  .label-no-margin {
+    margin: 0;
+  }
+}
+
+@media (min-width: 600px) {
+  h1 {
+    margin-bottom: 2rem;
+  }
+
+  p {
+    margin-bottom: 2rem;
+  }
+}

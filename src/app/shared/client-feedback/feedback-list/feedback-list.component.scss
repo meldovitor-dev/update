@@ -1,0 +1,18 @@
+ion-list[feedback-list] {
+  background: transparent;
+  width: 330px;
+  padding-top: 20px;
+  padding-bottom: 0;
+
+  .list-item {
+    --background: transparent;
+    --min-height: 20px;
+    --max-height: 20px;
+    font-size: 0.9rem;
+
+    ion-radio {
+      margin: 5px 0;
+      margin-right: 10px;
+    }
+  }
+}

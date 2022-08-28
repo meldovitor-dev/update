@@ -1,0 +1,101 @@
+ion-card-content {
+  padding: 5px !important;
+}
+
+ion-card[home-card] {
+  margin: 2.5% 20px !important;
+}
+
+ion-button {
+  height: 30px;
+  --padding-start: 0;
+}
+
+ion-card-subtitle[card-title] {
+  color: var(--ion-color-secondary) !important;
+  font-size: 0.7rem;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+ion-row.card__min-size {
+  //min-height: 110px;
+}
+
+.card {
+  ion-card-content {
+    p {
+      font-size: 14px;
+      width: 90%;
+    }
+
+    .right-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+
+    .icon {
+      background-size: 90% 100%;
+      background-repeat: no-repeat;
+    }
+
+    .icon-devices {
+      @extend .icon;
+      width: 100%;
+      height: 35px;
+      background-image: url('../../../../assets/icon/cards-home/dispositivos.svg');
+    }
+
+    .icon-network {
+      @extend .icon;
+      width: 100%;
+      height: 55px;
+      margin-left: 0.85em;
+      background-image: url('../../../../assets/icon/cards-home/rede.svg');
+    }
+
+    .icon-signal {
+      @extend .icon;
+      width: 100%;
+      height: 30px;
+      background-image: url('../../../../assets/icon/cards-home/intensidade.svg');
+    }
+
+    .icon-phone {
+      @extend .icon;
+      width: 100%;
+      height: 45px;
+      margin-left: 1.0em;
+      background-image: url('../../../../assets/icon/cards-home/icone_card_celular.svg');
+    }
+  }
+}
+
+.loading {
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.small-text {
+  font-size: 11px;
+  margin: 10px;
+  margin-top: 0;
+}
+
+.isDisabled {
+  color: var(--ion-color-medium) !important;
+}
+
+p[card-agendamento] {
+  font-size: 1.1em !important;
+}
+
+@media (min-width: 600px) {
+  .card {
+    width: 320px;
+  }
+}

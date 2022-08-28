@@ -1,0 +1,113 @@
+div[unlogged-area] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 0 10px 20px 10px;
+
+  .unlogged-card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    cursor: pointer;
+
+    p {
+      margin-top: 0;
+      text-align: center;
+      font-size: 0.7em;
+      color: #545454;
+      width: 80%;
+    }
+  }
+
+  .unlogged-card-container:active {
+    opacity: 0.6
+  }
+
+  .icone-unlogged {
+    display: block;
+    width: 2.5em;
+    height: 2.5em;
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+
+  .icone-guia-programacao {
+    background-image: url("../../../assets/icon/unlogged-area/icone_guia_programacao_.svg");
+  }
+
+  .icone-recursos-avancados {
+    background-image: url("../../../assets/icon/unlogged-area/recursos_avancados_TV.svg")
+  }
+
+  .icone-controle-remoto {
+    background-image: url("../../../assets/icon/unlogged-area/controle_remoto.svg")
+  }
+
+  .icone-guide-smartv {
+    background-image: url("../../../assets/icon/unlogged-area/wifi_TV.svg");
+    width: 2.6em;
+  }
+
+  .icone-dicas-wifi {
+    background-image: url("../../../assets/icon/unlogged-area/dicas_wifi.svg");
+    width: 2.6em;
+  }
+
+  .icone-antena-modem {
+    background-image: url("../../../assets/icon/unlogged-area/modem_antena.svg");
+    width: 2.6em;
+  }
+
+  .icone-ligacao {
+    background-image: url("../../../assets/icon/unlogged-area/phone.svg");
+    background-size: 70% 70%;
+  }
+
+  .icone-produtos-oi {
+    background-image: url("../../../assets/icon/unlogged-area/oi_products.svg");
+    background-size: 90% 90%;
+  }
+
+  .icone-welcome-kit {
+    background-image: url("../../../assets/icon/unlogged-area/icone_manuais.svg");
+    background-size: 80% 80%;
+  }
+
+  .icone-retirada-equipamento-fibra {
+    background-image: url("../../../assets/icon/unlogged-area/icone_retirada_equipamento.svg");
+    width: 2.5em;
+    margin-left: 0.5em;
+  }
+
+  ion-grid {
+    width: 100%;
+
+    ion-row {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+@media (min-width:600px) {
+  div[unlogged-area] {
+    width: 60%;
+    padding: 0;
+
+    ion-grid {
+      margin-left: 12%;
+
+      ion-row {
+        justify-content: flex-start;
+      }
+    }
+  }
+
+  p {
+    width: 60% !important;
+  }
+}

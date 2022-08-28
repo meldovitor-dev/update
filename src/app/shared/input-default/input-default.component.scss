@@ -1,0 +1,22 @@
+ion-item[input] {
+  border-radius: 5px;
+  --border-width: 0 0 2px 0;
+}
+
+div.input-default-container {
+  position: relative;
+}
+
+span.default-input-has-error--message {
+  padding-top: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+  height: 40px;
+  font-size: 13px;
+  position: absolute;
+  background: red;
+  color: var(--ion-color-white);
+  border-radius: 5px;
+  right: 0;
+  bottom: -20px;
+}

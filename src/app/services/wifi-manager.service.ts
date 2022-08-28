@@ -1,7 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-expressions */
-/* eslint-disable @typescript-eslint/dot-notation */
-/* eslint-disable @typescript-eslint/naming-convention */
-/* eslint-disable @typescript-eslint/member-delimiter-style */
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 import { Plugins } from '@capacitor/core';
