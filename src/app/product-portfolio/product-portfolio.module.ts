@@ -3,6 +3,7 @@ import { RouterModule } from '@angular/router';
 import { ProductPortfolioComponent } from './product-portfolio.component';
 import { CorePageModule } from './../core/core.module';
 import { SharedModule } from './../shared/shared.module';
+import { IonicModule } from '@ionic/angular';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PortfolioListComponent } from './portfolio-list/portfolio-list.component';
@@ -26,6 +27,7 @@ import { GetPortfolioComponent } from './get-portfolio/get-portfolio.component';
     CommonModule,
     SharedModule,
     CorePageModule,
+    IonicModule,
     RouterModule.forChild([
       {
         path: '',

@@ -1,0 +1,67 @@
+.scheduling-messages {
+  display: flex;
+
+  .scheduling-messages__left {
+    margin-right: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    .scheduling-messages__dots {
+      width: 15px;
+      height: 100%;
+      border-right: 2px dotted var(--ion-color-info);
+    }
+
+    .scheduling-messages__dots--hidden {
+      border-right: 2px dotted transparent;
+    }
+  }
+
+  .scheduling-messages__right {
+    margin-bottom: 20px;
+
+    p {
+      font-size: 0.9em;
+    }
+  }
+}
+
+.timeline__icon {
+  min-width: 30px;
+  min-height: 30px;
+  max-width: 30px;
+  max-height: 30px;
+  background-size: cover;
+}
+
+.timeline__icon--agendado {
+  @extend .timeline__icon;
+  background-image: url("../../../../assets/images/agendamento/agendado.svg");
+}
+
+.timeline__icon--agendarData {
+  @extend .timeline__icon;
+  background-image: url("../../../../assets/images/agendamento/agendar_data.svg");
+}
+
+.timeline__icon--agendar {
+  @extend .timeline__icon;
+  background-image: url("../../../../assets/images/agendamento/agendar.svg");
+}
+
+.timeline__icon--historico {
+  @extend .timeline__icon;
+  background-image: url("../../../../assets/images/agendamento/historico.svg");
+}
+
+.timeline__icon--semData {
+  @extend .timeline__icon;
+  background-image: url("../../../../assets/images/agendamento/sem_data.svg");
+}
+
+.timeline__icon--tecnico {
+  @extend .timeline__icon;
+  background-image: url("../../../../assets/images/agendamento/tecnico.svg");
+}
