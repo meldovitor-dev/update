@@ -1,0 +1,80 @@
+ion-content[diagnostic-core] {
+  overflow-y: hidden !important;
+
+  ion-row.ion-align-items-center {
+    height: 100%;
+
+    h1 {
+      margin-bottom: 15%;
+      text-align: center;
+      font-weight: normal;
+      font-size: 24px;
+    }
+
+    p {
+      text-align: center;
+    }
+  }
+
+  .footer-brand {
+    position: absolute;
+    width: 100%;
+    height: 15vh;
+    max-height: 120px;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.diagnostic-container {
+  padding: 10vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  p {
+    text-align: left !important;
+    margin-bottom: 20px;
+  }
+
+  h3 {
+    font-weight: normal;
+    font-size: 1.7em;
+    margin-bottom: 20px;
+  }
+
+  app-button {
+    display: block !important;
+    width: 100% !important;
+  }
+}
+
+.footer-protocol {
+  color: white;
+  position: absolute;
+  bottom: 2vh;
+}
+
+.footer-brand-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../../../assets/images/diagnostic/protocolo.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position-y: top;
+  background-size: cover;
+}
+
+@media (min-width: 420px) {
+  .footer-brand-container {
+    background-image: url('../../../assets/images/diagnostic/protocolo_pwa.svg');
+  }
+}

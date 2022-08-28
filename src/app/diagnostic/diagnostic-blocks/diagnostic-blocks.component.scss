@@ -1,0 +1,94 @@
+ion-content[diagnostic-blocks] {
+  .header-block-brand {
+    background-image: url('./../../../assets/images/diagnostic/header_diagnostico_bloqueio.svg');
+    position: absolute;
+    top: 0;
+    height: 8rem;
+    width: 100%;
+  }
+
+  h1 {
+    font-weight: normal;
+    font-size: 1.8em;
+    margin-top: 7rem;
+    margin-bottom: 4.5vh;
+  }
+
+  p {
+    color: #909090;
+    line-height: 1.3rem;
+    margin-bottom: 5vh;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+    tecvirt-button {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  ion-grid {
+    height: 100% !important;
+  }
+
+  ion-row {
+    height: 100% !important;
+  }
+
+  .icon-brand {
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    background-size: 90% 90%;
+    background-repeat: no-repeat;
+  }
+
+  .icon-financeiro {
+    @extend .icon-brand;
+    background-image: url('../../../assets/icon/diagnostic/bloqueio_financeiro_header.svg');
+  }
+
+  .icon-falha_massiva {
+    @extend .icon-brand;
+    background-image: url('../../../assets/icon/diagnostic/falha_massiva_header.svg');
+  }
+
+  .icon-reparo {
+    @extend .icon-brand;
+    right: .5rem;
+    top: 2rem;
+    background-image: url('../../../assets/icon/diagnostic/bloqueio_reparo_header.svg');
+  }
+
+  .icon-linha {
+    @extend .icon-brand;
+    right: .5rem;
+    top: 2rem;
+    background-image: url('../../../assets/icon/diagnostic/bloqueio_linha_header.svg');
+  }
+
+  .icon-os {
+    @extend .icon-reparo;
+  }
+
+  @media (min-width: 420px) {
+    .header-block-brand {
+      display: none;
+    }
+
+    .icon-brand {
+      display: none;
+    }
+
+    h1 {
+      margin-top: 2rem !important;
+    }
+  }
+}

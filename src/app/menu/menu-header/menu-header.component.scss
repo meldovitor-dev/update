@@ -1,0 +1,14 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #757575;
+
+  .header__close-container {
+    font-size: 26px;
+  }
+
+  .header__version-container {
+    font-size: 0.8rem;
+  }
+}

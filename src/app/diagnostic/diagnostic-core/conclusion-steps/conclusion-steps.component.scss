@@ -1,0 +1,46 @@
+.conclusion-steps-container {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font-size: 2em;
+    font-weight: normal;
+    text-align: center;
+    font-weight: normal;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  .conclusion-steps-btn-list {
+    width: 100%;
+    text-align: center;
+  }
+
+  .rounded-icon {
+    width: 80px;
+    height: 80px;
+    border: 3px solid var(--ion-color-info);
+    border-radius: 50%;
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+  }
+
+  .inline-btn-list {
+    display: flex;
+    justify-content: space-between;
+
+    .inline-button {
+      display: block;
+      width: 48%;
+    }
+  }
+}

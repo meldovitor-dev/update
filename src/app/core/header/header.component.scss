@@ -1,0 +1,31 @@
+ion-title {
+  text-align: center;
+  padding: 0;
+  border-bottom: 1px solid transparent;
+}
+
+ion-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.connection-badge {
+  background: transparent;
+  border: 1px solid;
+  border-radius: 2px;
+  font-size: 0.6rem;
+  padding: 1px;
+  min-width: 2rem;
+  text-align: center;
+}
+
+.conection-on {
+  border-color: var(--ion-color-success);
+  color: var(--ion-color-success);
+}
+
+.conection-off {
+  border-color: var(--ion-color-medium);
+  color: var(--ion-color-medium);
+}
