@@ -1,0 +1,54 @@
+.consult {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 25px;
+  max-width: 500px;
+
+  div.consult__image-container {
+    padding-top: 25px;
+    padding-left: 15px;
+
+    img {
+      height: 25px;
+    }
+  }
+
+  .consult__separation-line {
+    background-image: url('../../../assets/images/offer/separator-line.svg');
+    background-repeat: no-repeat;
+    height: 1px;
+    width: 100%;
+  }
+
+  p {
+    font-size: 0.8em;
+    text-align: left;
+    margin-top: 0;
+  }
+
+  ion-button {
+    width: 100%;
+  }
+
+  ion-icon {
+    font-size: 2em;
+  }
+
+  h5 {
+    font-size: 1em;
+    margin-top: 5px;
+  }
+
+  .consult__button {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media(min-width:600px) {
+  .consult {
+    padding-left: 10%;
+  }
+}
