@@ -1,9 +1,0 @@
-<div home-problems>
-  <tecvirt-viewmore-button (click)="onClick($event)"></tecvirt-viewmore-button>
-  <div class="home-problems__background">
-  </div>
-  <h3 class='title-content'>Selecione<br>um reparo:</h3>
-  <div *ngFor="let feature of getFeatureThatIsAProblem((product$ | async )?.features); let isLast = last; let isFirst = first" class="home-problems__buttons-container" [class.home-problems__buttons-first]="isFirst" [class.home-problems__buttons-last]="isLast">
-    <tecvirt-button color="white" label='{{feature.displayName}}' [icon]='getIcon(feature.featureCode)' [data]="getTaguemanto(feature.featureCode)" (clickEvent)="goToDiagnostic($event, feature)"></tecvirt-button>
-  </div>
-</div>

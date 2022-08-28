@@ -1,9 +1,0 @@
-<ion-slides pager #slidesFooter [options]="slideOpts">
-    <ion-slide *ngFor="let slide of tipsService.getTips()">
-      <div>
-          <h3>{{slide.title}}:</h3>
-          <p>{{slide.text}}</p>
-          <p link *ngIf="slide.link" (click)="onClick(slide.link)" target="_blank" class="tip__link">{{slide.linkLabel}}</p>
-      </div>
-    </ion-slide>
-</ion-slides>

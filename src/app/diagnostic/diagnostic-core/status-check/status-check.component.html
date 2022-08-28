@@ -1,8 +1,0 @@
-<ion-list color="light">
-    <ion-item color="light" lines="none" *ngFor="let item of layoutSteps; let idx = index" class="ion-no-padding safe-bottom">
-      <tecvirt-state-circle [state]="item.state" [index]="idx" [icon]="item.icon"></tecvirt-state-circle>
-      <span class="text-{{item.state}}">
-          {{item.state === 'done' ? item.feedbackMessage : item.executingMessage}}
-      </span>
-    </ion-item>
-</ion-list>

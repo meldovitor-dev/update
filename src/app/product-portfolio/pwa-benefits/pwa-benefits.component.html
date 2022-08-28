@@ -1,7 +1,0 @@
-<div *ngIf="pwaUtilityService && pwaUtilityService.isPwa()" class="pwa-benefits">
-  <p class="pwa-benefits--title">O Técnico Virtual mais leve tem vantagens pra você:</p>
-  <div class="pwa-benefits--item" *ngFor="let item of benefitsLIST">
-    <ion-icon src="{{iconPath}}/{{item.icon}}" class="{{item.class}}"></ion-icon>
-    <p>{{item.text}}</p>
-  </div>
-</div>

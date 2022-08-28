@@ -1,6 +1,0 @@
-<div phone-input>
-  <ion-text color="danger"><p>{{error}}</p></ion-text>
-  <tecvirt-input-default label='DDD + Número do telefone' [parentFormControl]="phoneFormControl" type="tel" mask="phone" (inputChanged)=setPhone($event)></tecvirt-input-default>
-  <div class="safe-margin"></div> 
-  <tecvirt-button size='large' color='white' label='Continuar' (clickEvent)='changePhone($event)' [data]="btnData"></tecvirt-button>
-</div>

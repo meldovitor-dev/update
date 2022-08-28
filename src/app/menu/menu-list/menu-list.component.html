@@ -1,9 +1,0 @@
-<div class="menu-list">
-    <div class="menu-list__item--container"  *ngFor="let p of appPages">
-      <ion-menu-toggle class="menu-list__item" *ngIf="user.authorization || p.unlogged" (click)="callAction(p)">
-        <ion-icon src="{{iconPath}}/{{p.icon}}"></ion-icon>
-        <p item-title>{{p.title}}</p>
-        <div class="menu__line-divider"></div>
-      </ion-menu-toggle>
-    </div>
-  </div>

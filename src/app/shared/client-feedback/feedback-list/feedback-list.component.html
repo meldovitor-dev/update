@@ -1,8 +1,0 @@
-<ion-list feedback-list>
-  <ion-radio-group (ionChange)="getData($event)" [(ngModel)]="feedback">
-    <ion-item class="list-item" lines="none" *ngFor="let item of listArray">
-      <span>{{item.label}}</span>
-      <ion-radio slot="start" color="info" [value]="item.feedback"></ion-radio>
-    </ion-item>
-  </ion-radio-group>
-</ion-list>

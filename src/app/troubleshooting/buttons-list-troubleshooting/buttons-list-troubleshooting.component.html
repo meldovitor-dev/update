@@ -1,7 +1,0 @@
-<ion-list button-troubleshotting>
- <ion-item lines="none" class="ion-text-center ion-no-padding" *ngFor="let btn of buttons, index as i">
-   <ion-label class="label-no-margin">
-     <tecvirt-button [letter]='hasAlphabeticButton(i)' id="button-{{i}}" [label]="btn.text" [data]="btn" (clickEvent)="onClick_(btn)" [color]="(btn.customClasses=== 'outline')? '' : 'white'" size="large" troubleshooting="true">{{btn.text}}</tecvirt-button>
-   </ion-label>
- </ion-item>
-</ion-list>

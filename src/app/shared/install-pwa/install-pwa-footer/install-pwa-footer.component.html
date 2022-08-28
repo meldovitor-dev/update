@@ -1,9 +1,0 @@
-<ion-footer [hidden]="!pwaUtility || pwaUtility.hiddenInstallBtn || hasClicked" class="mobile-pwa-footer">
-  <ion-toolbar (click)="installPWA($event)" color="dark-variation">
-    <div class="pwa-footer">
-      <img [src]="tecvirtIcon" alt="tecvirt_logo">
-      <ion-text color="white"><p>Adicionar o Técnico Virtual à tela inicial</p></ion-text>
-      <ion-icon name="close" color="white" (click)="onClick($event)"></ion-icon>
-    </div>
-  </ion-toolbar>
-</ion-footer>

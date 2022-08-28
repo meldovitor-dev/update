@@ -1,8 +1,0 @@
-<div class="progression-bar-container" *ngIf="!isConclusionStep">
-  <div class="progression-bar" *ngFor="let _ of [1,2,3]; let first = first; let last = last; let index = index"
-    [class.last-progression]="last" [class.first-progression]="first"
-    [class.done-progression]="index < progressionStep"></div>
-</div>
-<div class="progression-bar-container" *ngIf="isConclusionStep">
-  <div class="progression-bar conclusion-bar"></div>
-</div>
