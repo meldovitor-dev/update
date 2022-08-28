@@ -1,0 +1,62 @@
+div[card-verde] {
+  background-color: #006F0A;
+  height: auto;
+  padding: 5px 5px 8px 5px;
+  border-radius: 18px;
+  max-width: 400px;
+}
+
+.login-centralize {
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  justify-content: center;
+}
+
+.login-h1 {
+  margin-left: 2px;
+  margin-top: 10px;
+  font-size: 22px;
+}
+
+.ion-icon {
+  margin-bottom: 3px;
+  font-size: 22px;
+}
+
+div[get-portfolio] {
+  padding: 15px;
+  border-radius: 18px;
+  background: #F4F5F8;
+  color: black;
+  height: auto;
+}
+
+.login--title {
+  font-size: 1.3em;
+  font-weight: normal;
+}
+
+.login--terms-of-use {
+  display: block;
+}
+
+.login--inputs {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.tecvirt-button {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-top: 10px;
+}
+
+.login-link-skip {
+  display: block;
+  text-align: center;
+  width: 100%;
+  text-align: center;
+  margin: 15px 0;
+}

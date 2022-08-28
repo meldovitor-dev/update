@@ -1,0 +1,32 @@
+.pwa-benefits {
+  border-top: 1px solid #cacaca;
+  padding: 20px 0;
+
+  .pwa-benefits--title {
+    font-weight: bold;
+    padding: 0 10px;
+    font-size: 1em;
+  }
+
+  .pwa-benefits--item {
+    display: flex;
+    margin-bottom: 10px;
+
+    p {
+      margin: 0;
+      align-self: center;
+    }
+
+    ion-icon {
+      width: 40px;
+    }
+
+    .large-icon {
+      font-size: 40px;
+    }
+
+    .small-icon {
+      font-size: 24px;
+    }
+  }
+}
