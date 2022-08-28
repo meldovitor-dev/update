@@ -1,0 +1,83 @@
+$border-special-area: #C1C1C1;
+$heightSpecialArea: 200px;
+
+@mixin transitionHeight {
+  -webkit-transition: height 200ms linear;
+  -moz-transition: height 200ms linear;
+  -o-transition: height 200ms linear;
+  -ms-transition: height 200ms linear;
+  transition: height 200ms linear;
+}
+
+.special-area--list {
+  padding-top: 20px;
+  padding-left: 18px;
+  line-height: 22px;
+  font-size: 1em;
+}
+
+.special-area--contract {
+  height: 20px;
+  @include transitionHeight();
+}
+
+.special-area {
+  max-height: $heightSpecialArea;
+  min-height: $heightSpecialArea;
+  position: relative;
+  overflow: hidden;
+  margin-top: -20px;
+}
+
+.special-area--expanded {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: $heightSpecialArea;
+  @include transitionHeight();
+}
+
+.special-area--expanded__container {
+  padding: 10px;
+  width: 98%;
+  margin-left: 1%;
+}
+
+.special-area--expanded__container--close {
+  float: right;
+  right: 0;
+  top: 0;
+
+  a {
+    background-color: transparent;
+    border: 1px solid $border-special-area;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+}
+
+.special-area--expanded__link {
+  color: #227819;
+  font-size: 0.9em;
+  position: absolute;
+  bottom: 0;
+  cursor: pointer;
+}
+
+.special-area--slide-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    max-height: 120px;
+  }
+
+  h1 {
+    font-size: 14px;
+    font-weight: normal;
+    color: black;
+    margin-top: 0;
+  }
+}

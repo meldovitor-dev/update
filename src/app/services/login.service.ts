@@ -1,8 +1,3 @@
-/* eslint-disable @typescript-eslint/no-shadow */
-/* eslint-disable curly */
-/* eslint-disable prefer-const */
-/* eslint-disable @typescript-eslint/member-ordering */
-/* eslint-disable @typescript-eslint/member-delimiter-style */
 import { UtilityState } from 'src/app/states/utility.state';
 import { ExternalUserState } from './../states/externalUser.state';
 import { ToastService } from './toast.service';
