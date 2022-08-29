@@ -10,10 +10,9 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 import { HomePage } from './home.page';
+import { RouterModule } from '@angular/router';
 import { OfflineWarningComponent } from './offline-warning/offline-warning.component';
 import { FooterLoginComponent } from './home-footer/footer-login/footer-login.component';
-
-import { HomePageRoutingModule } from './home-routing.module';
 
 
 @NgModule({
@@ -22,8 +21,17 @@ import { HomePageRoutingModule } from './home-routing.module';
     FormsModule,
     IonicModule,
     SharedModule,
-    CorePageModule,
-    HomePageRoutingModule
+    RouterModule.forChild([
+      {
+        path: '',
+        component: HomePage,
+      },
+      {
+        path: 'sem-conexao/:context',
+        component: OfflineWarningComponent
+      }
+    ]),
+    CorePageModule
   ],
   declarations: [
     HomePage,
